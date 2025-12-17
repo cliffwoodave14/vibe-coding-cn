@@ -1,242 +1,241 @@
-TRANSLATED CONTENT:
-# 🎯 AI Skills 技能库
+# 🎯 AI Skills Library
 
-`i18n/zh/skills/` 目录存放 AI 技能（Skills），这些是比提示词更高级的能力封装，可以让 AI 在特定领域表现出专家级水平。当前包含 **14 个**专业技能。
+The `i18n/zh/skills/` directory stores AI Skills. These are advanced capability encapsulations, more sophisticated than simple prompts, that enable AI to perform at an expert level in specific domains. Currently includes **14** professional skills.
 
-## 目录结构
+## Directory Structure
 
 ```
 i18n/zh/skills/
-├── README.md                # 本文件
+├── README.md                # This file
 │
-├── # === 元技能（核心） ===
-├── claude-skills/           # ⭐ 元技能：生成 Skills 的 Skills（11KB）
+├── # === Meta Skills (Core) ===
+├── claude-skills/           # ⭐ Meta Skill: Skills for Generating Skills (11KB)
 │
-├── # === Claude 工具 ===
-├── claude-code-guide/       # Claude Code 使用指南（9KB）
-├── claude-cookbooks/        # Claude API 最佳实践（9KB）
+├── # === Claude Tools ===
+├── claude-code-guide/       # Guide for using Claude Code (9KB)
+├── claude-cookbooks/        # Best practices for Claude API (9KB)
 │
-├── # === 数据库 ===
-├── postgresql/              # ⭐ PostgreSQL 专家技能（76KB，最详细）
-├── timescaledb/             # 时序数据库扩展（3KB）
+├── # === Databases ===
+├── postgresql/              # ⭐ PostgreSQL Expert Skill (76KB, most detailed)
+├── timescaledb/             # Time-series Database Extension (3KB)
 │
-├── # === 加密货币/量化 ===
-├── ccxt/                    # 加密货币交易所统一 API（18KB）
-├── coingecko/               # CoinGecko 行情 API（3KB）
-├── cryptofeed/              # 加密货币实时数据流（6KB）
-├── hummingbot/              # 量化交易机器人框架（4KB）
-├── polymarket/              # 预测市场 API（6KB）
+├── # === Cryptocurrency / Quant ===
+├── ccxt/                    # Unified Cryptocurrency Exchange API (18KB)
+├── coingecko/               # CoinGecko Market Data API (3KB)
+├── cryptofeed/              # Cryptocurrency Real-time Data Stream (6KB)
+├── hummingbot/              # Quant Trading Bot Framework (4KB)
+├── polymarket/              # Prediction Market API (6KB)
 │
-├── # === 开发工具 ===
-├── telegram-dev/            # Telegram Bot 开发（18KB）
-├── twscrape/                # Twitter/X 数据抓取（11KB）
-├── snapdom/                 # DOM 快照工具（8KB）
-└── proxychains/             # 代理链配置（6KB）
+├── # === Development Tools ===
+├── telegram-dev/            # Telegram Bot Development (18KB)
+├── twscrape/                # Twitter/X Data Scraping (11KB)
+├── snapdom/                 # DOM Snapshot Tool (8KB)
+└── proxychains/             # Proxy Chains Configuration (6KB)
 ```
 
-## Skills 一览表
+## Skills Overview Table
 
-### 按文件大小排序（详细程度）
+### Sorted by File Size (Detail Level)
 
-| 技能 | 大小 | 领域 | 说明 |
-|------|------|------|------|
-| **postgresql** | 76KB | 数据库 | ⭐ 最详细，PostgreSQL 完整专家技能 |
-| **telegram-dev** | 18KB | Bot 开发 | Telegram Bot 开发完整指南 |
-| **ccxt** | 18KB | 交易 | 加密货币交易所统一 API |
-| **twscrape** | 11KB | 数据采集 | Twitter/X 数据抓取 |
-| **claude-skills** | 11KB | 元技能 | ⭐ 生成 Skills 的 Skills |
-| **claude-code-guide** | 9KB | 工具 | Claude Code 使用最佳实践 |
-| **claude-cookbooks** | 9KB | 工具 | Claude API 使用示例 |
-| **snapdom** | 8KB | 前端 | DOM 快照与测试 |
-| **cryptofeed** | 6KB | 数据流 | 加密货币实时数据流 |
-| **polymarket** | 6KB | 预测市场 | Polymarket API 集成 |
-| **proxychains** | 6KB | 网络 | 代理链配置与使用 |
-| **hummingbot** | 4KB | 量化 | 量化交易机器人框架 |
-| **timescaledb** | 3KB | 数据库 | PostgreSQL 时序扩展 |
-| **coingecko** | 3KB | 行情 | CoinGecko 行情 API |
+| Skill | Size | Domain | Description |
+|---|---|---|---|
+| **postgresql** | 76KB | Database | ⭐ Most detailed, complete PostgreSQL expert skill |
+| **telegram-dev** | 18KB | Bot Development | Complete guide for Telegram Bot development |
+| **ccxt** | 18KB | Trading | Unified API for cryptocurrency exchanges |
+| **twscrape** | 11KB | Data Collection | Twitter/X data scraping |
+| **claude-skills** | 11KB | Meta Skill | ⭐ Skills for Generating Skills |
+| **claude-code-guide** | 9KB | Tools | Best practices for Claude Code usage |
+| **claude-cookbooks** | 9KB | Tools | Claude API usage examples |
+| **snapdom** | 8KB | Frontend | DOM snapshots and testing |
+| **cryptofeed** | 6KB | Data Stream | Cryptocurrency real-time data stream |
+| **polymarket** | 6KB | Prediction Market | Polymarket API integration |
+| **proxychains** | 6KB | Network | Proxy chains configuration and usage |
+| **hummingbot** | 4KB | Quant | Quant trading bot framework |
+| **timescaledb** | 3KB | Database | PostgreSQL time-series extension |
+| **coingecko** | 3KB | Market Data | CoinGecko Market Data API |
 
-### 按领域分类
+### Categorized by Domain
 
-#### 🔧 元技能与工具
+#### 🔧 Meta Skills & Tools
 
-| 技能 | 说明 | 推荐场景 |
-|------|------|----------|
-| `claude-skills` | 生成 Skills 的 Skills | 创建新技能时必用 |
-| `claude-code-guide` | Claude Code CLI 使用指南 | 日常开发 |
-| `claude-cookbooks` | Claude API 最佳实践 | API 集成 |
+| Skill | Description | Recommended Scenarios |
+|---|---|---|
+| `claude-skills` | Skills for Generating Skills | Essential for creating new skills |
+| `claude-code-guide` | Claude Code CLI Usage Guide | Daily development |
+| `claude-cookbooks` | Claude API Best Practices | API integration |
 
-#### 🗄️ 数据库
+#### 🗄️ Databases
 
-| 技能 | 说明 | 推荐场景 |
-|------|------|----------|
-| `postgresql` | PostgreSQL 完整指南（76KB） | 关系型数据库开发 |
-| `timescaledb` | 时序数据库扩展 | 时间序列数据 |
+| Skill | Description | Recommended Scenarios |
+|---|---|---|
+| `postgresql` | Complete PostgreSQL Guide (76KB) | Relational database development |
+| `timescaledb` | Time-series Database Extension | Time-series data |
 
-#### 💰 加密货币/量化
+#### 💰 Cryptocurrency / Quant
 
-| 技能 | 说明 | 推荐场景 |
-|------|------|----------|
-| `ccxt` | 交易所统一 API | 多交易所对接 |
-| `coingecko` | 行情数据 API | 价格查询 |
-| `cryptofeed` | 实时数据流 | WebSocket 行情 |
-| `hummingbot` | 量化交易框架 | 自动化交易 |
-| `polymarket` | 预测市场 API | 预测市场交易 |
+| Skill | Description | Recommended Scenarios |
+|---|---|---|
+| `ccxt` | Unified Exchange API | Multi-exchange integration |
+| `coingecko` | Market Data API | Price queries |
+| `cryptofeed` | Real-time Data Stream | WebSocket market data |
+| `hummingbot` | Quant Trading Framework | Automated trading |
+| `polymarket` | Prediction Market API | Prediction market trading |
 
-#### 🛠️ 开发工具
+#### 🛠️ Development Tools
 
-| 技能 | 说明 | 推荐场景 |
-|------|------|----------|
-| `telegram-dev` | Telegram Bot 开发 | Bot 开发 |
-| `twscrape` | Twitter 数据抓取 | 社交媒体数据 |
-| `snapdom` | DOM 快照 | 前端测试 |
-| `proxychains` | 代理链配置 | 网络代理 |
+| Skill | Description | Recommended Scenarios |
+|---|---|---|
+| `telegram-dev` | Telegram Bot Development | Bot development |
+| `twscrape` | Twitter Data Scraping | Social media data |
+| `snapdom` | DOM Snapshots | Frontend testing |
+| `proxychains` | Proxy Chains Configuration | Network proxy |
 
-## Skills vs Prompts 的区别
+## Difference Between Skills vs Prompts
 
-| 维度 | Prompts（提示词） | Skills（技能） |
-|------|------------------|----------------|
-| 粒度 | 单次任务指令 | 完整能力封装 |
-| 复用性 | 复制粘贴 | 配置后自动生效 |
-| 上下文 | 需手动提供 | 内置领域知识 |
-| 适用场景 | 临时任务 | 长期项目 |
-| 结构 | 单文件 | 目录（含 assets/scripts/references） |
+| Dimension | Prompts | Skills |
+|---|---|---|
+| Granularity | Single task instruction | Complete capability encapsulation |
+| Reusability | Copy-paste | Automatically effective after configuration |
+| Context | Needs manual provision | Built-in domain knowledge |
+| Use Case | Temporary tasks | Long-term projects |
+| Structure | Single file | Directory (includes assets/scripts/references) |
 
-## 技能目录结构
+## Skill Directory Structure
 
-每个技能遵循统一结构：
+Each skill follows a unified structure:
 
 ```
 skill-name/
-├── SKILL.md         # 技能主文件，包含领域知识和规则
-├── assets/          # 静态资源（图片、配置模板等）
-├── scripts/         # 辅助脚本
-└── references/      # 参考文档
+├── SKILL.md         # Main skill file, contains domain knowledge and rules
+├── assets/          # Static resources (images, config templates, etc.)
+├── scripts/         # Helper scripts
+└── references/      # Reference documents
 ```
 
-## 快速使用
+## Quick Start
 
-### 1. 查看技能
+### 1. View a Skill
 
 ```bash
-# 查看元技能
+# View meta-skill
 cat i18n/zh/skills/claude-skills/SKILL.md
 
-# 查看 PostgreSQL 技能（最详细）
+# View PostgreSQL skill (most detailed)
 cat i18n/zh/skills/postgresql/SKILL.md
 
-# 查看 Telegram Bot 开发技能
+# View Telegram Bot development skill
 cat i18n/zh/skills/telegram-dev/SKILL.md
 ```
 
-### 2. 复制到项目中使用
+### 2. Copy to Project for Use
 
 ```bash
-# 复制整个技能目录
+# Copy entire skill directory
 cp -r i18n/zh/skills/postgresql/ ./my-project/
 
-# 或只复制主文件到 CLAUDE.md
+# Or just copy main file to CLAUDE.md
 cp i18n/zh/skills/postgresql/SKILL.md ./CLAUDE.md
 ```
 
-### 3. 结合 Claude Code 使用
+### 3. Use with Claude Code
 
-在项目根目录创建 `CLAUDE.md`，引用技能：
+Create `CLAUDE.md` in the project root, referencing skills:
 
 ```markdown
-# 项目规则
+# Project Rules
 
-请参考以下技能文件：
+Please refer to the following skill files:
 @i18n/zh/skills/postgresql/SKILL.md
 @i18n/zh/skills/telegram-dev/SKILL.md
 ```
 
-## 创建自定义 Skill
+## Create Custom Skill
 
-### 方法一：使用元技能生成（推荐）
+### Method 1: Generate using Meta Skill (Recommended)
 
-1. 准备领域资料（文档、代码、规范）
-2. 将资料和 `i18n/zh/skills/claude-skills/SKILL.md` 一起提供给 AI
-3. AI 会生成针对该领域的专用 Skill
+1. Prepare domain materials (documents, code, specifications)
+2. Provide materials along with `i18n/zh/skills/claude-skills/SKILL.md` to AI
+3. AI will generate a dedicated Skill for that domain
 
 ```bash
-# 示例：让 AI 读取元技能后生成新技能
+# Example: Let AI generate a new skill after reading the meta-skill
 cat i18n/zh/skills/claude-skills/SKILL.md
-# 然后告诉 AI：请根据这个元技能，为 [你的领域] 生成一个新的 SKILL.md
+# Then tell AI: Based on this meta-skill, please generate a new SKILL.md for [your domain]
 ```
 
-### 方法二：手动创建
+### Method 2: Manual Creation
 
 ```bash
-# 创建技能目录
+# Create skill directory
 mkdir -p i18n/zh/skills/my-skill/{assets,scripts,references}
 
-# 创建主文件
+# Create main file
 cat > i18n/zh/skills/my-skill/SKILL.md << 'EOF'
 # My Skill
 
-## 概述
-简要说明技能用途和适用场景
+## Overview
+Briefly describe skill purpose and applicable scenarios
 
-## 领域知识
-- 核心概念
-- 最佳实践
-- 常见模式
+## Domain Knowledge
+- Core concepts
+- Best practices
+- Common patterns
 
-## 规则与约束
-- 必须遵守的规则
-- 禁止的操作
-- 边界条件
+## Rules & Constraints
+- Mandatory rules
+- Prohibited operations
+- Boundary conditions
 
-## 示例
-具体的使用示例和代码片段
+## Examples
+Specific usage examples and code snippets
 
-## 常见问题
-FAQ 和解决方案
+## FAQ
+FAQ and solutions
 EOF
 ```
 
-## 核心技能详解
+## Core Skill Details
 
-### `claude-skills/SKILL.md` - 元技能 ⭐
+### `claude-skills/SKILL.md` - Meta Skill ⭐
 
-**生成 Skills 的 Skills**，是创建新技能的核心工具。
+**Skills for Generating Skills**, is the core tool for creating new skills.
 
-使用方法：
-1. 准备你的领域资料（文档、代码、规范等）
-2. 将资料和 SKILL.md 一起提供给 AI
-3. AI 会生成针对该领域的专用 Skill
+Usage:
+1. Prepare your domain materials (documents, code, specifications, etc.)
+2. Provide materials along with SKILL.md to AI
+3. AI will generate a dedicated Skill for that domain
 
-### `postgresql/SKILL.md` - PostgreSQL 专家 ⭐
+### `postgresql/SKILL.md` - PostgreSQL Expert ⭐
 
-最详细的技能（76KB），包含：
-- 数据库设计最佳实践
-- 查询优化技巧
-- 索引策略
-- 性能调优
-- 常见问题解决方案
-- SQL 代码示例
+The most detailed skill (76KB), includes:
+- Database design best practices
+- Query optimization techniques
+- Indexing strategies
+- Performance tuning
+- Common problem solutions
+- SQL code examples
 
-### `telegram-dev/SKILL.md` - Telegram Bot 开发
+### `telegram-dev/SKILL.md` - Telegram Bot Development
 
-完整的 Telegram Bot 开发指南（18KB）：
-- Bot API 使用
-- 消息处理
-- 键盘与回调
-- Webhook 配置
-- 错误处理
+Complete Telegram Bot development guide (18KB):
+- Bot API usage
+- Message handling
+- Keyboards and callbacks
+- Webhook configuration
+- Error handling
 
-### `ccxt/SKILL.md` - 加密货币交易所 API
+### `ccxt/SKILL.md` - Cryptocurrency Exchange API
 
-统一的交易所 API 封装（18KB）：
-- 支持 100+ 交易所
-- 统一的数据格式
-- 订单管理
-- 行情获取
+Unified exchange API encapsulation (18KB):
+- Supports 100+ exchanges
+- Unified data format
+- Order management
+- Market data retrieval
 
-## 相关资源
+## Related Resources
 
-- [Skills 生成器](https://github.com/yusufkaraaslan/Skill_Seekers) - 把任何资料转为 AI Skills
-- [元技能文件](./claude-skills/SKILL.md) - 生成 Skills 的 Skills
-- [提示词库](../prompts/) - 更细粒度的提示词集合
-- [Claude Code 指南](./claude-code-guide/SKILL.md) - Claude Code 使用最佳实践
-- [文档库](../documents/) - 方法论与开发经验
+- [Skills Generator](https://github.com/yusufkaraaslan/Skill_Seekers) - Convert any material into AI Skills
+- [Meta Skill File](./claude-skills/SKILL.md) - Skills for Generating Skills
+- [Prompt Library](../prompts/) - More granular prompt collections
+- [Claude Code Guide](./claude-code-guide/SKILL.md) - Claude Code Usage Best Practices
+- [Document Library](../documents/) - Methodologies and development experiences
