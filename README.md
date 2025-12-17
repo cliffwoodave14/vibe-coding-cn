@@ -98,6 +98,27 @@
 
 ---
 
+<details open>
+<summary><strong>🧬 胶水编程 (Glue Coding)</strong></summary>
+
+> **软件工程的圣杯与银弹——终于出现了。**
+
+胶水编程是 Vibe Coding 的终极进化形态，可能完美解决三大致命缺陷：
+
+| 问题 | 解法 |
+|:---|:---|
+| 🎭 AI 幻觉 | ✅ 只使用已验证的成熟代码，零幻觉 |
+| 🧩 复杂性爆炸 | ✅ 每个模块都是久经考验的轮子 |
+| 🎓 门槛过高 | ✅ 你只需要描述"连接方式" |
+
+**核心理念**：能抄不写，能连不造，能复用不原创。
+
+👉 [深入了解胶水编程](./i18n/zh/documents/胶水编程/README.md)
+
+</details>
+
+---
+
 ## 🖼️ 概览
 
 **Vibe Coding** 是一个与 AI 结对编程的终极工作流程，旨在帮助开发者丝滑地将想法变为现实。本指南详细介绍了从项目构思、技术选型、实施规划到具体开发、调试和扩展的全过程，强调以**规划驱动**和**模块化**为核心，避免让 AI 失控导致项目混乱。
@@ -245,6 +266,7 @@
 
 ### 项目内部文档
 
+*   [**胶水编程 (Glue Coding)**](./i18n/zh/documents/胶水编程/): 软件工程的圣杯与银弹，Vibe Coding 的终极进化形态。
 *   [**prompts-library 工具说明**](./libs/external/prompts-library/): 支持 Excel 与 Markdown 格式互转，包含数百个精选提示词。
 *   [**coding_prompts 集合**](./i18n/zh/prompts/coding_prompts/): 适用于 Vibe Coding 流程的专用提示词。
 *   [**系统提示词构建原则**](./i18n/zh/documents/方法论与原则/系统提示词构建原则.md): 构建高效 AI 系统提示词的综合指南。
