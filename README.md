@@ -67,6 +67,7 @@
   <a href="https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1"><img src="https://img.shields.io/badge/提示词-在线表格(推荐)-blue?style=for-the-badge" alt="提示词在线表格（推荐）"></a>
   <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"><img src="https://img.shields.io/badge/系统提示词-仓库-slateblue?style=for-the-badge" alt="系统提示词仓库"></a>
   <a href="./i18n/zh/documents/从零开始vibecoding/"><img src="https://img.shields.io/badge/🚀_从零开始-新手入门-red?style=for-the-badge" alt="从零开始"></a>
+  <a href="./i18n/zh/documents/外部资源聚合/"><img src="https://img.shields.io/badge/📡_信息源-聚合-teal?style=for-the-badge" alt="信息源聚合"></a>
 </p>
 
 [📋 工具资源](#-器-工具与资源)
@@ -274,7 +275,7 @@
 *   [**通用项目架构模板**](./i18n/zh/documents/模板与资源/通用项目架构模板.md): 多种项目类型的标准目录结构。
 *   [**Augment MCP 配置文档**](./i18n/zh/documents/教程与指南/auggie-mcp配置文档.md): Augment 上下文引擎配置说明。
 *   [**system_prompts 集合**](./i18n/zh/prompts/system_prompts/): AI 开发的系统提示词，含多版本开发规范。
-*   [**外部资源聚合**](./i18n/zh/documents/外部资源聚合/): GitHub 精选仓库、AI 工具平台、提示词资源汇总。
+*   [**外部资源聚合**](./i18n/zh/documents/外部资源聚合/): GitHub 精选仓库、AI 工具平台、提示词资源、优质博主汇总。
 
 ---
 
