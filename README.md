@@ -5,7 +5,7 @@
 -->
 <p align="center">
   <!-- 建议尺寸: 1280x640px。可以使用 Canva, Figma 或 https://banners.beyondco.de/ 等工具制作 -->
-  <img src="https://github.com/tukuaiai.png" alt="Vibe Coding 指南" width="80px">
+  <img src="https://github.com/tukuaiai.png" alt="Vibe Coding 指南" width="50px">
 </p>
 
 <div align="center">
@@ -204,7 +204,6 @@
 *   [**Zread**](https://zread.ai/): AI 驱动的 GitHub 仓库阅读工具，有助于快速理解项目代码。
 *   [**tmux**](https://github.com/tmux/tmux): 强大的终端复用工具，支持会话保持、分屏和后台任务，是服务器与多项目开发的理想选择。
 *   [**DBeaver**](https://dbeaver.io/): 一款通用数据库管理客户端，支持多种数据库，功能全面。
-*   [**手机远程 Vibe Coding**](./i18n/zh/documents/教程与指南/关于手机ssh任意位置链接本地计算机，基于frp实现的方法.md): 基于 frp 实现手机 SSH 远程控制本地电脑进行 Vibe Coding。
 
 ### 资源与模板
 
@@ -216,6 +215,18 @@
 *   [**元技能：Skills 的 Skills**](./i18n/zh/skills/claude-skills/SKILL.md): 用于生成 Skills 的元技能。
 *   [**tmux快捷键大全**](./i18n/zh/documents/教程与指南/tmux快捷键大全.md): tmux 的快捷键参考文档。
 *   [**LazyVim快捷键大全**](./i18n/zh/documents/教程与指南/LazyVim快捷键大全.md): LazyVim 的快捷键参考文档。
+*   [**手机远程 Vibe Coding**](./i18n/zh/documents/教程与指南/关于手机ssh任意位置链接本地计算机，基于frp实现的方法.md): 基于 frp 实现手机 SSH 远程控制本地电脑进行 Vibe Coding。
+*   [**prompts-library**](./libs/external/prompts-library/): 提示词库管理工具，支持 Excel 与 Markdown 互转。
+*   [**my-nvim**](./libs/external/my-nvim/): Neovim 配置参考。
+*   [**XHS-image-to-PDF-conversion**](./libs/external/XHS-image-to-PDF-conversion/): 小红书图片转 PDF 工具。
+*   [**MCPlayerTransfer**](./libs/external/MCPlayerTransfer/): MC 玩家数据迁移工具。
+*   [**快速本地备份**](./libs/common/utils/backups/): 项目快速备份脚本。
+
+### 外部教程与资源
+
+*   [**Vibe Coding 社群 (X)**](https://x.com/i/communities/1993849457210011871): X 平台上的 Vibe Coding 社群。
+*   [**社群干货聚合页**](https://x.com/vibeverything/status/1999796188053438687): Vibe Coding 社群精华内容汇总。
+*   [**超级个体资源清单**](https://x.com/BiteyeCN/status/2000856243645157387): 从 Vibe Coding 入门的资源清单。
 *   [**二哥的Java进阶之路**](https://javabetter.cn/): 包含多种开发工具的详细配置教程。
 *   [**虚拟卡**](https://www.bybit.com/cards/?ref=YDGAVPN&source=applet_invite): 可用于注册云服务等需要国际支付的场景。
 
@@ -642,13 +653,13 @@ gantt
 
 救救孩子，感谢了，好人一生平安🙏🙏🙏
 
+-   **币安 UID**: `572155580`
 -   **Tron (TRC20)**: `TQtBXCSTwLFHjBqTS4rNUp7ufiGx51BRey`
 -   **Solana**: `HjYhozVf9AQmfv7yv79xSNs6uaEU5oUk2USasYQfUYau`
 -   **Ethereum (ERC20)**: `0xa396923a71ee7D9480b346a17dDeEb2c0C287BBC`
 -   **BNB Smart Chain (BEP20)**: `0xa396923a71ee7D9480b346a17dDeEb2c0C287BBC`
 -   **Bitcoin**: `bc1plslluj3zq3snpnnczplu7ywf37h89dyudqua04pz4txwh8z5z5vsre7nlm`
 -   **Sui**: `0xb720c98a48c77f2d49d375932b2867e793029e6337f1562522640e4f84203d2e`
--   **币安 UID**: `572155580`
 
 ---
 
@@ -668,6 +679,8 @@ gantt
 <a href="https://x.com/xDinoDeer">@xDinoDeer</a> |
 <a href="https://x.com/geekbb">@geekbb</a>
 <a href="https://x.com/GitHub_Daily">@GitHub_Daily</a>
+<a href="https://x.com/BiteyeCN">@BiteyeCN</a>
+<a href="https://x.com/CryptoJHK">@CryptoJHK</a>
 </p>
 
 ---
