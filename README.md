@@ -71,7 +71,7 @@
   <a href="./i18n/zh/documents/从零开始vibecoding/"><img src="https://img.shields.io/badge/🚀_从零开始-新手入门-red?style=for-the-badge" alt="从零开始"></a>
 </p>
 
-[📚 相关文档](#-相关文档与资源)
+[📋 工具资源](#-器-工具与资源)
 [🚀 从零开始](#-从零开始)
 [🎯 入门指南](#-入门指南)
 [⚙️ 完整设置流程](#️-完整设置流程)
@@ -234,6 +234,22 @@
 *   [**二哥的Java进阶之路**](https://javabetter.cn/): 包含多种开发工具的详细配置教程。
 *   [**虚拟卡**](https://www.bybit.com/cards/?ref=YDGAVPN&source=applet_invite): 可用于注册云服务等需要国际支付的场景。
 
+### 交流社区
+
+*   [**Telegram 交流群**](https://t.me/glue_coding): Vibe Coding 中文交流群
+*   [**Telegram 频道**](https://t.me/tradecat_ai_channel): 项目更新与资讯
+
+### 项目内部文档
+
+*   [**prompts-library 工具说明**](./libs/external/prompts-library/): 支持 Excel 与 Markdown 格式互转，包含数百个精选提示词。
+*   [**coding_prompts 集合**](./i18n/zh/prompts/coding_prompts/): 适用于 Vibe Coding 流程的专用提示词。
+*   [**系统提示词构建原则**](./i18n/zh/documents/方法论与原则/系统提示词构建原则.md): 构建高效 AI 系统提示词的综合指南。
+*   [**开发经验总结**](./i18n/zh/documents/方法论与原则/开发经验.md): 变量命名、文件结构、编码规范、架构原则等。
+*   [**通用项目架构模板**](./i18n/zh/documents/模板与资源/通用项目架构模板.md): 多种项目类型的标准目录结构。
+*   [**Augment MCP 配置文档**](./i18n/zh/documents/教程与指南/auggie-mcp配置文档.md): Augment 上下文引擎配置说明。
+*   [**system_prompts 集合**](./i18n/zh/prompts/system_prompts/): AI 开发的系统提示词，含多版本开发规范。
+*   [**外部资源聚合**](./i18n/zh/documents/外部资源聚合/): GitHub 精选仓库、AI 工具平台、提示词资源汇总。
+
 ---
 
 </details>
@@ -248,37 +264,6 @@
 *   **第一梯队**: `codex-5.1-max-xhigh`, `claude-opus-4.5-xhigh`, `gpt-5.2-xhigh`
 *   **第二梯队**: `claude-sonnet-4.5`, `kimi-k2-thinking`, `minimax-m2`, `glm-4.6`, `gemini-3.0-pro`, `gemini-2.5-pro`
 *   **第三梯队**: `qwen3`, `SWE`, `grok4`
-
----
-
-</details>
-
-<details>
-<summary><strong>📚 相关文档与资源</strong></summary>
-
-## 📚 相关文档与资源
-
-*   **交流社区**:
-    *   [Telegram 交流群](https://t.me/glue_coding)
-    *   [Telegram 频道](https://t.me/tradecat_ai_channel)
-*   **个人分享**:
-    *   [我的学习经验](./i18n/zh/documents/方法论与原则/学习经验.md)
-    *   [编程书籍推荐](./i18n/zh/documents/模板与资源/编程书籍推荐.md)
-*   **核心资源**:
-    *   [**元提示词库**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=1770874220#gid=1770874220): 用于生成提示词的高级提示词集合。
-    *   [**元技能 (Meta-Skill)**](./i18n/zh/skills/claude-skills/SKILL.md): 用于生成 Skills 的 Skill。
-    *   [**技能库 (Skills)**](./i18n/zh/skills): 可直接集成的模块化技能仓库。
-    *   [**技能生成器**](https://github.com/yusufkaraaslan/Skill_Seekers): 将任何资料转化为 Agent 可用技能的工具。
-    *   [**在线提示词数据库**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1): 包含数百个适用于各场景的用户及系统提示词的在线表格。
-    *   [**第三方系统提示词仓库**](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools): 汇集了多种 AI 工具的系统提示词。
-*   **项目内部文档**:
-    *   [**prompts-library 工具说明**](./libs/external/prompts-library/): 该工具支持在 Excel 和 Markdown 格式之间转换提示词，并包含数百个精选提示词。
-    *   [**coding_prompts 集合**](./i18n/zh/prompts/coding_prompts/): 适用于 Vibe Coding 流程的专用提示词。
-    *   [**系统提示词构建原则**](./i18n/zh/documents/方法论与原则/系统提示词构建原则.md): 关于如何构建高效、可靠的 AI 系统提示词的综合指南。
-    *   [**开发经验总结**](./i18n/zh/documents/方法论与原则/开发经验.md): 包含变量命名、文件结构、编码规范、架构原则等实践经验。
-    *   [**通用项目架构模板**](./i18n/zh/documents/模板与资源/通用项目架构模板.md): 提供多种项目类型的标准目录结构与最佳实践。
-    *   [**Augment MCP 配置文档**](./i18n/zh/documents/教程与指南/auggie-mcp配置文档.md): Augment 上下文引擎的详细配置说明。
-    *   [**system_prompts 集合**](./i18n/zh/prompts/system_prompts/): 用于指导 AI 开发的系统提示词，包含多个版本的开发规范与思维框架。
 
 ---
 
@@ -465,15 +450,16 @@ graph TB
 gantt
     title 项目发展路线图
     dateFormat YYYY-MM
-    section 近期 (2025)
-    补全演示GIF与示例项目: active, 2025-12, 15d
-    prompts 索引自动生成脚本: 2025-12, 10d
-    section 中期 (2026 Q1)
+    section 进行中 (2025 Q4)
+    补全演示GIF与示例项目: active, 2025-12, 30d
+    外部资源聚合完善: active, 2025-12, 20d
+    section 近期 (2026 Q1)
+    prompts 索引自动生成脚本: 2026-01, 15d
     一键演示/验证 CLI 工作流: 2026-01, 15d
-    备份脚本增加快照与校验: 2026-01, 10d
-    section 远期 (2026 Q1-Q2)
-    模板化示例项目集: 2026-02, 20d
-    多模型对比与评估基线: 2026-02, 20d
+    备份脚本增加快照与校验: 2026-02, 10d
+    section 中期 (2026 Q2)
+    模板化示例项目集: 2026-03, 30d
+    多模型对比与评估基线: 2026-04, 30d
 ```
 
 ---
@@ -703,9 +689,9 @@ gantt
 <a href="https://x.com/0XBard_thomas">@0XBard_thomas</a> |
 <a href="https://x.com/Pluvio9yte">@Pluvio9yte</a> |
 <a href="https://x.com/xDinoDeer">@xDinoDeer</a> |
-<a href="https://x.com/geekbb">@geekbb</a>
-<a href="https://x.com/GitHub_Daily">@GitHub_Daily</a>
-<a href="https://x.com/BiteyeCN">@BiteyeCN</a>
+<a href="https://x.com/geekbb">@geekbb</a> |
+<a href="https://x.com/GitHub_Daily">@GitHub_Daily</a> |
+<a href="https://x.com/BiteyeCN">@BiteyeCN</a> |
 <a href="https://x.com/CryptoJHK">@CryptoJHK</a>
 </p>
 
