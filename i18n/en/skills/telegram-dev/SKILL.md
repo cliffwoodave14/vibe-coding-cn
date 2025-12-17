@@ -1,79 +1,78 @@
-TRANSLATED CONTENT:
 ---
 name: telegram-dev
-description: Telegram 生态开发全栈指南 - 涵盖 Bot API、Mini Apps (Web Apps)、MTProto 客户端开发。包括消息处理、支付、内联模式、Webhook、认证、存储、传感器 API 等完整开发资源。
+description: A full-stack guide to Telegram ecosystem development - covering Bot API, Mini Apps (Web Apps), and MTProto client development. Includes complete development resources for message handling, payments, inline mode, webhooks, authentication, storage, sensor APIs, and more.
 ---
 
-# Telegram 生态开发技能
+# Telegram Ecosystem Development Skill
 
-全面的 Telegram 开发指南，涵盖 Bot 开发、Mini Apps (Web Apps)、客户端开发的完整技术栈。
+A comprehensive guide to Telegram development, covering the full technology stack for Bot development, Mini Apps (Web Apps), and client development.
 
-## 何时使用此技能
+## When to Use This Skill
 
-当需要以下帮助时使用此技能：
-- 开发 Telegram Bot（消息机器人）
-- 创建 Telegram Mini Apps（小程序）
-- 构建自定义 Telegram 客户端
-- 集成 Telegram 支付和业务功能
-- 实现 Webhook 和长轮询
-- 使用 Telegram 认证和存储
-- 处理消息、媒体和文件
-- 实现内联模式和键盘
+Use this skill when you need help with the following:
+- Developing a Telegram Bot (message bot)
+- Creating Telegram Mini Apps
+- Building a custom Telegram client
+- Integrating Telegram payments and business features
+- Implementing webhooks and long polling
+- Using Telegram authentication and storage
+- Handling messages, media, and files
+- Implementing inline mode and keyboards
 
-## Telegram 开发生态概览
+## Overview of the Telegram Development Ecosystem
 
-### 三大核心 API
+### Three Core APIs
 
-1. **Bot API** - 创建机器人程序
-   - HTTP 接口，简单易用
-   - 自动处理加密和通信
-   - 适合：聊天机器人、自动化工具
+1.  **Bot API** - For creating bot programs
+    -   Simple to use HTTP interface
+    -   Automatically handles encryption and communication
+    -   Suitable for: chatbots, automation tools
 
-2. **Mini Apps API** (Web Apps) - 创建 Web 应用
-   - JavaScript 接口
-   - 在 Telegram 内运行
-   - 适合：小程序、游戏、电商
+2.  **Mini Apps API** (Web Apps) - For creating web applications
+    -   JavaScript interface
+    -   Runs inside Telegram
+    -   Suitable for: mini-apps, games, e-commerce
 
-3. **Telegram API & TDLib** - 创建客户端
-   - 完整的 Telegram 协议实现
-   - 支持所有平台
-   - 适合：自定义客户端、企业应用
+3.  **Telegram API & TDLib** - For creating clients
+    -   Full implementation of the Telegram protocol
+    -   Supports all platforms
+    -   Suitable for: custom clients, enterprise applications
 
-## Bot API 开发
+## Bot API Development
 
-### 快速开始
+### Quick Start
 
-**API 端点：**
+**API Endpoint:**
 ```
 https://api.telegram.org/bot<TOKEN>/METHOD_NAME
 ```
 
-**获取 Bot Token：**
-1. 与 @BotFather 对话
-2. 发送 `/newbot`
-3. 按提示设置名称
-4. 获取 token
+**Get a Bot Token:**
+1.  Talk to @BotFather
+2.  Send `/newbot`
+3.  Follow the prompts to set a name
+4.  Get the token
 
-**第一个 Bot (Python)：**
+**First Bot (Python):**
 ```python
 import requests
 
 BOT_TOKEN = "your_bot_token_here"
 API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
-# 发送消息
+# Send a message
 def send_message(chat_id, text):
     url = f"{API_URL}/sendMessage"
     data = {"chat_id": chat_id, "text": text}
     return requests.post(url, json=data)
 
-# 获取更新（长轮询）
+# Get updates (long polling)
 def get_updates(offset=None):
     url = f"{API_URL}/getUpdates"
     params = {"offset": offset, "timeout": 30}
     return requests.get(url, params=params).json()
 
-# 主循环
+# Main loop
 offset = None
 while True:
     updates = get_updates(offset)
@@ -81,48 +80,48 @@ while True:
         chat_id = update["message"]["chat"]["id"]
         text = update["message"]["text"]
         
-        # 回复消息
-        send_message(chat_id, f"你说了：{text}")
+        # Reply to the message
+        send_message(chat_id, f"You said: {text}")
         
         offset = update["update_id"] + 1
 ```
 
-### 核心 API 方法
+### Core API Methods
 
-**更新管理：**
-- `getUpdates` - 长轮询获取更新
-- `setWebhook` - 设置 Webhook
-- `deleteWebhook` - 删除 Webhook
-- `getWebhookInfo` - 查询 Webhook 状态
+**Update Management:**
+- `getUpdates` - Get updates via long polling
+- `setWebhook` - Set a webhook
+- `deleteWebhook` - Delete a webhook
+- `getWebhookInfo` - Query webhook status
 
-**消息操作：**
-- `sendMessage` - 发送文本消息
-- `sendPhoto` / `sendVideo` / `sendDocument` - 发送媒体
-- `sendAudio` / `sendVoice` - 发送音频
-- `sendLocation` / `sendVenue` - 发送位置
-- `editMessageText` - 编辑消息
-- `deleteMessage` - 删除消息
-- `forwardMessage` / `copyMessage` - 转发/复制消息
+**Message Operations:**
+- `sendMessage` - Send a text message
+- `sendPhoto` / `sendVideo` / `sendDocument` - Send media
+- `sendAudio` / `sendVoice` - Send audio
+- `sendLocation` / `sendVenue` - Send a location
+- `editMessageText` - Edit a message
+- `deleteMessage` - Delete a message
+- `forwardMessage` / `copyMessage` - Forward/copy a message
 
-**交互元素：**
-- `sendPoll` - 发送投票（最多 12 个选项）
-- 内联键盘 (InlineKeyboardMarkup)
-- 回复键盘 (ReplyKeyboardMarkup)
-- `answerCallbackQuery` - 响应回调查询
+**Interactive Elements:**
+- `sendPoll` - Send a poll (up to 12 options)
+- Inline Keyboard (InlineKeyboardMarkup)
+- Reply Keyboard (ReplyKeyboardMarkup)
+- `answerCallbackQuery` - Respond to a callback query
 
-**文件操作：**
-- `getFile` - 获取文件信息
-- `downloadFile` - 下载文件
-- 支持最大 2GB 文件（本地 Bot API 模式）
+**File Operations:**
+- `getFile` - Get file information
+- `downloadFile` - Download a file
+- Supports files up to 2GB (in local Bot API mode)
 
-**支付功能：**
-- `sendInvoice` - 发送发票
-- `answerPreCheckoutQuery` - 处理支付
-- Telegram Stars 支付（最高 10,000 Stars）
+**Payment Features:**
+- `sendInvoice` - Send an invoice
+- `answerPreCheckoutQuery` - Process a payment
+- Telegram Stars payment (up to 10,000 Stars)
 
-### Webhook 配置
+### Webhook Configuration
 
-**设置 Webhook：**
+**Set a Webhook:**
 ```python
 import requests
 
@@ -135,7 +134,7 @@ requests.post(
 )
 ```
 
-**Flask Webhook 示例：**
+**Flask Webhook Example:**
 ```python
 from flask import Flask, request
 import requests
@@ -150,10 +149,10 @@ def webhook():
     chat_id = update["message"]["chat"]["id"]
     text = update["message"]["text"]
     
-    # 发送回复
+    # Send a reply
     requests.post(
         f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
-        json={"chat_id": chat_id, "text": f"收到: {text}"}
+        json={"chat_id": chat_id, "text": f"Received: {text}"}
     )
     
     return "OK"
@@ -162,25 +161,25 @@ if __name__ == '__main__':
     app.run(port=5000)
 ```
 
-**Webhook 要求：**
-- 必须使用 HTTPS
-- 支持 TLS 1.2+
-- 端口：443, 80, 88, 8443
-- 公共可访问的 URL
+**Webhook Requirements:**
+- Must use HTTPS
+- Supports TLS 1.2+
+- Ports: 443, 80, 88, 8443
+- Publicly accessible URL
 
-### 内联键盘
+### Inline Keyboard
 
-**创建内联键盘：**
+**Create an Inline Keyboard:**
 ```python
 def send_inline_keyboard(chat_id):
     keyboard = {
         "inline_keyboard": [
             [
-                {"text": "按钮 1", "callback_data": "btn1"},
-                {"text": "按钮 2", "callback_data": "btn2"}
+                {"text": "Button 1", "callback_data": "btn1"},
+                {"text": "Button 2", "callback_data": "btn2"}
             ],
             [
-                {"text": "打开链接", "url": "https://example.com"}
+                {"text": "Open Link", "url": "https://example.com"}
             ]
         ]
     }
@@ -189,55 +188,55 @@ def send_inline_keyboard(chat_id):
         f"{API_URL}/sendMessage",
         json={
             "chat_id": chat_id,
-            "text": "选择一个选项：",
+            "text": "Choose an option:",
             "reply_markup": keyboard
         }
     )
 ```
 
-**处理回调：**
+**Handle Callbacks:**
 ```python
 def handle_callback_query(callback_query):
     query_id = callback_query["id"]
     data = callback_query["data"]
     chat_id = callback_query["message"]["chat"]["id"]
     
-    # 响应回调
+    # Respond to the callback
     requests.post(
         f"{API_URL}/answerCallbackQuery",
-        json={"callback_query_id": query_id, "text": f"你点击了 {data}"}
+        json={"callback_query_id": query_id, "text": f"You clicked {data}"}
     )
     
-    # 更新消息
+    # Update the message
     requests.post(
         f"{API_URL}/editMessageText",
         json={
             "chat_id": chat_id,
             "message_id": callback_query["message"]["message_id"],
-            "text": f"你选择了：{data}"
+            "text": f"You chose: {data}"
         }
     )
 ```
 
-### 内联模式
+### Inline Mode
 
-**配置内联模式：**
-与 @BotFather 对话，发送 `/setinline`
+**Configure Inline Mode:**
+Talk to @BotFather and send `/setinline`
 
-**处理内联查询：**
+**Handle Inline Queries:**
 ```python
 def handle_inline_query(inline_query):
     query_id = inline_query["id"]
     query_text = inline_query["query"]
     
-    # 创建结果
+    # Create results
     results = [
         {
             "type": "article",
             "id": "1",
-            "title": "结果 1",
+            "title": "Result 1",
             "input_message_content": {
-                "message_text": f"你搜索了：{query_text}"
+                "message_text": f"You searched for: {query_text}"
             }
         }
     ]
@@ -248,11 +247,11 @@ def handle_inline_query(inline_query):
     )
 ```
 
-## Mini Apps (Web Apps) 开发
+## Mini Apps (Web Apps) Development
 
-### 初始化 Mini App
+### Initialize a Mini App
 
-**HTML 模板：**
+**HTML Template:**
 ```html
 <!DOCTYPE html>
 <html>
@@ -264,34 +263,34 @@ def handle_inline_query(inline_query):
 </head>
 <body>
     <h1>Telegram Mini App</h1>
-    <button id="mainBtn">主按钮</button>
+    <button id="mainBtn">Main Button</button>
     
     <script>
-        // 获取 Telegram WebApp 对象
+        // Get the Telegram WebApp object
         const tg = window.Telegram.WebApp;
         
-        // 通知 Telegram 应用已准备好
+        // Notify Telegram that the app is ready
         tg.ready();
         
-        // 展开到全屏
+        // Expand to full screen
         tg.expand();
         
-        // 显示用户信息
+        // Display user information
         const user = tg.initDataUnsafe?.user;
         if (user) {
-            console.log("用户名:", user.first_name);
-            console.log("用户ID:", user.id);
+            console.log("Username:", user.first_name);
+            console.log("User ID:", user.id);
         }
         
-        // 配置主按钮
-        tg.MainButton.text = "提交";
+        // Configure the main button
+        tg.MainButton.text = "Submit";
         tg.MainButton.show();
         tg.MainButton.onClick(() => {
-            // 发送数据到 Bot
+            // Send data to the Bot
             tg.sendData(JSON.stringify({action: "submit"}));
         });
         
-        // 添加返回按钮
+        // Add a back button
         tg.BackButton.show();
         tg.BackButton.onClick(() => {
             tg.close();
@@ -301,249 +300,249 @@ def handle_inline_query(inline_query):
 </html>
 ```
 
-### Mini App 核心 API
+### Mini App Core API
 
-**WebApp 对象主要属性：**
+**WebApp Object Main Properties:**
 ```javascript
-// 初始化数据
-tg.initData           // 原始初始化字符串
-tg.initDataUnsafe     // 解析后的对象
+// Initialization data
+tg.initData           // Raw initialization string
+tg.initDataUnsafe     // Parsed object
 
-// 用户和主题
-tg.initDataUnsafe.user       // 用户信息
-tg.themeParams                // 主题颜色
-tg.colorScheme                // 'light' 或 'dark'
+// User and theme
+tg.initDataUnsafe.user       // User information
+tg.themeParams                // Theme colors
+tg.colorScheme                // 'light' or 'dark'
 
-// 状态
-tg.isExpanded         // 是否全屏
-tg.isFullscreen       // 是否全屏
-tg.viewportHeight     // 视口高度
-tg.platform           // 平台类型
+// Status
+tg.isExpanded         // Whether it's full screen
+tg.isFullscreen       // Whether it's full screen
+tg.viewportHeight     // Viewport height
+tg.platform           // Platform type
 
-// 版本
-tg.version            // WebApp 版本
+// Version
+tg.version            // WebApp version
 ```
 
-**主要方法：**
+**Main Methods:**
 ```javascript
-// 窗口控制
-tg.ready()            // 标记应用准备就绪
-tg.expand()           // 展开到全高度
-tg.close()            // 关闭 Mini App
-tg.requestFullscreen() // 请求全屏
+// Window control
+tg.ready()            // Mark the app as ready
+tg.expand()           // Expand to full height
+tg.close()            // Close the Mini App
+tg.requestFullscreen() // Request full screen
 
-// 数据发送
-tg.sendData(data)     // 发送数据到 Bot
+// Data sending
+tg.sendData(data)     // Send data to the Bot
 
-// 导航
-tg.openLink(url)      // 打开外部链接
-tg.openTelegramLink(url) // 打开 Telegram 链接
+// Navigation
+tg.openLink(url)      // Open an external link
+tg.openTelegramLink(url) // Open a Telegram link
 
-// 对话框
-tg.showPopup(params, callback)  // 显示弹窗
-tg.showAlert(message)           // 显示警告
-tg.showConfirm(message)         // 显示确认
+// Dialogs
+tg.showPopup(params, callback)  // Show a popup
+tg.showAlert(message)           // Show an alert
+tg.showConfirm(message)         // Show a confirmation
 
-// 分享
-tg.shareMessage(message)        // 分享消息
-tg.shareUrl(url)                // 分享链接
+// Sharing
+tg.shareMessage(message)        // Share a message
+tg.shareUrl(url)                // Share a link
 ```
 
-### UI 控件
+### UI Controls
 
-**主按钮 (MainButton)：**
+**Main Button (MainButton):**
 ```javascript
-tg.MainButton.setText("点击我");
+tg.MainButton.setText("Click Me");
 tg.MainButton.show();
 tg.MainButton.enable();
-tg.MainButton.showProgress();  // 显示加载
+tg.MainButton.showProgress();  // Show loading
 tg.MainButton.hideProgress();
 
 tg.MainButton.onClick(() => {
-    console.log("主按钮被点击");
+    console.log("Main button clicked");
 });
 ```
 
-**次要按钮 (SecondaryButton)：**
+**Secondary Button (SecondaryButton):**
 ```javascript
-tg.SecondaryButton.setText("取消");
+tg.SecondaryButton.setText("Cancel");
 tg.SecondaryButton.show();
 tg.SecondaryButton.onClick(() => {
     tg.close();
 });
 ```
 
-**返回按钮 (BackButton)：**
+**Back Button (BackButton):**
 ```javascript
 tg.BackButton.show();
 tg.BackButton.onClick(() => {
-    // 返回逻辑
+    // Back logic
 });
 ```
 
-**触觉反馈：**
+**Haptic Feedback:**
 ```javascript
 tg.HapticFeedback.impactOccurred('light');  // light, medium, heavy
 tg.HapticFeedback.notificationOccurred('success'); // success, warning, error
 tg.HapticFeedback.selectionChanged();
 ```
 
-### 存储 API
+### Storage API
 
-**云存储：**
+**Cloud Storage:**
 ```javascript
-// 保存数据
+// Save data
 tg.CloudStorage.setItem('key', 'value', (error, success) => {
-    if (success) console.log('保存成功');
+    if (success) console.log('Saved successfully');
 });
 
-// 获取数据
+// Get data
 tg.CloudStorage.getItem('key', (error, value) => {
-    console.log('值:', value);
+    console.log('Value:', value);
 });
 
-// 删除数据
+// Delete data
 tg.CloudStorage.removeItem('key');
 
-// 获取所有键
+// Get all keys
 tg.CloudStorage.getKeys((error, keys) => {
-    console.log('所有键:', keys);
+    console.log('All keys:', keys);
 });
 ```
 
-**本地存储：**
+**Local Storage:**
 ```javascript
-// 普通本地存储
+// Normal local storage
 localStorage.setItem('key', 'value');
 const value = localStorage.getItem('key');
 
-// 安全存储（需要生物识别）
+// Secure storage (requires biometrics)
 tg.SecureStorage.setItem('secret', 'value', callback);
 tg.SecureStorage.getItem('secret', callback);
 ```
 
-### 生物识别认证
+### Biometric Authentication
 
 ```javascript
 const bioManager = tg.BiometricManager;
 
-// 初始化
+// Initialize
 bioManager.init(() => {
     if (bioManager.isInited) {
-        console.log('支持的类型:', bioManager.biometricType);
+        console.log('Supported type:', bioManager.biometricType);
         // 'finger', 'face', 'unknown'
         
         if (bioManager.isAccessGranted) {
-            // 已授权，可以使用
+            // Already authorized, can be used
         } else {
-            // 请求授权
-            bioManager.requestAccess({reason: '需要验证身份'}, (success) => {
+            // Request authorization
+            bioManager.requestAccess({reason: 'Need to verify identity'}, (success) => {
                 if (success) {
-                    console.log('授权成功');
+                    console.log('Authorization successful');
                 }
             });
         }
     }
 });
 
-// 执行认证
-bioManager.authenticate({reason: '确认操作'}, (success, token) => {
+// Perform authentication
+bioManager.authenticate({reason: 'Confirm action'}, (success, token) => {
     if (success) {
-        console.log('认证成功，token:', token);
+        console.log('Authentication successful, token:', token);
     }
 });
 ```
 
-### 位置和传感器
+### Location and Sensors
 
-**获取位置：**
+**Get Location:**
 ```javascript
 tg.LocationManager.init(() => {
     if (tg.LocationManager.isInited) {
         tg.LocationManager.getLocation((location) => {
-            console.log('纬度:', location.latitude);
-            console.log('经度:', location.longitude);
+            console.log('Latitude:', location.latitude);
+            console.log('Longitude:', location.longitude);
         });
     }
 });
 ```
 
-**加速度计：**
+**Accelerometer:**
 ```javascript
 tg.Accelerometer.start({refresh_rate: 100}, (started) => {
     if (started) {
         tg.Accelerometer.onEvent((event) => {
-            console.log('加速度:', event.x, event.y, event.z);
+            console.log('Acceleration:', event.x, event.y, event.z);
         });
     }
 });
 
-// 停止
+// Stop
 tg.Accelerometer.stop();
 ```
 
-**陀螺仪：**
+**Gyroscope:**
 ```javascript
 tg.Gyroscope.start({refresh_rate: 100}, callback);
 tg.Gyroscope.onEvent((event) => {
-    console.log('旋转速度:', event.x, event.y, event.z);
+    console.log('Rotation speed:', event.x, event.y, event.z);
 });
 ```
 
-**设备方向：**
+**Device Orientation:**
 ```javascript
 tg.DeviceOrientation.start({refresh_rate: 100}, callback);
 tg.DeviceOrientation.onEvent((event) => {
-    console.log('方向:', event.absolute, event.alpha, event.beta, event.gamma);
+    console.log('Orientation:', event.absolute, event.alpha, event.beta, event.gamma);
 });
 ```
 
-### 支付集成
+### Payment Integration
 
-**发起支付 (Telegram Stars)：**
+**Initiate a Payment (Telegram Stars):**
 ```javascript
 tg.openInvoice('https://t.me/$invoice_link', (status) => {
     if (status === 'paid') {
-        console.log('支付成功');
+        console.log('Payment successful');
     } else if (status === 'cancelled') {
-        console.log('支付取消');
+        console.log('Payment cancelled');
     } else if (status === 'failed') {
-        console.log('支付失败');
+        console.log('Payment failed');
     }
 });
 ```
 
-### 数据验证
+### Data Validation
 
-**服务器端验证 initData (Python)：**
+**Server-side Validation of initData (Python):**
 ```python
 import hmac
 import hashlib
 from urllib.parse import parse_qs
 
 def validate_init_data(init_data, bot_token):
-    # 解析数据
+    # Parse the data
     parsed = parse_qs(init_data)
     received_hash = parsed.get('hash', [''])[0]
     
-    # 移除 hash
+    # Remove the hash
     data_check_arr = []
     for key, value in parsed.items():
         if key != 'hash':
             data_check_arr.append(f"{key}={value[0]}")
     
-    # 排序
+    # Sort
     data_check_arr.sort()
     data_check_string = '\n'.join(data_check_arr)
     
-    # 计算密钥
+    # Calculate the secret key
     secret_key = hmac.new(
         b"WebAppData",
         bot_token.encode(),
         hashlib.sha256
     ).digest()
     
-    # 计算哈希
+    # Calculate the hash
     calculated_hash = hmac.new(
         secret_key,
         data_check_string.encode(),
@@ -553,14 +552,14 @@ def validate_init_data(init_data, bot_token):
     return calculated_hash == received_hash
 ```
 
-### 启动 Mini App
+### Launching a Mini App
 
-**从键盘按钮：**
+**From a Keyboard Button:**
 ```python
 keyboard = {
-    "keyboard": [[
+    "keyboard": [[ 
         {
-            "text": "打开应用",
+            "text": "Open App",
             "web_app": {"url": "https://yourdomain.com/app"}
         }
     ]],
@@ -571,37 +570,37 @@ requests.post(
     f"{API_URL}/sendMessage",
     json={
         "chat_id": chat_id,
-        "text": "点击按钮打开应用",
+        "text": "Click the button to open the app",
         "reply_markup": keyboard
     }
 )
 ```
 
-**从内联按钮：**
+**From an Inline Button:**
 ```python
 keyboard = {
     "inline_keyboard": [[
         {
-            "text": "启动应用",
+            "text": "Launch App",
             "web_app": {"url": "https://yourdomain.com/app"}
         }
     ]]
 }
 ```
 
-**从菜单按钮：**
-与 @BotFather 对话：
+**From the Menu Button:**
+Talk to @BotFather:
 ```
 /setmenubutton
-→ 选择你的 Bot
-→ 提供 URL: https://yourdomain.com/app
+→ Choose your Bot
+→ Provide URL: https://yourdomain.com/app
 ```
 
-## 客户端开发 (TDLib)
+## Client Development (TDLib)
 
-### 使用 TDLib
+### Using TDLib
 
-**Python 示例 (python-telegram)：**
+**Python Example (python-telegram):**
 ```python
 from telegram.client import Telegram
 
@@ -614,13 +613,13 @@ tg = Telegram(
 
 tg.login()
 
-# 发送消息
+# Send a message
 result = tg.send_message(
     chat_id=123456789,
     text='Hello from TDLib!'
 )
 
-# 获取聊天列表
+# Get chat list
 result = tg.get_chats()
 result.wait()
 chats = result.update
@@ -630,132 +629,132 @@ print(chats)
 tg.stop()
 ```
 
-### MTProto 协议
+### MTProto Protocol
 
-**特点：**
-- 端到端加密
-- 高性能
-- 支持所有 Telegram 功能
-- 需要 API ID/Hash（从 https://my.telegram.org 获取）
+**Features:**
+- End-to-end encryption
+- High performance
+- Supports all Telegram features
+- Requires API ID/Hash (from https://my.telegram.org)
 
-## 最佳实践
+## Best Practices
 
-### Bot 开发
+### Bot Development
 
-1. **错误处理**
-   ```python
-   try:
-       response = requests.post(url, json=data, timeout=10)
-       response.raise_for_status()
-   except requests.exceptions.RequestException as e:
-       print(f"请求失败: {e}")
-   ```
+1.  **Error Handling**
+    ```python
+    try:
+        response = requests.post(url, json=data, timeout=10)
+        response.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        print(f"Request failed: {e}")
+    ```
 
-2. **速率限制**
-   - 群组消息：最多 20 条/分钟
-   - 私聊消息：最多 30 条/秒
-   - 全局限制：避免过于频繁
+2.  **Rate Limiting**
+    -   Group messages: max 20/minute
+    -   Private messages: max 30/second
+    -   Global limits: avoid being too frequent
 
-3. **使用 Webhook 而非长轮询**
-   - 更高效
-   - 更低延迟
-   - 更好的可扩展性
+3.  **Use Webhooks instead of Long Polling**
+    -   More efficient
+    -   Lower latency
+    -   Better scalability
 
-4. **数据验证**
-   - 始终验证 initData
-   - 不要信任客户端数据
-   - 服务器端验证所有操作
+4.  **Data Validation**
+    -   Always validate initData
+    -   Don't trust client-side data
+    -   Server-side validation for all operations
 
-### Mini Apps 开发
+### Mini Apps Development
 
-1. **响应式设计**
-   ```javascript
-   // 监听主题变化
-   tg.onEvent('themeChanged', () => {
-       document.body.style.backgroundColor = tg.themeParams.bg_color;
-   });
-   
-   // 监听视口变化
-   tg.onEvent('viewportChanged', () => {
-       console.log('新高度:', tg.viewportHeight);
-   });
-   ```
+1.  **Responsive Design**
+    ```javascript
+    // Listen for theme changes
+    tg.onEvent('themeChanged', () => {
+        document.body.style.backgroundColor = tg.themeParams.bg_color;
+    });
+    
+    // Listen for viewport changes
+    tg.onEvent('viewportChanged', () => {
+        console.log('New height:', tg.viewportHeight);
+    });
+    ```
 
-2. **性能优化**
-   - 最小化 JavaScript 包大小
-   - 使用懒加载
-   - 优化图片和资源
+2.  **Performance Optimization**
+    -   Minimize JavaScript bundle size
+    -   Use lazy loading
+    -   Optimize images and resources
 
-3. **用户体验**
-   - 适配深色/浅色主题
-   - 使用原生 UI 控件（MainButton 等）
-   - 提供触觉反馈
-   - 快速响应用户操作
+3.  **User Experience**
+    -   Adapt to dark/light themes
+    -   Use native UI controls (MainButton, etc.)
+    -   Provide haptic feedback
+    -   Respond quickly to user actions
 
-4. **安全考虑**
-   - HTTPS 强制
-   - 验证 initData
-   - 不在客户端存储敏感信息
-   - 使用 SecureStorage 存储密钥
+4.  **Security Considerations**
+    -   HTTPS is mandatory
+    -   Validate initData
+    -   Don't store sensitive information on the client
+    -   Use SecureStorage for secrets
 
-## 常用库和工具
+## Common Libraries and Tools
 
 ### Python
-- `python-telegram-bot` - 功能强大的 Bot 框架
-- `aiogram` - 异步 Bot 框架
-- `telethon` / `pyrogram` - MTProto 客户端
+- `python-telegram-bot` - A powerful Bot framework
+- `aiogram` - An asynchronous Bot framework
+- `telethon` / `pyrogram` - MTProto clients
 
 ### Node.js
-- `node-telegram-bot-api` - Bot API 包装器
-- `telegraf` - 现代 Bot 框架
-- `grammy` - 轻量级框架
+- `node-telegram-bot-api` - Bot API wrapper
+- `telegraf` - Modern Bot framework
+- `grammy` - Lightweight framework
 
-### 其他语言
+### Other Languages
 - PHP: `telegram-bot-sdk`
 - Go: `telegram-bot-api`
 - Java: `TelegramBots`
 - C#: `Telegram.Bot`
 
-## 参考资源
+## Reference Resources
 
-### 官方文档
+### Official Documentation
 - Bot API: https://core.telegram.org/bots/api
 - Mini Apps: https://core.telegram.org/bots/webapps
 - Mini Apps Platform: https://docs.telegram-mini-apps.com
 - Telegram API: https://core.telegram.org
 
-### GitHub 仓库
-- Bot API 服务器: https://github.com/tdlib/telegram-bot-api
-- Android 客户端: https://github.com/DrKLO/Telegram
-- Desktop 客户端: https://github.com/telegramdesktop/tdesktop
-- 官方组织: https://github.com/orgs/TelegramOfficial/repositories
+### GitHub Repositories
+- Bot API Server: https://github.com/tdlib/telegram-bot-api
+- Android Client: https://github.com/DrKLO/Telegram
+- Desktop Client: https://github.com/telegramdesktop/tdesktop
+- Official Organization: https://github.com/orgs/TelegramOfficial/repositories
 
-### 工具
-- @BotFather - 创建和管理 Bot
-- https://my.telegram.org - 获取 API ID/Hash
-- Telegram Web App 测试环境
+### Tools
+- @BotFather - Create and manage Bots
+- https://my.telegram.org - Get API ID/Hash
+- Telegram Web App test environment
 
-## 参考文件
+## Reference Files
 
-此技能包含详细的 Telegram 开发资源索引和完整实现模板：
+This skill includes a detailed index of Telegram development resources and complete implementation templates:
 
-- **index.md** - 完整的资源链接和快速导航
-- **Telegram_Bot_按钮和键盘实现模板.md** - 交互式按钮和键盘实现指南（404 行，12 KB）
-  - 三种按钮类型详解（Inline/Reply/Command Menu）
-  - python-telegram-bot 和 Telethon 双实现对比
-  - 完整的即用代码示例和项目结构
-  - Handler 系统、错误处理和部署方案
-- **动态视图对齐实现文档.md** - Telegram 数据展示指南（407 行，12 KB）
-  - 智能动态对齐算法（三步法，O(n×m) 复杂度）
-  - 等宽字体环境的完美对齐方案
-  - 智能数值格式化系统（B/M/K 自动缩写）
-  - 排行榜和数据表格专业展示
+- **index.md** - A complete index of resources and quick navigation
+- **Telegram_Bot_按钮和键盘实现模板.md** - An implementation guide for interactive buttons and keyboards (404 lines, 12 KB)
+  - Detailed explanation of three button types (Inline/Reply/Command Menu)
+  - Comparison of implementations with python-telegram-bot and Telethon
+  - Complete ready-to-use code examples and project structure
+  - Handler system, error handling, and deployment方案
+- **动态视图对齐实现文档.md** - A guide to data display in Telegram (407 lines, 12 KB)
+  - Intelligent dynamic alignment algorithm (three-step method, O(n×m) complexity)
+  - Perfect alignment solution for monospaced font environments
+  - Intelligent numerical formatting system (automatic B/M/K abbreviation)
+  - Professional display for leaderboards and data tables
 
-这些精简指南提供了核心的 Telegram Bot 开发解决方案：
-- 按钮和键盘交互的所有实现方式
-- 消息和数据的专业格式化展示
-- 实用的最佳实践和快速参考
+These concise guides provide core solutions for Telegram Bot development:
+- All implementation methods for button and keyboard interaction
+- Professional formatting and display of messages and data
+- Practical best practices and quick references
 
 ---
 
-**使用此技能掌握 Telegram 生态的全栈开发！**
+**Master full-stack development of the Telegram ecosystem with this skill!**
