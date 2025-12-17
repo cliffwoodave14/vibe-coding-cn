@@ -105,7 +105,7 @@
 
 **注意**：以下经验分享并非普遍适用，请在具体实践中结合场景，辩证采纳。
 
-<details>
+<details open>
 <summary><strong>🔑 元方法论 (Meta-Methodology)</strong></summary>
 
 
@@ -138,7 +138,7 @@
 
 </details>
 
-<details>
+<details open>
 <summary><strong>🧭 方法论精要 (道·法·术)</strong></summary>
 
 ## 🧭 道
@@ -179,7 +179,7 @@
 
 </details>
 
-<details>
+<details open>
 <summary><strong>📋 器 (工具与资源)</strong></summary>
 
 ## 📋 器
@@ -256,7 +256,7 @@
 
 </details>
 
-<details>
+<details open>
 <summary><strong>编码模型性能分级参考</strong></summary>
 
 ## 编码模型性能分级参考
