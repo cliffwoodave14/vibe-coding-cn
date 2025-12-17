@@ -1,4 +1,3 @@
-TRANSLATED CONTENT:
 # Glue Coding (glue coding) Methodology
 
 ## **1. Definition of Glue Coding**

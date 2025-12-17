@@ -1,79 +1,123 @@
-# 📖 Document Library (Documents)
+# 📖 Documents
 
-The `i18n/zh/documents/` directory summarizes project process documents, architecture descriptions, development experiences, and best practices, serving as the primary entry point for understanding methodologies and collaboration rules.
+The `i18n/zh/documents/` directory aggregates project process documentation, architectural descriptions, development experience, and best practices, serving as the primary entry point for understanding methodologies and collaboration rules.
 
 ## Directory Structure
 
 ```
-i18n/zh/documents/
+i18n/en/documents/
 ├── README.md
+│
+├── Starting Vibe Coding from Scratch/ # 🚀 Must-read for beginners
+│   ├── 00-Vibe Coding Philosophy.md
+│   ├── 01-Network Environment Configuration.md
+│   ├── 02-Development Environment Setup.md
+│   └── 03-IDE Configuration.md
+│
+├── Glue Coding/                       # 🧬 Revolutionary Paradigm of Glue Coding
+│   └── README.md
 │
 ├── Methodology and Principles/
 │   ├── A Formalization of Recursive Self-Optimizing Generative Systems.md
 │   ├── gluecoding.md
-│   ├── vibe-coding-Experience_Collection.md
-│   ├── Learning_Experience.md
-│   ├── Development_Experience.md
-│   ├── The_Way_of_Programming.md
-│   ├── Glue_Programming.md
-│   └── System_Prompt_Construction_Principles.md
+│   ├── vibe-coding-experience-collection.md
+│   ├── Learning Experience.md
+│   ├── Development Experience.md
+│   ├── The Way of Programming.md
+│   └── System Prompt Construction Principles.md
 │
 ├── Tutorials and Guides/
-│   ├── auggie-mcp_Configuration_Document.md
-│   ├── LazyVim_Shortcut_Cheatsheet.md
-│   ├── tmux_Shortcut_Cheatsheet.md
-│   ├── Method_for_SSH_Linking_Mobile_Phone_to_Local_Computer_Anywhere_Based_on_FRP_Implementation.md
-│   └── telegram-dev/
+│   ├── auggie-mcp Configuration Document.md
+│   ├── LazyVim Shortcut Cheatsheet.md
+│   ├── tmux Shortcut Cheatsheet.md
+│   └── How to SSH to Local Computer from Any Location via FRP.md
 │
-└── Templates and Resources/
-    ├── Code_Organization.md
-    ├── Tool_Set.md
-    ├── Recommended_Programming_Books.md
-    └── General_Project_Architecture_Template.md
+├── Templates and Resources/
+│   ├── Code Organization.md
+│   ├── Tool Collection.md
+│   ├── Recommended Programming Books.md
+│   ├── General Project Architecture Template.md
+│   └── memory-bank-template/
+│
+├── External Resource Aggregation/    # 🔗 External Links Summary
+│   ├── AI Tools and Platforms/
+│   ├── GitHub Featured Repositories/
+│   ├── Prompt Resources/
+│   ├── Development Tools/
+│   ├── Tutorials and Courses/
+│   └── Communities and Forums/
+│
+└── Project Practical Experience/     # 📁 Case Studies
+    ├── fate-engine-dev/
+    ├── polymarket-dev/
+    ├── telegram-dev/
+    └── ...
 ```
 
-## Document Classification
+## Document Categories
 
-### Methodology and Principles
+### 🚀 Starting Vibe Coding from Scratch (Beginner's Guide)
 
-This category contains documents about programming philosophy, development philosophy, and core project principles.
+Completely new? Start here!
 
-*   `A Formalization of Recursive Self-Optimizing Generative Systems.md`
-*   `gluecoding.md`
-*   `vibe-coding-Experience_Collection.md`
-*   `Learning_Experience.md`
-*   `Development_Experience.md`
-*   `The_Way_of_Programming.md`
-*   `Glue_Programming.md`
-*   `System_Prompt_Construction_Principles.md`
+*   [00-Vibe Coding Philosophy](./Starting%20Vibe%20Coding%20from%20Scratch/00-Vibe%20Coding%20Philosophy.md) - Core Concepts
+*   [01-Network Environment Configuration](./Starting%20Vibe%20Coding%20from%20Scratch/01-Network%20Environment%20Configuration.md) - Configure network access
+*   [02-Development Environment Setup](./Starting%20Vibe%20Coding%20from%20Scratch/02-Development%20Environment%20Setup.md) - Set up development environment (Prompt Version)
+*   [03-IDE Configuration](./Starting%20Vibe%20Coding%20from%20Scratch/03-IDE%20Configuration.md) - Configure VS Code / Cursor / Windsurf
+
+### 🧬 Glue Coding
+
+**The Holy Grail and Silver Bullet of Software Engineering.** Completely solves Vibe Coding's hallucination, complexity, and barrier issues.
+
+*   [Introduction to Glue Coding](./Glue%20Coding/README.md) - Revolutionary Programming Paradigm
+
+### Methodologies and Principles
+
+Documents on programming philosophy, development principles, and core project guidelines.
+
+*   `A Formalization of Recursive Self-Optimizing Generative Systems.md` - Formalization of Recursive Self-Optimizing Systems
+*   `gluecoding.md` - Glue Coding Theory
+*   `vibe-coding-experience-collection.md` - Experience Summary
+*   `Learning Experience.md` - Learning Insights
+*   `Development Experience.md` - Development Practices
+*   `The Way of Programming.md` - Programming Philosophy
+*   `System Prompt Construction Principles.md` - Prompt Engineering
 
 ### Tutorials and Guides
 
-This category contains configuration, usage guides, and operation tutorials for specific tools.
+Configuration, usage guides, and operational tutorials for specific tools.
 
-*   `auggie-mcp_Configuration_Document.md`
-*   `LazyVim_Shortcut_Cheatsheet.md`
-*   `tmux_Shortcut_Cheatsheet.md`
-*   `Method_for_SSH_Linking_Mobile_Phone_to_Local_Computer_Anywhere_Based_on_FRP_Implementation.md`
-*   `telegram-dev/`
+*   `auggie-mcp Configuration Document.md` - Augment MCP Configuration
+*   `LazyVim Shortcut Cheatsheet.md` - LazyVim Shortcuts
+*   `tmux Shortcut Cheatsheet.md` - tmux Shortcuts
+*   `How to SSH to Local Computer from Any Location via FRP.md` - Remote Development
 
 ### Templates and Resources
 
-This category contains reusable project templates, code structure specifications, and resource lists.
+Reusable project templates, code structure specifications, and resource lists.
 
-*   `Code_Organization.md`
-*   `Tool_Set.md`
-*   `Recommended_Programming_Books.md`
-*   `General_Project_Architecture_Template.md`
+*   `Code Organization.md` - Code Organization Standards
+*   `Tool Collection.md` - Tool Recommendations
+*   `Recommended Programming Books.md` - Book Recommendations
+*   `General Project Architecture Template.md` - Project Templates
+*   `memory-bank-template/` - Memory Bank Template
 
-## Contribute New Documents
+### 🔗 External Resource Aggregation
 
-1.  Place documents in the most appropriate category directory.
-2.  Create new category directories if needed.
-3.  Update this README file to reflect changes.
+Summary of high-quality external resources, continuously updated.
+
+*   [External Resource Aggregation](./External%20Resource%20Aggregation/README.md) - General Index
+
+### 📁 Project Practical Experience
+
+Summaries of experience and case studies from actual project development.
+
+*   [Project Practical Experience](./Project%20Practical%20Experience/README.md) - General Index
+*   `fate-engine-dev/` - Fate Engine Development
+*   `polymarket-dev/` - Polymarket Data Analysis
+*   `telegram-dev/` - Telegram Bot Development
 
 ## Related Resources
 
 - [Prompt Library](../prompts/) - AI Prompt Collection
 - [Skill Library](../skills/) - AI Skills
-- [General Library](../libs/) - Tools and External Integrations

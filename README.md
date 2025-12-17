@@ -93,6 +93,7 @@
 
 完全新手？按顺序完成以下步骤：
 
+0. [00-Vibe Coding 哲学原理](./i18n/zh/documents/从零开始vibecoding/00-Vibe%20Coding%20哲学原理.md) - 理解核心理念
 1. [01-网络环境配置](./i18n/zh/documents/从零开始vibecoding/01-网络环境配置.md) - 配置网络访问
 2. [02-开发环境搭建](./i18n/zh/documents/从零开始vibecoding/02-开发环境搭建.md) - 复制提示词给 AI，让 AI 指导你搭建环境
 3. [03-IDE配置](./i18n/zh/documents/从零开始vibecoding/03-IDE配置.md) - 配置 VS Code 编辑器

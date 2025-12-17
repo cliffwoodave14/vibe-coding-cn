@@ -53,6 +53,7 @@
 ### 💬 AI 对话平台
 
 #### 第一梯队 (推荐)
+
 | 平台 | 模型 | 特点 |
 |:---|:---|:---|
 | [Claude](https://claude.ai/) | Claude Opus 4.5 | 代码能力强，支持 Artifacts |
@@ -60,6 +61,7 @@
 | [Gemini](https://gemini.google.com/) | Gemini 3.0 Pro | 免费额度大，支持长上下文 |
 
 #### 国产平台
+
 | 平台 | 模型 | 特点 |
 |:---|:---|:---|
 | [Kimi](https://kimi.moonshot.cn/) | Kimi K2 | 长文本处理强 |
@@ -88,15 +90,21 @@
 ### 🆓 免费资源
 
 #### 完全免费
-- [AI Studio](https://aistudio.google.com/) - Google 免费 Gemini
-- [Gemini CLI](https://geminicli.com/) - 免费命令行访问
-- [antigravity](https://antigravity.google/) - Google 免费 AI 服务
-- [Qwen CLI](https://qwenlm.github.io/qwen-code-docs/zh/cli/) - 阿里免费 CLI
+
+| 资源 | 链接 | 说明 |
+|:---|:---|:---|
+| AI Studio | [aistudio.google.com](https://aistudio.google.com/) | Google 免费 Gemini |
+| Gemini CLI | [geminicli.com](https://geminicli.com/) | 免费命令行访问 |
+| antigravity | [antigravity.google](https://antigravity.google/) | Google 免费 AI 服务 |
+| Qwen CLI | [qwenlm.github.io](https://qwenlm.github.io/qwen-code-docs/zh/cli/) | 阿里免费 CLI |
 
 #### 有免费额度
-- [Kiro](https://kiro.dev/) - 免费 Claude Opus 4.5
-- [Windsurf](https://windsurf.com/) - 新用户免费额度
-- [GitHub Copilot](https://github.com/copilot) - 学生/开源免费
+
+| 资源 | 链接 | 说明 |
+|:---|:---|:---|
+| Kiro | [kiro.dev](https://kiro.dev/) | 免费 Claude Opus 4.5 |
+| Windsurf | [windsurf.com](https://windsurf.com/) | 新用户免费额度 |
+| GitHub Copilot | [github.com/copilot](https://github.com/copilot) | 学生/开源免费 |
 
 ### 🎨 AI 生成工具
 
@@ -116,16 +124,36 @@
 <summary><strong>👥 社区与论坛</strong></summary>
 
 ### Telegram
-- [Vibe Coding 交流群](https://t.me/glue_coding)
-- [Vibe Coding 频道](https://t.me/tradecat_ai_channel)
+
+| 社区 | 链接 | 说明 |
+|:---|:---|:---|
+| Vibe Coding 交流群 | [t.me/glue_coding](https://t.me/glue_coding) | |
+| Vibe Coding 频道 | [t.me/tradecat_ai_channel](https://t.me/tradecat_ai_channel) | |
 
 ### Discord
-- [Cursor Discord](https://discord.gg/cursor)
-- [Anthropic Discord](https://discord.gg/anthropic)
+
+| 社区 | 链接 | 说明 |
+|:---|:---|:---|
+| Cursor Discord | [discord.gg/cursor](https://discord.gg/cursor) | |
+| Anthropic Discord | [discord.gg/anthropic](https://discord.gg/anthropic) | |
+
+### Reddit
+
+| 社区 | 链接 | 说明 |
+|:---|:---|:---|
+| r/ChatGPT | [reddit.com/r/ChatGPT](https://www.reddit.com/r/ChatGPT/) | ChatGPT 社区 |
+| r/ClaudeAI | [reddit.com/r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/) | Claude 社区 |
+| r/Bard | [reddit.com/r/Bard](https://www.reddit.com/r/Bard/) | Gemini 社区 |
+| r/PromptEngineering | [reddit.com/r/PromptEngineering](https://www.reddit.com/r/PromptEngineering/) | 提示词工程 |
+| r/ChatGPTPromptGenius | [reddit.com/r/ChatGPTPromptGenius](https://www.reddit.com/r/ChatGPTPromptGenius/) | 提示词分享 |
+| r/LocalLLaMA | [reddit.com/r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/) | 本地大模型 |
 
 ### X (Twitter)
-- [Vibe Coding 社群](https://x.com/i/communities/1993849457210011871)
-- [社群干货聚合页](https://x.com/vibeverything/status/1999796188053438687)
+
+| 社区 | 链接 | 说明 |
+|:---|:---|:---|
+| Vibe Coding 社群 | [x.com/communities](https://x.com/i/communities/1993849457210011871) | |
+| 社群干货聚合页 | [x.com/vibeverything](https://x.com/vibeverything/status/1999796188053438687) | |
 
 </details>
 
@@ -135,22 +163,31 @@
 <summary><strong>📝 提示词资源</strong></summary>
 
 ### 提示词库
-- [在线提示词表格 (推荐)](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1)
-- [元提示词库](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=1770874220#gid=1770874220)
-- [System Prompts 仓库](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
-- [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
+
+| 资源 | 链接 | 说明 |
+|:---|:---|:---|
+| 在线提示词表格 | [Google Sheets](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1) | 推荐 |
+| 元提示词库 | [Google Sheets](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=1770874220#gid=1770874220) | |
+| System Prompts 仓库 | [GitHub](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) | |
+| Awesome ChatGPT Prompts | [GitHub](https://github.com/f/awesome-chatgpt-prompts) | |
 
 ### 提示词工具
-- [Skills 制作器](https://github.com/yusufkaraaslan/Skill_Seekers) - 生成定制化 Skills
-- [LangGPT](https://github.com/langgptai/LangGPT) - 结构化提示词框架
+
+| 工具 | 链接 | 说明 |
+|:---|:---|:---|
+| Skills 制作器 | [GitHub](https://github.com/yusufkaraaslan/Skill_Seekers) | 生成定制化 Skills |
+| LangGPT | [GitHub](https://github.com/langgptai/LangGPT) | 结构化提示词框架 |
 
 ### 提示词教程
-- [Prompt Engineering Guide](https://www.promptingguide.ai/zh)
-- [Learn Prompting](https://learnprompting.org/zh-Hans/)
-- [OpenAI Prompt Engineering](https://platform.openai.com/docs/guides/prompt-engineering)
-- [Anthropic Prompt Engineering](https://docs.anthropic.com/claude/docs/prompt-engineering)
-- [State-Of-The-Art Prompting For AI Agents](https://docs.google.com/document/d/11tBoylc5Pvy8wDp9_i2UaAfDi8x02iMNg9mhCNv65cU/) - YC 顶级 AI 提示词技巧
-- [Vibe Coding 101](https://drive.google.com/file/d/1OMiqUviji4aI56E14PLaGVJsbjhOP1L1/view) - Vibe Coding 入门指南
+
+| 教程 | 链接 | 说明 |
+|:---|:---|:---|
+| Prompt Engineering Guide | [promptingguide.ai](https://www.promptingguide.ai/zh) | 中文版 |
+| Learn Prompting | [learnprompting.org](https://learnprompting.org/zh-Hans/) | 中文版 |
+| OpenAI Prompt Engineering | [platform.openai.com](https://platform.openai.com/docs/guides/prompt-engineering) | 官方 |
+| Anthropic Prompt Engineering | [docs.anthropic.com](https://docs.anthropic.com/claude/docs/prompt-engineering) | 官方 |
+| State-Of-The-Art Prompting | [Google Docs](https://docs.google.com/document/d/11tBoylc5Pvy8wDp9_i2UaAfDi8x02iMNg9mhCNv65cU/) | YC 顶级技巧 |
+| Vibe Coding 101 | [Google Drive](https://drive.google.com/file/d/1OMiqUviji4aI56E14PLaGVJsbjhOP1L1/view) | 入门指南 |
 
 </details>
 
@@ -160,42 +197,64 @@
 <summary><strong>🐙 GitHub 精选仓库</strong></summary>
 
 ### CLI 工具
-- [claude-code](https://github.com/anthropics/claude-code) - Anthropic 官方 CLI
-- [aider](https://github.com/paul-gauthier/aider) - AI 结对编程工具
-- [gpt-engineer](https://github.com/gpt-engineer-org/gpt-engineer) - 自然语言生成代码
-- [open-interpreter](https://github.com/OpenInterpreter/open-interpreter) - 本地代码解释器
-- [continue](https://github.com/continuedev/continue) - 开源 AI 代码助手
+
+| 仓库 | 链接 | 说明 |
+|:---|:---|:---|
+| claude-code | [GitHub](https://github.com/anthropics/claude-code) | Anthropic 官方 CLI |
+| aider | [GitHub](https://github.com/paul-gauthier/aider) | AI 结对编程工具 |
+| gpt-engineer | [GitHub](https://github.com/gpt-engineer-org/gpt-engineer) | 自然语言生成代码 |
+| open-interpreter | [GitHub](https://github.com/OpenInterpreter/open-interpreter) | 本地代码解释器 |
+| continue | [GitHub](https://github.com/continuedev/continue) | 开源 AI 代码助手 |
+| spec-kit | [GitHub](https://github.com/github/spec-kit) | GitHub 官方 Spec-Driven 开发工具包 |
 
 ### IDE 插件
-- [copilot.vim](https://github.com/github/copilot.vim) - GitHub Copilot Vim 插件
-- [codeium](https://github.com/Exafunction/codeium.vim) - 免费 AI 代码补全
+
+| 仓库 | 链接 | 说明 |
+|:---|:---|:---|
+| copilot.vim | [GitHub](https://github.com/github/copilot.vim) | GitHub Copilot Vim 插件 |
+| codeium | [GitHub](https://github.com/Exafunction/codeium.vim) | 免费 AI 代码补全 |
 
 ### 提示词工程
-- [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts) - ChatGPT 提示词集合
-- [awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh) - 中文提示词
-- [system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) - AI 工具系统提示词
-- [LangGPT](https://github.com/langgptai/LangGPT) - 结构化提示词框架
+
+| 仓库 | 链接 | 说明 |
+|:---|:---|:---|
+| awesome-chatgpt-prompts | [GitHub](https://github.com/f/awesome-chatgpt-prompts) | ChatGPT 提示词集合 |
+| awesome-chatgpt-prompts-zh | [GitHub](https://github.com/PlexPt/awesome-chatgpt-prompts-zh) | 中文提示词 |
+| system-prompts-and-models-of-ai-tools | [GitHub](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) | AI 工具系统提示词 |
+| LangGPT | [GitHub](https://github.com/langgptai/LangGPT) | 结构化提示词框架 |
 
 ### Agent 框架
-- [langchain](https://github.com/langchain-ai/langchain) - LLM 应用开发框架
-- [autogen](https://github.com/microsoft/autogen) - 多 Agent 对话框架
-- [crewai](https://github.com/joaomdmoura/crewAI) - AI Agent 协作框架
-- [dspy](https://github.com/stanfordnlp/dspy) - 编程式 LLM 框架
-- [MCAF](https://mcaf.managed-code.com/) - AI 编程框架，定义 AGENTS.md 规范
+
+| 仓库 | 链接 | 说明 |
+|:---|:---|:---|
+| langchain | [GitHub](https://github.com/langchain-ai/langchain) | LLM 应用开发框架 |
+| autogen | [GitHub](https://github.com/microsoft/autogen) | 多 Agent 对话框架 |
+| crewai | [GitHub](https://github.com/joaomdmoura/crewAI) | AI Agent 协作框架 |
+| dspy | [GitHub](https://github.com/stanfordnlp/dspy) | 编程式 LLM 框架 |
+| MCAF | [mcaf.managed-code.com](https://mcaf.managed-code.com/) | AI 编程框架，定义 AGENTS.md 规范 |
 
 ### MCP 相关
-- [mcp-servers](https://github.com/modelcontextprotocol/servers) - MCP 服务器集合
-- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - MCP 资源汇总
+
+| 仓库 | 链接 | 说明 |
+|:---|:---|:---|
+| mcp-servers | [GitHub](https://github.com/modelcontextprotocol/servers) | MCP 服务器集合 |
+| awesome-mcp-servers | [GitHub](https://github.com/punkpeye/awesome-mcp-servers) | MCP 资源汇总 |
 
 ### 学习资源
-- [prompt-engineering-guide](https://github.com/dair-ai/Prompt-Engineering-Guide) - 提示工程指南
-- [generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners) - 微软生成式 AI 教程
-- [llm-course](https://github.com/mlabonne/llm-course) - LLM 学习路线
+
+| 仓库 | 链接 | 说明 |
+|:---|:---|:---|
+| prompt-engineering-guide | [GitHub](https://github.com/dair-ai/Prompt-Engineering-Guide) | 提示工程指南 |
+| generative-ai-for-beginners | [GitHub](https://github.com/microsoft/generative-ai-for-beginners) | 微软生成式 AI 教程 |
+| llm-course | [GitHub](https://github.com/mlabonne/llm-course) | LLM 学习路线 |
 
 ### 实用工具
-- [ollama](https://github.com/ollama/ollama) - 本地大模型运行
-- [localai](https://github.com/mudler/LocalAI) - 本地 AI API
-- [text-generation-webui](https://github.com/oobabooga/text-generation-webui) - 文本生成 WebUI
+
+| 仓库 | 链接 | 说明 |
+|:---|:---|:---|
+| ollama | [GitHub](https://github.com/ollama/ollama) | 本地大模型运行 |
+| localai | [GitHub](https://github.com/mudler/LocalAI) | 本地 AI API |
+| text-generation-webui | [GitHub](https://github.com/oobabooga/text-generation-webui) | 文本生成 WebUI |
 
 </details>
 
@@ -219,7 +278,7 @@
 | 工具 | 链接 | 说明 |
 |:---|:---|:---|
 | Warp | [warp.dev](https://www.warp.dev/) | AI 终端 |
-| tmux | [github.com/tmux/tmux](https://github.com/tmux/tmux) | 终端复用 |
+| tmux | [GitHub](https://github.com/tmux/tmux) | 终端复用 |
 | zsh | [ohmyz.sh](https://ohmyz.sh/) | Shell 增强 |
 
 ### Web 框架
@@ -251,13 +310,148 @@
 <summary><strong>📖 教程与课程</strong></summary>
 
 ### 官方文档
-- [Claude Documentation](https://docs.anthropic.com/)
-- [OpenAI Documentation](https://platform.openai.com/docs/)
-- [Gemini Documentation](https://ai.google.dev/docs)
+
+| 文档 | 链接 | 说明 |
+|:---|:---|:---|
+| Claude Documentation | [docs.anthropic.com](https://docs.anthropic.com/) | Anthropic 官方 |
+| OpenAI Documentation | [platform.openai.com](https://platform.openai.com/docs/) | OpenAI 官方 |
+| Gemini Documentation | [ai.google.dev](https://ai.google.dev/docs) | Google 官方 |
 
 ### 社区教程
-- [二哥的Java进阶之路](https://javabetter.cn/) - 开发工具配置教程
-- [超级个体资源清单](https://x.com/BiteyeCN/status/2000856243645157387)
+
+| 教程 | 链接 | 说明 |
+|:---|:---|:---|
+| 二哥的Java进阶之路 | [javabetter.cn](https://javabetter.cn/) | 开发工具配置教程 |
+| 超级个体资源清单 | [x.com/BiteyeCN](https://x.com/BiteyeCN/status/2000856243645157387) | |
+
+</details>
+
+---
+
+<details>
+<summary><strong>🌐 网络配置</strong></summary>
+
+### 代理客户端
+
+| 工具 | 链接 | 说明 |
+|:---|:---|:---|
+| FlClash | [GitHub](https://github.com/chen08209/FlClash/releases) | 跨平台代理客户端 |
+
+### 网络服务
+
+| 服务 | 链接 | 说明 |
+|:---|:---|:---|
+| 机场服务 | [链接](https://xn--9kqz23b19z.com/#/register?code=35BcnKzl) | 约 6 元/月起 |
+
+</details>
+
+---
+
+<details>
+<summary><strong>💳 支付工具</strong></summary>
+
+### 虚拟卡
+
+| 服务 | 链接 | 说明 |
+|:---|:---|:---|
+| Bybit 虚拟卡 | [bybit.com/cards](https://www.bybit.com/cards/?ref=YDGAVPN&source=applet_invite) | 注册云服务等国际支付 |
+
+</details>
+
+---
+
+<details>
+<summary><strong>📏 Rules/规则文件</strong></summary>
+
+### AI 编程规则
+
+| 仓库 | 链接 | 说明 |
+|:---|:---|:---|
+| | | 待补充 |
+
+</details>
+
+---
+
+<details>
+<summary><strong>📦 模板/脚手架</strong></summary>
+
+### 项目模板
+
+| 仓库 | 链接 | 说明 |
+|:---|:---|:---|
+| | | 待补充 |
+
+</details>
+
+---
+
+<details>
+<summary><strong>📚 文档/知识库工具</strong></summary>
+
+### RAG 相关
+
+| 工具 | 链接 | 说明 |
+|:---|:---|:---|
+| | | 待补充 |
+
+</details>
+
+---
+
+<details>
+<summary><strong>✅ 代码质量/测试</strong></summary>
+
+### AI 代码审查
+
+| 工具 | 链接 | 说明 |
+|:---|:---|:---|
+| | | 待补充 |
+
+</details>
+
+---
+
+<details>
+<summary><strong>🚀 部署/DevOps</strong></summary>
+
+### 一键部署
+
+| 平台 | 链接 | 说明 |
+|:---|:---|:---|
+| | | 待补充 |
+
+</details>
+
+---
+
+<details>
+<summary><strong>🎯 特定领域</strong></summary>
+
+### Web3/区块链
+
+| 工具 | 链接 | 说明 |
+|:---|:---|:---|
+| | | 待补充 |
+
+### 数据科学/ML
+
+| 工具 | 链接 | 说明 |
+|:---|:---|:---|
+| | | 待补充 |
+
+</details>
+
+---
+
+<details>
+<summary><strong>🇨🇳 中文资源专区</strong></summary>
+
+### 国内镜像/加速
+
+| 资源 | 链接 | 说明 |
+|:---|:---|:---|
+| | | 待补充 |
 
 </details>
 
