@@ -5,6 +5,49 @@
 ---
 
 <details open>
+<summary><strong>🎙️ 优质博主</strong></summary>
+
+### 𝕏 (Twitter) 博主
+
+| 博主 | 链接 | 说明 |
+|:---|:---|:---|
+| @shao__meng | [x.com/shao__meng](https://x.com/shao__meng) | |
+| @0XBard_thomas | [x.com/0XBard_thomas](https://x.com/0XBard_thomas) | |
+| @Pluvio9yte | [x.com/Pluvio9yte](https://x.com/Pluvio9yte) | |
+| @xDinoDeer | [x.com/xDinoDeer](https://x.com/xDinoDeer) | |
+| @geekbb | [x.com/geekbb](https://x.com/geekbb) | |
+| @GitHub_Daily | [x.com/GitHub_Daily](https://x.com/GitHub_Daily) | |
+| @BiteyeCN | [x.com/BiteyeCN](https://x.com/BiteyeCN) | |
+| @CryptoJHK | [x.com/CryptoJHK](https://x.com/CryptoJHK) | |
+| @rohanpaul_ai | [x.com/rohanpaul_ai](https://x.com/rohanpaul_ai) | |
+| @DataChaz | [x.com/DataChaz](https://x.com/DataChaz) | |
+
+### 📺 YouTube 博主
+
+| 博主 | 链接 | 说明 |
+|:---|:---|:---|
+| Best Partners | [youtube.com/@bestpartners](https://www.youtube.com/@bestpartners) | |
+| 王路飞 | [youtube.com/@王路飞](https://www.youtube.com/@%E7%8E%8B%E8%B7%AF%E9%A3%9E) | |
+| 即刻风 | [youtube.com/@jidifeng](https://www.youtube.com/@jidifeng) | |
+| 3Blue1Brown | [youtube.com/@3blue1brown](https://www.youtube.com/@3blue1brown) | 数学可视化 |
+| Andrej Karpathy | [youtube.com/andrejkarpathy](https://www.youtube.com/andrejkarpathy) | AI/深度学习 |
+
+### 📱 微信视频号
+
+| 博主 | 说明 |
+|:---|:---|
+| 美国的牛粪博士 | |
+
+### 🎵 抖音
+
+| 博主 | 说明 |
+|:---|:---|
+
+</details>
+
+---
+
+<details open>
 <summary><strong>🤖 AI 工具与平台</strong></summary>
 
 ### 💬 AI 对话平台
@@ -70,6 +113,50 @@
 ---
 
 <details>
+<summary><strong>👥 社区与论坛</strong></summary>
+
+### Telegram
+- [Vibe Coding 交流群](https://t.me/glue_coding)
+- [Vibe Coding 频道](https://t.me/tradecat_ai_channel)
+
+### Discord
+- [Cursor Discord](https://discord.gg/cursor)
+- [Anthropic Discord](https://discord.gg/anthropic)
+
+### X (Twitter)
+- [Vibe Coding 社群](https://x.com/i/communities/1993849457210011871)
+- [社群干货聚合页](https://x.com/vibeverything/status/1999796188053438687)
+
+</details>
+
+---
+
+<details>
+<summary><strong>📝 提示词资源</strong></summary>
+
+### 提示词库
+- [在线提示词表格 (推荐)](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1)
+- [元提示词库](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=1770874220#gid=1770874220)
+- [System Prompts 仓库](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
+- [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
+
+### 提示词工具
+- [Skills 制作器](https://github.com/yusufkaraaslan/Skill_Seekers) - 生成定制化 Skills
+- [LangGPT](https://github.com/langgptai/LangGPT) - 结构化提示词框架
+
+### 提示词教程
+- [Prompt Engineering Guide](https://www.promptingguide.ai/zh)
+- [Learn Prompting](https://learnprompting.org/zh-Hans/)
+- [OpenAI Prompt Engineering](https://platform.openai.com/docs/guides/prompt-engineering)
+- [Anthropic Prompt Engineering](https://docs.anthropic.com/claude/docs/prompt-engineering)
+- [State-Of-The-Art Prompting For AI Agents](https://docs.google.com/document/d/11tBoylc5Pvy8wDp9_i2UaAfDi8x02iMNg9mhCNv65cU/) - YC 顶级 AI 提示词技巧
+- [Vibe Coding 101](https://drive.google.com/file/d/1OMiqUviji4aI56E14PLaGVJsbjhOP1L1/view) - Vibe Coding 入门指南
+
+</details>
+
+---
+
+<details>
 <summary><strong>🐙 GitHub 精选仓库</strong></summary>
 
 ### CLI 工具
@@ -94,6 +181,7 @@
 - [autogen](https://github.com/microsoft/autogen) - 多 Agent 对话框架
 - [crewai](https://github.com/joaomdmoura/crewAI) - AI Agent 协作框架
 - [dspy](https://github.com/stanfordnlp/dspy) - 编程式 LLM 框架
+- [MCAF](https://mcaf.managed-code.com/) - AI 编程框架，定义 AGENTS.md 规范
 
 ### MCP 相关
 - [mcp-servers](https://github.com/modelcontextprotocol/servers) - MCP 服务器集合
@@ -108,29 +196,6 @@
 - [ollama](https://github.com/ollama/ollama) - 本地大模型运行
 - [localai](https://github.com/mudler/LocalAI) - 本地 AI API
 - [text-generation-webui](https://github.com/oobabooga/text-generation-webui) - 文本生成 WebUI
-
-</details>
-
----
-
-<details>
-<summary><strong>📝 提示词资源</strong></summary>
-
-### 提示词库
-- [在线提示词表格 (推荐)](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1)
-- [元提示词库](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=1770874220#gid=1770874220)
-- [System Prompts 仓库](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
-- [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
-
-### 提示词工具
-- [Skills 制作器](https://github.com/yusufkaraaslan/Skill_Seekers) - 生成定制化 Skills
-- [LangGPT](https://github.com/langgptai/LangGPT) - 结构化提示词框架
-
-### 提示词教程
-- [Prompt Engineering Guide](https://www.promptingguide.ai/zh)
-- [Learn Prompting](https://learnprompting.org/zh-Hans/)
-- [OpenAI Prompt Engineering](https://platform.openai.com/docs/guides/prompt-engineering)
-- [Anthropic Prompt Engineering](https://docs.anthropic.com/claude/docs/prompt-engineering)
 
 </details>
 
@@ -193,66 +258,6 @@
 ### 社区教程
 - [二哥的Java进阶之路](https://javabetter.cn/) - 开发工具配置教程
 - [超级个体资源清单](https://x.com/BiteyeCN/status/2000856243645157387)
-
-</details>
-
----
-
-<details>
-<summary><strong>👥 社区与论坛</strong></summary>
-
-### Telegram
-- [Vibe Coding 交流群](https://t.me/glue_coding)
-- [Vibe Coding 频道](https://t.me/tradecat_ai_channel)
-
-### Discord
-- [Cursor Discord](https://discord.gg/cursor)
-- [Anthropic Discord](https://discord.gg/anthropic)
-
-### X (Twitter)
-- [Vibe Coding 社群](https://x.com/i/communities/1993849457210011871)
-- [社群干货聚合页](https://x.com/vibeverything/status/1999796188053438687)
-
-</details>
-
----
-
-<details open>
-<summary><strong>🎙️ 优质博主</strong></summary>
-
-### 𝕏 (Twitter) 博主
-
-| 博主 | 链接 | 说明 |
-|:---|:---|:---|
-| @shao__meng | [x.com/shao__meng](https://x.com/shao__meng) | |
-| @0XBard_thomas | [x.com/0XBard_thomas](https://x.com/0XBard_thomas) | |
-| @Pluvio9yte | [x.com/Pluvio9yte](https://x.com/Pluvio9yte) | |
-| @xDinoDeer | [x.com/xDinoDeer](https://x.com/xDinoDeer) | |
-| @geekbb | [x.com/geekbb](https://x.com/geekbb) | |
-| @GitHub_Daily | [x.com/GitHub_Daily](https://x.com/GitHub_Daily) | |
-| @BiteyeCN | [x.com/BiteyeCN](https://x.com/BiteyeCN) | |
-| @CryptoJHK | [x.com/CryptoJHK](https://x.com/CryptoJHK) | |
-
-### 📺 YouTube 博主
-
-| 博主 | 链接 | 说明 |
-|:---|:---|:---|
-| Best Partners | [youtube.com/@bestpartners](https://www.youtube.com/@bestpartners) | |
-| 王路飞 | [youtube.com/@王路飞](https://www.youtube.com/@%E7%8E%8B%E8%B7%AF%E9%A3%9E) | |
-| 即刻风 | [youtube.com/@jidifeng](https://www.youtube.com/@jidifeng) | |
-| 3Blue1Brown | [youtube.com/@3blue1brown](https://www.youtube.com/@3blue1brown) | 数学可视化 |
-| Andrej Karpathy | [youtube.com/andrejkarpathy](https://www.youtube.com/andrejkarpathy) | AI/深度学习 |
-
-### 📱 微信视频号
-
-| 博主 | 说明 |
-|:---|:---|
-| 美国的牛粪博士 | |
-
-### 🎵 抖音
-
-| 博主 | 说明 |
-|:---|:---|
 
 </details>
 
