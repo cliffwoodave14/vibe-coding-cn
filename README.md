@@ -103,7 +103,9 @@
 
 **注意**：以下经验分享并非普遍适用，请在具体实践中结合场景，辩证采纳。
 
-## 🔑 元方法论 (Meta-Methodology)
+<details>
+<summary><strong>🔑 元方法论 (Meta-Methodology)</strong></summary>
+
 
 该思想的核心是构建一个能够**自我优化**的 AI 系统。其递归本质可分解为以下步骤：
 
@@ -131,6 +133,11 @@
 #### 3. 终极目标：
 
 通过此持续的**递归优化循环**，系统在每次迭代中实现**自我超越**，无限逼近预设的**预期状态**。
+
+</details>
+
+<details>
+<summary><strong>🧭 方法论精要 (道·法·术)</strong></summary>
 
 ## 🧭 道
 
@@ -167,6 +174,11 @@
 * Debug 只给：**预期 vs 实际 + 最小复现**
 * 测试可交给 AI，**断言人审**
 * 代码一多就**切会话**
+
+</details>
+
+<details>
+<summary><strong>📋 器 (工具与资源)</strong></summary>
 
 ## 📋 器
 
@@ -216,21 +228,18 @@
 *   [**tmux快捷键大全**](./i18n/zh/documents/教程与指南/tmux快捷键大全.md): tmux 的快捷键参考文档。
 *   [**LazyVim快捷键大全**](./i18n/zh/documents/教程与指南/LazyVim快捷键大全.md): LazyVim 的快捷键参考文档。
 *   [**手机远程 Vibe Coding**](./i18n/zh/documents/教程与指南/关于手机ssh任意位置链接本地计算机，基于frp实现的方法.md): 基于 frp 实现手机 SSH 远程控制本地电脑进行 Vibe Coding。
-*   [**prompts-library**](./libs/external/prompts-library/): 提示词库管理工具，支持 Excel 与 Markdown 互转。
-*   [**my-nvim**](./libs/external/my-nvim/): Neovim 配置参考。
-*   [**XHS-image-to-PDF-conversion**](./libs/external/XHS-image-to-PDF-conversion/): 小红书图片转 PDF 工具。
-*   [**MCPlayerTransfer**](./libs/external/MCPlayerTransfer/): MC 玩家数据迁移工具。
-*   [**快速本地备份**](./libs/common/utils/backups/): 项目快速备份脚本。
 
 ### 外部教程与资源
 
-*   [**Vibe Coding 社群 (X)**](https://x.com/i/communities/1993849457210011871): X 平台上的 Vibe Coding 社群。
-*   [**社群干货聚合页**](https://x.com/vibeverything/status/1999796188053438687): Vibe Coding 社群精华内容汇总。
-*   [**超级个体资源清单**](https://x.com/BiteyeCN/status/2000856243645157387): 从 Vibe Coding 入门的资源清单。
 *   [**二哥的Java进阶之路**](https://javabetter.cn/): 包含多种开发工具的详细配置教程。
 *   [**虚拟卡**](https://www.bybit.com/cards/?ref=YDGAVPN&source=applet_invite): 可用于注册云服务等需要国际支付的场景。
 
 ---
+
+</details>
+
+<details>
+<summary><strong>编码模型性能分级参考</strong></summary>
 
 ## 编码模型性能分级参考
 
@@ -241,6 +250,11 @@
 *   **第三梯队**: `qwen3`, `SWE`, `grok4`
 
 ---
+
+</details>
+
+<details>
+<summary><strong>📚 相关文档与资源</strong></summary>
 
 ## 📚 相关文档与资源
 
@@ -267,6 +281,11 @@
     *   [**system_prompts 集合**](./i18n/zh/prompts/system_prompts/): 用于指导 AI 开发的系统提示词，包含多个版本的开发规范与思维框架。
 
 ---
+
+</details>
+
+<details>
+<summary><strong>项目目录结构概览</strong></summary>
 
 ### 项目目录结构概览
 
@@ -329,6 +348,8 @@
 
 ---
 
+</details>
+
 ## 🖼️ 概览与演示
 
 一句话：Vibe Coding = **规划驱动 + 上下文固定 + AI 结对执行**，让「从想法到可维护代码」变成一条可审计的流水线，而不是一团无法迭代的巨石文件。
@@ -336,6 +357,9 @@
 **你能得到**
 - 成体系的提示词工具链：`i18n/zh/prompts/system_prompts/` 约束 AI 行为边界，`i18n/zh/prompts/coding_prompts/` 提供需求澄清、计划、执行的全链路脚本。
 - 闭环交付路径：需求 → 上下文文档 → 实施计划 → 分步实现 → 自测 → 进度记录，全程可复盘、可移交。
+
+<details>
+<summary><strong>⚙️ 架构与工作流程</strong></summary>
 
 ## ⚙️ 架构与工作流程
 
@@ -416,6 +440,8 @@ graph TB
 ```
 
 ---
+
+</details>
 
 <details>
 <summary>📈 性能基准 (可选)</summary>
