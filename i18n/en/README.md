@@ -218,7 +218,7 @@ Through this continuous **recursive optimization loop**, the system achieves **s
 *   [**Third-party System Prompt Learning Library**](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools): For learning and referencing system prompts of other AI tools.
 *   [**Skills Maker**](https://github.com/yusufkaraaslan/Skill_Seekers): A tool for generating customized skills based on requirements.
 *   [**Meta-Prompts**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=1770874220#gid=1770874220): Advanced prompts for generating prompts.
-*   [**General Project Architecture Template**](./documents/04-resources/General%20Project%20Architecture%20Template.md): Can be used to quickly set up standardized project directory structures.
+*   [**General Project Architecture Template**](./documents/00-fundamentals/General%20Project%20Architecture%20Template.md): Can be used to quickly set up standardized project directory structures.
 *   [**Meta-Skill: Skills of Skills**](./skills/claude-skills/SKILL.md): A meta-skill for generating skills.
 *   [**tmux Shortcut Cheatsheet**](./documents/02-methodology/tmux%20Shortcut%20Cheatsheet.md): Reference documentation for tmux shortcuts.
 *   [**LazyVim Shortcut Cheatsheet**](./documents/02-methodology/LazyVim%20Shortcut%20Cheatsheet.md): Reference documentation for LazyVim shortcuts.
@@ -257,7 +257,7 @@ It is recommended to only choose models from the first tier for complex tasks to
     *   [**coding_prompts Collection**](./prompts/coding_prompts/): Dedicated prompts for the Vibe Coding process.
     *   [**System Prompt Construction Principles**](./documents/00-fundamentals/System%20Prompt%20Construction%20Principles.md): A comprehensive guide on how to build efficient and reliable AI system prompts.
     *   [**Development Experience Summary**](./documents/00-fundamentals/Development%20Experience.md): Includes practical experience on variable naming, file structure, coding standards, and architectural principles.
-    *   [**General Project Architecture Template**](./documents/04-resources/General%20Project%20Architecture%20Template.md): Provides standard directory structures and best practices for various project types.
+    *   [**General Project Architecture Template**](./documents/00-fundamentals/General%20Project%20Architecture%20Template.md): Provides standard directory structures and best practices for various project types.
     *   [**Augment MCP Configuration Document**](./documents/02-methodology/auggie-mcp%20Configuration%20Document.md): Detailed configuration instructions for the Augment context engine.
     *   [**system_prompts Collection**](./prompts/system_prompts/): System prompts used to guide AI development, including multiple versions of development specifications and thinking frameworks.
 
