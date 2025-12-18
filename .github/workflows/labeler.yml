@@ -1,16 +1,22 @@
-name: Auto Labeler
+# .github/workflows/labeler.yml
+# 自动为 Pull Requests 添加标签
 
-on:
-  pull_request:
-    types: [opened, synchronize]
+name: Labeler
+
+on: [pull_request_target]
+
+permissions:
+  contents: read
+  pull-requests: write
 
 jobs:
   label:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
     steps:
-      - uses: actions/labeler@v5
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Run Labeler
+        uses: actions/labeler@v4
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: .github/labeler.yml

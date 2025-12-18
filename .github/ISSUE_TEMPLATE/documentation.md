@@ -1,29 +1,42 @@
 ---
-name: 文档改进
-about: 报告文档问题或建议改进
-title: "[Docs]: "
-labels: documentation
-assignees: ''
+name: "📖 文档改进"
+description: "提出关于文档的改进建议或报告错误。"
+title: "docs: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您花时间来改进我们的文档！
 
----
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: "您想改进或报告的问题是什么？"
+      description: "请清晰、简洁地描述问题。例如：某个链接失效、某个步骤不清晰、某个概念解释有误等。"
+    validations:
+      required: true
 
-**文档位置**
-请提供需要改进的文档路径或链接。
+  - type: textarea
+    id: suggested-solution
+    attributes:
+      label: "您的建议方案"
+      description: "您认为应该如何修正？请提供具体的修改建议。"
+    validations:
+      required: true
 
-**问题类型**
-- [ ] 内容错误
-- [ ] 内容过时
-- [ ] 内容缺失
-- [ ] 表述不清
-- [ ] 链接失效
-- [ ] 格式问题
-- [ ] 翻译问题
-
-**问题描述**
-清晰描述文档存在的问题。
-
-**建议改进**
-如果有具体的改进建议，请在此描述。
-
-**附加信息**
-任何其他相关信息。
+  - type: dropdown
+    id: document-scope
+    attributes:
+      label: "涉及的文档范围"
+      description: "这个问题主要影响哪个部分的文档？"
+      multiple: true
+      options:
+        - "README 主页"
+        - "Wiki"
+        - "实战案例"
+        - "教程与指南"
+        - "方法论与原则"
+        - "其他"
+    validations:
+      required: true

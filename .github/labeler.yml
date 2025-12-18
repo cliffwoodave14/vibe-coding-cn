@@ -1,45 +1,22 @@
-# 文档相关
+# .github/labeler.yml
+# 为 actions/labeler 定义标签规则
+
+# 文档相关的标签
 documentation:
   - changed-files:
-      - any-glob-to-any-file:
-          - '**/*.md'
-          - 'docs/**'
-          - 'i18n/**/documents/**'
+    - any-glob-to-any-file: ['i18n/**/*.md', 'README.md', 'CONTRIBUTING.md', 'LICENSE']
 
-# 提示词相关
-prompts:
+# CI/CD 工作流相关的标签
+cicd:
   - changed-files:
-      - any-glob-to-any-file:
-          - 'i18n/**/prompts/**'
-          - 'libs/external/prompts-library/**'
+    - any-glob-to-any-file: '.github/workflows/*'
 
-# 技能相关
-skills:
+# 提示词相关的标签
+prompt:
   - changed-files:
-      - any-glob-to-any-file:
-          - 'i18n/**/skills/**'
+    - any-glob-to-any-file: 'i18n/zh/prompts/**/*.md'
 
-# 工具相关
-tools:
+# 实战案例相关的标签
+example:
   - changed-files:
-      - any-glob-to-any-file:
-          - 'libs/**'
-          - 'backups/**'
-
-# 国际化
-i18n:
-  - changed-files:
-      - any-glob-to-any-file:
-          - 'i18n/**'
-
-# CI/CD
-ci:
-  - changed-files:
-      - any-glob-to-any-file:
-          - '.github/**'
-
-# 中文内容
-chinese:
-  - changed-files:
-      - any-glob-to-any-file:
-          - 'i18n/zh/**'
+    - any-glob-to-any-file: 'i18n/zh/documents/实战案例/**/*.md'

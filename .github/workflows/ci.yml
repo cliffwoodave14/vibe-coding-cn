@@ -1,60 +1,34 @@
+# .github/workflows/ci.yml
+# 持续集成工作流：用于代码风格检查和链接检查
+
 name: CI
 
 on:
   push:
-    branches: [main, master]
+    branches: [ main ]
   pull_request:
-    branches: [main, master]
+    branches: [ main ]
 
 jobs:
-  lint-markdown:
-    name: Lint Markdown
+  markdown-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - name: Install markdownlint-cli
-        run: npm install -g markdownlint-cli
-      - name: Run markdownlint
-        run: markdownlint '**/*.md' --ignore node_modules --ignore libs/external || true
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+    - name: Install markdownlint-cli
+      run: npm install -g markdownlint-cli
+    - name: Run markdownlint
+      run: markdownlint --config .github/lint_config.json '**/*.md'
 
-  check-links:
-    name: Check Links
+  link-checker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
       - name: Link Checker
-        uses: lycheeverse/lychee-action@v1
+        uses: lycheeverse/lychee-action@v1.5.0
         with:
-          args: --verbose --no-progress './**/*.md' --exclude-path libs/external
-          fail: false
-
-  validate-structure:
-    name: Validate Project Structure
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Check required files
-        run: |
-          echo "Checking required files..."
-          files=("README.md" "LICENSE" "CONTRIBUTING.md" "CODE_OF_CONDUCT.md" "AGENTS.md" "CLAUDE.md")
-          for file in "${files[@]}"; do
-            if [ -f "$file" ]; then
-              echo "✓ $file exists"
-            else
-              echo "✗ $file missing"
-            fi
-          done
-      - name: Check i18n structure
-        run: |
-          echo "Checking i18n directories..."
-          for lang in zh en; do
-            if [ -d "i18n/$lang" ]; then
-              echo "✓ i18n/$lang exists"
-            else
-              echo "✗ i18n/$lang missing"
-            fi
-          done
+          args: --verbose --no-progress './**/*.md'

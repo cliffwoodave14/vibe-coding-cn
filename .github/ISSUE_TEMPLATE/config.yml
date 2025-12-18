@@ -1,11 +1,8 @@
+# .github/ISSUE_TEMPLATE/config.yml
+# 配置 Issue 模板选择器
+
 blank_issues_enabled: true
 contact_links:
-  - name: 💬 Telegram 交流群
-    url: https://t.me/glue_coding
-    about: 加入我们的 Telegram 群组讨论问题
-  - name: 📢 Telegram 频道
-    url: https://t.me/tradecat_ai_channel
-    about: 关注项目更新和资讯
-  - name: 📖 在线提示词表格
-    url: https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351
-    about: 查看和使用提示词库
+  - name: 🤔 提问与讨论
+    url: https://github.com/tukuaiai/vibe-coding-cn/discussions
+    about: 请使用 GitHub Discussions 进行提问或发起讨论。
