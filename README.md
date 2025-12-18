@@ -66,10 +66,10 @@
   <a href="./libs/external/prompts-library/prompt_docs/"><img src="https://img.shields.io/badge/提示词-大全-orange?style=for-the-badge" alt="提示词大全"></a>
   <a href="https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1"><img src="https://img.shields.io/badge/提示词-在线表格(推荐)-blue?style=for-the-badge" alt="提示词在线表格（推荐）"></a>
   <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"><img src="https://img.shields.io/badge/系统提示词-仓库-slateblue?style=for-the-badge" alt="系统提示词仓库"></a>
-  <a href="./i18n/zh/documents/从零开始vibecoding/README.md"><img src="https://img.shields.io/badge/🚀_从零开始-新手入门-red?style=for-the-badge" alt="从零开始"></a>
-  <a href="./i18n/zh/documents/实战案例/README.md"><img src="https://img.shields.io/badge/🎬_实战案例-项目实操-orange?style=for-the-badge" alt="实战案例"></a>
-  <a href="./i18n/zh/documents/常见坑汇总/README.md"><img src="https://img.shields.io/badge/🕳️_常见坑-避坑指南-yellow?style=for-the-badge" alt="常见坑汇总"></a>
-  <a href="./i18n/zh/documents/外部资源聚合/README.md"><img src="https://img.shields.io/badge/📡_信息源-聚合-teal?style=for-the-badge" alt="信息源聚合"></a>
+  <a href="./i18n/zh/documents/01-入门指南/README.md"><img src="https://img.shields.io/badge/🚀_从零开始-新手入门-red?style=for-the-badge" alt="从零开始"></a>
+  <a href="./i18n/zh/documents/03-实战/README.md"><img src="https://img.shields.io/badge/🎬_实战案例-项目实操-orange?style=for-the-badge" alt="实战案例"></a>
+  <a href="./i18n/zh/documents/04-资源/常见坑汇总.md"><img src="https://img.shields.io/badge/🕳️_常见坑-避坑指南-yellow?style=for-the-badge" alt="常见坑汇总"></a>
+  <a href="./i18n/zh/documents/04-资源/外部资源聚合.md"><img src="https://img.shields.io/badge/📡_信息源-聚合-teal?style=for-the-badge" alt="信息源聚合"></a>
   <a href="./libs/external/chat-vault/README_CN.md"><img src="https://img.shields.io/badge/🔐_Chat_Vault-全部AI会话数据库-gold?style=for-the-badge" alt="Chat Vault"></a>
 </p>
 
