@@ -90,7 +90,7 @@
 
 ---
 
-<details open>
+<details>
 <summary><strong>⚡ 5 分钟快速开始</strong></summary>
 
 ## ⚡ 5 分钟快速开始
