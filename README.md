@@ -68,7 +68,7 @@
   <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"><img src="https://img.shields.io/badge/系统提示词-仓库-slateblue?style=for-the-badge" alt="系统提示词仓库"></a>
   <a href="./i18n/zh/documents/01-入门指南/README.md"><img src="https://img.shields.io/badge/🚀_从零开始-新手入门-red?style=for-the-badge" alt="从零开始"></a>
   <a href="./i18n/zh/documents/03-实战/README.md"><img src="https://img.shields.io/badge/🎬_实战案例-项目实操-orange?style=for-the-badge" alt="实战案例"></a>
-  <a href="./i18n/zh/documents/04-资源/README.md"><img src="https://img.shields.io/badge/🕳️_常见坑-避坑指南-yellow?style=for-the-badge" alt="常见坑汇总"></a>
+  <a href="./i18n/zh/documents/00-基础指南/常见坑汇总.md"><img src="https://img.shields.io/badge/🕳️_常见坑-避坑指南-yellow?style=for-the-badge" alt="常见坑汇总"></a>
   <a href="./i18n/zh/documents/04-资源/外部资源聚合.md"><img src="https://img.shields.io/badge/📡_信息源-聚合-teal?style=for-the-badge" alt="信息源聚合"></a>
   <a href="./libs/external/chat-vault/README_CN.md"><img src="https://img.shields.io/badge/🔐_Chat_Vault-全部AI会话数据库-gold?style=for-the-badge" alt="Chat Vault"></a>
 </p>
@@ -308,11 +308,11 @@
 *   [**prompts-library 工具说明**](./libs/external/prompts-library/): 支持 Excel 与 Markdown 格式互转，包含数百个精选提示词。
 *   [**coding_prompts 集合**](./i18n/zh/prompts/coding_prompts/): 适用于 Vibe Coding 流程的专用提示词。
 *   [**系统提示词构建原则**](./i18n/zh/documents/00-基础指南/系统提示词构建原则.md): 构建高效 AI 系统提示词的综合指南。
-*   [**开发经验总结**](./i18n/zh/documents/00-基础指南/开发经验.md): 变量命名、文件结构、编码规范、架构原则等。
+*   [**开发经验总结**](./i18n/zh/documents/02-方法论/开发经验.md): 变量命名、文件结构、编码规范、架构原则等。
 *   [**通用项目架构模板**](./i18n/zh/documents/04-资源/通用项目架构模板.md): 多种项目类型的标准目录结构。
 *   [**Augment MCP 配置文档**](./i18n/zh/documents/02-方法论/auggie-mcp配置文档.md): Augment 上下文引擎配置说明。
 *   [**system_prompts 集合**](./i18n/zh/prompts/system_prompts/): AI 开发的系统提示词，含多版本开发规范。
-*   [**外部资源聚合**](./i18n/zh/documents/外部资源聚合/): GitHub 精选仓库、AI 工具平台、提示词资源、优质博主汇总。
+*   [**外部资源聚合**](./i18n/zh/documents/04-资源/外部资源聚合.md): GitHub 精选仓库、AI 工具平台、提示词资源、优质博主汇总。
 
 ---
 
