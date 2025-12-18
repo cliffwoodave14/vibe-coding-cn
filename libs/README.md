@@ -27,8 +27,11 @@ libs/
 │   └── .gitkeep
 └── external/
     ├── README.md
+    ├── chat-vault/
     ├── prompts-library/
+    ├── l10n-tool/
     ├── my-nvim/
+    ├── MCPlayerTransfer/
     ├── XHS-image-to-PDF-conversion/
     └── .gitkeep
 ```
@@ -57,6 +60,7 @@ libs/
 
 ## 常用入口
 
+- AI 聊天记录保存：[`external/chat-vault/`](./external/chat-vault/)（支持 Codex/Kiro/Gemini/Claude CLI）
 - 提示词批量管理：[`external/prompts-library/`](./external/prompts-library/)（配合 `../prompts/` 使用）
 - 备份工具：优先使用仓库根目录的 `backups/`（当前与 `libs/common/utils/backups/` 内容一致）
 

@@ -221,6 +221,7 @@
     *   [**在线提示词数据库**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1): 包含数百个适用于各场景的用户及系统提示词的在线表格。
     *   [**第三方系统提示词仓库**](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools): 汇集了多种 AI 工具的系统提示词。
 *   **项目内部文档**:
+    *   [**Chat Vault**](../../libs/external/chat-vault/): AI 聊天记录保存工具，支持 Codex/Kiro/Gemini/Claude CLI。
     *   [**prompts-library 工具说明**](./libs/external/prompts-library/): 该工具支持在 Excel 和 Markdown 格式之间转换提示词，并包含数百个精选提示词。
     *   [**coding_prompts 集合**](./i18n/zh/prompts/coding_prompts/): 适用于 Vibe Coding 流程的专用提示词。
     *   [**系统提示词构建原则**](./documents/方法论与原则/系统提示词构建原则.md): 关于如何构建高效、可靠的 AI 系统提示词的综合指南。

@@ -303,6 +303,7 @@
 ### 项目内部文档
 
 *   [**胶水编程 (Glue Coding)**](./i18n/zh/documents/胶水编程/): 软件工程的圣杯与银弹，Vibe Coding 的终极进化形态。
+*   [**Chat Vault**](./libs/external/chat-vault/): AI 聊天记录保存工具，支持 Codex/Kiro/Gemini/Claude CLI。
 *   [**prompts-library 工具说明**](./libs/external/prompts-library/): 支持 Excel 与 Markdown 格式互转，包含数百个精选提示词。
 *   [**coding_prompts 集合**](./i18n/zh/prompts/coding_prompts/): 适用于 Vibe Coding 流程的专用提示词。
 *   [**系统提示词构建原则**](./i18n/zh/documents/方法论与原则/系统提示词构建原则.md): 构建高效 AI 系统提示词的综合指南。
