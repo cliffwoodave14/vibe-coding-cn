@@ -61,14 +61,14 @@
 <p>
   <a href="./prompts/"><img src="https://img.shields.io/badge/Prompts-Curated-purple?style=for-the-badge" alt="Curated Prompts"></a>
   <a href="./skills/"><img src="https://img.shields.io/badge/Skills-Collection-forestgreen?style=for-the-badge" alt="Skills Collection"></a>
-  <a href="../../libs/external/prompts-library/prompt_docs/"><img src="https://img.shields.io/badge/Prompts-Library-orange?style=for-the-badge" alt="Prompts Library"></a>
+  <a href="../.../../libs/external/prompts-library/prompt_docs/"><img src="https://img.shields.io/badge/Prompts-Library-orange?style=for-the-badge" alt="Prompts Library"></a>
   <a href="https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1"><img src="https://img.shields.io/badge/Prompts-Online_Sheet_(Recommended)-blue?style=for-the-badge" alt="Online Prompt Sheet"></a>
   <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"><img src="https://img.shields.io/badge/System_Prompts-Repo-slateblue?style=for-the-badge" alt="System Prompts Repo"></a>
   <a href="./documents/01-getting-started/README.md"><img src="https://img.shields.io/badge/🚀_Getting_Started-Beginners-red?style=for-the-badge" alt="Getting Started"></a>
   <a href="./documents/03-practice/README.md"><img src="https://img.shields.io/badge/🎬_Practice-Projects-orange?style=for-the-badge" alt="Practice Projects"></a>
   <a href="./documents/00-fundamentals/Common%20Pitfalls.md"><img src="https://img.shields.io/badge/🕳️_Common_Pitfalls-Guide-yellow?style=for-the-badge" alt="Common Pitfalls"></a>
   <a href="./documents/04-resources/External%20Resource%20Aggregation.md"><img src="https://img.shields.io/badge/📡_Resources-Aggregation-teal?style=for-the-badge" alt="Resource Aggregation"></a>
-  <a href="../../libs/external/chat-vault/README.md"><img src="https://img.shields.io/badge/🔐_Chat_Vault-AI_Session_DB-gold?style=for-the-badge" alt="Chat Vault"></a>
+  <a href="../.../../libs/external/chat-vault/README.md"><img src="https://img.shields.io/badge/🔐_Chat_Vault-AI_Session_DB-gold?style=for-the-badge" alt="Chat Vault"></a>
 </p>
 
 [📋 Tools & Resources](#-the-tools-qi)
@@ -80,6 +80,43 @@
 AI interpretation link for this repository: [zread.ai/tukuaiai/vibe-coding-cn](https://zread.ai/tukuaiai/vibe-coding-cn/1-overview)
 
 </div>
+
+## 🎲 Preface
+
+**This is a constantly growing and self-negating project. All current experience and capabilities may become meaningless as AI evolves. So always maintain an AI-first mindset, don't be complacent, all experience may become obsolete - view it dialectically 🙏🙏🙏**
+
+---
+
+<details>
+<summary><strong>⚡ 5-Minute Quick Start</strong></summary>
+
+## ⚡ 5-Minute Quick Start
+
+> Already have network and development environment? Start Vibe Coding directly!
+
+**Step 1**: Copy the prompt below and paste it into [Claude](https://claude.ai/) or [ChatGPT](https://chatgpt.com/)
+
+```
+You are a professional AI programming assistant. I want to develop a project using the Vibe Coding approach.
+
+Please ask me first:
+1. What project do you want to build? (one sentence description)
+2. What programming languages are you familiar with? (it's okay if you're not familiar with any)
+3. What is your operating system?
+
+Then help me:
+1. Recommend the simplest tech stack
+2. Generate project structure
+3. Guide me step by step to complete development
+
+Requirement: After completing each step, ask me if it was successful before continuing to the next step.
+```
+
+**Step 2**: Follow AI's guidance to turn your ideas into reality 🚀
+
+**That's it!** Read on for more advanced content 👇
+
+</details>
 
 ---
 
@@ -261,12 +298,12 @@ It is recommended to only choose models from the first tier for complex tasks to
 *   **Core Resources**:
     *   [**Meta-Prompt Library**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=1770874220#gid=1770874220): A collection of advanced prompts for generating prompts.
     *   [**Meta-Skill**](./skills/claude-skills/SKILL.md): A skill for generating skills.
-    *   [**Skills Library**](./i18n/en/skills): A modular skill repository that can be directly integrated.
+    *   [**Skills Library**](./skills): A modular skill repository that can be directly integrated.
     *   [**Skill Generator**](https://github.com/yusufkaraaslan/Skill_Seekers): A tool to convert any material into agent-usable skills.
     *   [**Online Prompt Database**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1): An online table containing hundreds of user and system prompts for various scenarios.
     *   [**Third-party System Prompt Repository**](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools): Gathers system prompts from various AI tools.
 *   **Internal Project Documentation**:
-    *   [**prompts-library Tool Description**](./libs/external/prompts-library/): This tool supports converting prompts between Excel and Markdown formats, and includes hundreds of selected prompts.
+    *   [**prompts-library Tool Description**](../../libs/external/prompts-library/): This tool supports converting prompts between Excel and Markdown formats, and includes hundreds of selected prompts.
     *   [**coding_prompts Collection**](./prompts/coding_prompts/): Dedicated prompts for the Vibe Coding process.
     *   [**System Prompt Construction Principles**](./documents/00-fundamentals/System%20Prompt%20Construction%20Principles.md): A comprehensive guide on how to build efficient and reliable AI system prompts.
     *   [**Development Experience Summary**](./documents/00-fundamentals/Development%20Experience.md): Includes practical experience on variable naming, file structure, coding standards, and architectural principles.
