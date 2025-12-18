@@ -9,6 +9,4 @@ Tools, tutorials, and development guides.
 - [auggie-mcp Configuration Document](./auggie-mcp%20Configuration%20Document.md)
 - [SSH via Mobile with FRP](./How%20to%20SSH%20to%20Local%20Computer%20from%20Any%20Location%20via%20Mobile%2C%20Based%20on%20FRP%20Implementation.md)
 - [Gemini Headless Mode Translation Guide](./Gemini%20Headless%20Mode%20Translation%20Guide.md)
-- [Learning Experience](./Learning%20Experience.md)
 - [Vibe Coding Experience Collection](./vibe-coding-experience-collection.md)
-- [telegram-dev/](./telegram-dev/) - Telegram development resources
