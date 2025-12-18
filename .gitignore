@@ -104,3 +104,4 @@ logs/
 backups/gz/
 *.pdf
 1
+backups/
