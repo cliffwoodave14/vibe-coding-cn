@@ -26,7 +26,13 @@ i18n/zh/prompts/
 │   │   ├── ...
 │   │   ├── 9/AGENTS.md             # v9 当前没有 CLAUDE.md
 │   │   └── 10/CLAUDE.md
-│   └── ...
+│   └── system-prompts-and-models-of-ai-tools-main-cn/  # AI 工具系统提示词（中文翻译版）
+│       ├── Anthropic/              # Claude Code 等
+│       ├── Cursor Prompts/         # Cursor Agent/Chat
+│       ├── Windsurf/               # Windsurf Wave 11
+│       ├── VSCode Agent/           # VS Code Copilot
+│       ├── Kiro/                   # Kiro Vibe/Spec 模式
+│       └── ...                     # 更多 AI 工具提示词
 └── user_prompts/                   # 用户自用/一次性提示词
     ├── ASCII图生成.md
     ├── 数据管道.md
@@ -43,6 +49,23 @@ i18n/zh/prompts/
   - `v10`：偏 Augment/上下文引擎的规范化约束
 - 注意：`v9` 目录目前仅占位（无 `CLAUDE.md`）
 
+### AI 工具系统提示词集合（中文翻译版）
+
+`system_prompts/system-prompts-and-models-of-ai-tools-main-cn/` 收录了主流 AI 编程工具的系统提示词（中文翻译），包括：
+
+| 工具 | 目录 | 说明 |
+|:---|:---|:---|
+| Claude Code | `Anthropic/` | Claude Code 2.0 系统提示词 |
+| Cursor | `Cursor Prompts/` | Agent/Chat 多版本提示词 |
+| Windsurf | `Windsurf/` | Wave 11 提示词与工具定义 |
+| VS Code Copilot | `VSCode Agent/` | GPT-4/5、Gemini、Claude 等模型配置 |
+| Kiro | `Kiro/` | Vibe/Spec 模式提示词 |
+| Devin | `Devin AI/` | 自主 AI 工程师提示词 |
+| Lovable | `Lovable/` | Agent 提示词与工具 |
+| Replit | `Replit/` | Agent 提示词 |
+| 更多... | 见目录 | Bolt、Cline、Gemini CLI 等 |
+
+> 来源：[x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
 ## `coding_prompts/`：任务级提示词（把流程跑通）
 
 `coding_prompts/` 面向「一次任务」：从需求澄清、计划拆解到交付与复盘。建议把它当作工作流脚本库：
