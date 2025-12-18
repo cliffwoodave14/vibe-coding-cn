@@ -90,6 +90,9 @@
 
 ---
 
+<details open>
+<summary><strong>⚡ 5 分钟快速开始</strong></summary>
+
 ## ⚡ 5 分钟快速开始
 
 > 已有网络和开发环境？直接开始 Vibe Coding！
@@ -116,6 +119,7 @@
 
 **就这么简单！** 更多进阶内容请继续阅读 👇
 
+</details>
 
 ---
 
