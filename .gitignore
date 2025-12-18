@@ -30,6 +30,7 @@ MANIFEST
 *.pyc
 *.png
 *.jpg
+backups/
 
 # Virtual Environment
 .venv
