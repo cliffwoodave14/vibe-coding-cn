@@ -68,7 +68,7 @@
   <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"><img src="https://img.shields.io/badge/系统提示词-仓库-slateblue?style=for-the-badge" alt="系统提示词仓库"></a>
   <a href="./i18n/zh/documents/01-入门指南/README.md"><img src="https://img.shields.io/badge/🚀_从零开始-新手入门-red?style=for-the-badge" alt="从零开始"></a>
   <a href="./i18n/zh/documents/03-实战/README.md"><img src="https://img.shields.io/badge/🎬_实战案例-项目实操-orange?style=for-the-badge" alt="实战案例"></a>
-  <a href="./i18n/zh/documents/04-资源/常见坑汇总.md"><img src="https://img.shields.io/badge/🕳️_常见坑-避坑指南-yellow?style=for-the-badge" alt="常见坑汇总"></a>
+  <a href="./i18n/zh/documents/04-资源/README.md"><img src="https://img.shields.io/badge/🕳️_常见坑-避坑指南-yellow?style=for-the-badge" alt="常见坑汇总"></a>
   <a href="./i18n/zh/documents/04-资源/外部资源聚合.md"><img src="https://img.shields.io/badge/📡_信息源-聚合-teal?style=for-the-badge" alt="信息源聚合"></a>
   <a href="./libs/external/chat-vault/README_CN.md"><img src="https://img.shields.io/badge/🔐_Chat_Vault-全部AI会话数据库-gold?style=for-the-badge" alt="Chat Vault"></a>
 </p>
@@ -128,10 +128,10 @@
 
 完全新手？按顺序完成以下步骤：
 
-0. [00-Vibe Coding 哲学原理](./i18n/zh/documents/从零开始vibecoding/00-Vibe%20Coding%20哲学原理.md) - 理解核心理念
-1. [01-网络环境配置](./i18n/zh/documents/从零开始vibecoding/01-网络环境配置.md) - 配置网络访问
-2. [02-开发环境搭建](./i18n/zh/documents/从零开始vibecoding/02-开发环境搭建.md) - 复制提示词给 AI，让 AI 指导你搭建环境
-3. [03-IDE配置](./i18n/zh/documents/从零开始vibecoding/03-IDE配置.md) - 配置 VS Code 编辑器
+0. [00-Vibe Coding 哲学原理](./i18n/zh/documents/01-入门指南/00-Vibe%20Coding%20哲学原理.md) - 理解核心理念
+1. [01-网络环境配置](./i18n/zh/documents/01-入门指南/01-网络环境配置.md) - 配置网络访问
+2. [02-开发环境搭建](./i18n/zh/documents/01-入门指南/02-开发环境搭建.md) - 复制提示词给 AI，让 AI 指导你搭建环境
+3. [03-IDE配置](./i18n/zh/documents/01-入门指南/03-IDE配置.md) - 配置 VS Code 编辑器
 
 ---
 
@@ -150,7 +150,7 @@
 
 **核心理念**：能抄不写，能连不造，能复用不原创。
 
-👉 [深入了解胶水编程](./i18n/zh/documents/胶水编程/README.md)
+👉 [深入了解胶水编程](./i18n/zh/documents/00-基础指南/胶水编程.md)
 
 </details>
 
@@ -170,7 +170,7 @@
 
 该思想的核心是构建一个能够**自我优化**的 AI 系统。其递归本质可分解为以下步骤：
 
-> 延伸阅读：[A Formalization of Recursive Self-Optimizing Generative Systems](./i18n/zh/documents/方法论与原则/A%20Formalization%20of%20Recursive%20Self-Optimizing%20Generative%20Systems.md)
+> 延伸阅读：[A Formalization of Recursive Self-Optimizing Generative Systems](./i18n/zh/documents/00-基础指南/A%20Formalization%20of%20Recursive%20Self-Optimizing%20Generative%20Systems.md)
 
 #### 1. 定义核心角色：
 
@@ -285,11 +285,11 @@
 *   [**第三方系统提示词学习库**](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools): 用于学习和参考其他 AI 工具的系统提示词。
 *   [**Skills 制作器**](https://github.com/yusufkaraaslan/Skill_Seekers): 可根据需求生成定制化 Skills 的工具。
 *   [**元提示词**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=1770874220#gid=1770874220): 用于生成提示词的高级提示词。
-*   [**通用项目架构模板**](./i18n/zh/documents/模板与资源/通用项目架构模板.md): 可用于快速搭建标准化的项目目录结构。
+*   [**通用项目架构模板**](./i18n/zh/documents/04-资源/通用项目架构模板.md): 可用于快速搭建标准化的项目目录结构。
 *   [**元技能：Skills 的 Skills**](./i18n/zh/skills/claude-skills/SKILL.md): 用于生成 Skills 的元技能。
-*   [**tmux快捷键大全**](./i18n/zh/documents/教程与指南/tmux快捷键大全.md): tmux 的快捷键参考文档。
-*   [**LazyVim快捷键大全**](./i18n/zh/documents/教程与指南/LazyVim快捷键大全.md): LazyVim 的快捷键参考文档。
-*   [**手机远程 Vibe Coding**](./i18n/zh/documents/教程与指南/关于手机ssh任意位置链接本地计算机，基于frp实现的方法.md): 基于 frp 实现手机 SSH 远程控制本地电脑进行 Vibe Coding。
+*   [**tmux快捷键大全**](./i18n/zh/documents/02-方法论/tmux快捷键大全.md): tmux 的快捷键参考文档。
+*   [**LazyVim快捷键大全**](./i18n/zh/documents/02-方法论/LazyVim快捷键大全.md): LazyVim 的快捷键参考文档。
+*   [**手机远程 Vibe Coding**](./i18n/zh/documents/02-方法论/关于手机ssh任意位置链接本地计算机，基于frp实现的方法.md): 基于 frp 实现手机 SSH 远程控制本地电脑进行 Vibe Coding。
 
 ### 外部教程与资源
 
@@ -303,14 +303,14 @@
 
 ### 项目内部文档
 
-*   [**胶水编程 (Glue Coding)**](./i18n/zh/documents/胶水编程/): 软件工程的圣杯与银弹，Vibe Coding 的终极进化形态。
+*   [**胶水编程 (Glue Coding)**](./i18n/zh/documents/00-基础指南/): 软件工程的圣杯与银弹，Vibe Coding 的终极进化形态。
 *   [**Chat Vault**](./libs/external/chat-vault/): AI 聊天记录保存工具，支持 Codex/Kiro/Gemini/Claude CLI。
 *   [**prompts-library 工具说明**](./libs/external/prompts-library/): 支持 Excel 与 Markdown 格式互转，包含数百个精选提示词。
 *   [**coding_prompts 集合**](./i18n/zh/prompts/coding_prompts/): 适用于 Vibe Coding 流程的专用提示词。
-*   [**系统提示词构建原则**](./i18n/zh/documents/方法论与原则/系统提示词构建原则.md): 构建高效 AI 系统提示词的综合指南。
-*   [**开发经验总结**](./i18n/zh/documents/方法论与原则/开发经验.md): 变量命名、文件结构、编码规范、架构原则等。
-*   [**通用项目架构模板**](./i18n/zh/documents/模板与资源/通用项目架构模板.md): 多种项目类型的标准目录结构。
-*   [**Augment MCP 配置文档**](./i18n/zh/documents/教程与指南/auggie-mcp配置文档.md): Augment 上下文引擎配置说明。
+*   [**系统提示词构建原则**](./i18n/zh/documents/00-基础指南/系统提示词构建原则.md): 构建高效 AI 系统提示词的综合指南。
+*   [**开发经验总结**](./i18n/zh/documents/00-基础指南/开发经验.md): 变量命名、文件结构、编码规范、架构原则等。
+*   [**通用项目架构模板**](./i18n/zh/documents/04-资源/通用项目架构模板.md): 多种项目类型的标准目录结构。
+*   [**Augment MCP 配置文档**](./i18n/zh/documents/02-方法论/auggie-mcp配置文档.md): Augment 上下文引擎配置说明。
 *   [**system_prompts 集合**](./i18n/zh/prompts/system_prompts/): AI 开发的系统提示词，含多版本开发规范。
 *   [**外部资源聚合**](./i18n/zh/documents/外部资源聚合/): GitHub 精选仓库、AI 工具平台、提示词资源、优质博主汇总。
 
@@ -353,9 +353,9 @@
 ├── CLAUDE.md                    # AI 助手的核心行为准则或配置。
 │
 ├── i18n/zh/documents/           # 存放各类说明文档、经验总结和配置详细说明。
-│   ├── 方法论与原则/                # 方法论与原则
-│   ├── 模板与资源/                  # 模板与资源
-│   └── 教程与指南/                  # 教程与指南
+│   ├── 00-基础指南/                # 方法论与原则
+│   ├── 04-资源/                  # 模板与资源
+│   └── 02-方法论/                  # 教程与指南
 │
 ├── libs/                        # 通用库代码，用于项目内部模块化。
 │   ├── common/                  # 通用功能模块。
@@ -420,7 +420,7 @@ i18n/zh/prompts/
   assistant_prompts/     # 辅助/配合型提示
   user_prompts/          # 可复用的用户侧提示词
 i18n/zh/documents/
-  模板与资源/代码组织.md, 模板与资源/通用项目架构模板.md, 方法论与原则/开发经验.md, 方法论与原则/系统提示词构建原则.md 等知识库
+  04-资源/代码组织.md, 04-资源/通用项目架构模板.md, 00-基础指南/开发经验.md, 00-基础指南/系统提示词构建原则.md 等知识库
 backups/
   一键备份.sh, 快速备份.py  # 本地/远端快照脚本
 ```
