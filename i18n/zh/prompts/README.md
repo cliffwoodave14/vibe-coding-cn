@@ -51,7 +51,7 @@ i18n/zh/prompts/
 
 ### AI 工具系统提示词集合（中文翻译版）
 
-`system_prompts/system-prompts-and-models-of-ai-tools-main-cn/` 收录了主流 AI 编程工具的系统提示词（中文翻译），包括：
+`system_prompts/system-prompts-and-models-of-ai-tools-main-cn/` 收录了主流 AI 编程工具的系统提示词，**由 [x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) 翻译为中文**，包括：
 
 | 工具 | 目录 | 说明 |
 |:---|:---|:---|
@@ -65,7 +65,8 @@ i18n/zh/prompts/
 | Replit | `Replit/` | Agent 提示词 |
 | 更多... | 见目录 | Bolt、Cline、Gemini CLI 等 |
 
-> 来源：[x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
+> 📌 原仓库：[x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
+
 ## `coding_prompts/`：任务级提示词（把流程跑通）
 
 `coding_prompts/` 面向「一次任务」：从需求澄清、计划拆解到交付与复盘。建议把它当作工作流脚本库：
