@@ -1,6 +1,8 @@
 # 🔗 外部资源聚合
 
 > Vibe Coding 相关的优质外部资源汇总
+>
+> 最后更新：2025-12-18
 
 ---
 
@@ -84,8 +86,20 @@
 |:---|:---|:---|
 | Claude Code | `claude` | Anthropic 官方 CLI |
 | Codex CLI | `codex` | OpenAI 官方 CLI |
-| Gemini CLI | `gemini` | Google 官方 CLI，免费 |
-| Aider | `aider` | 开源 AI 结对编程 |
+| Gemini CLI | `gemini` | Google 官方 CLI，免费 1000 次/天 |
+| Aider | `aider` | 开源 AI 结对编程，Git 集成 |
+| OpenCode | `opencode` | 开源终端 AI 助手，Go 编写 |
+| Cline CLI | `cline` | VS Code 扩展配套 CLI |
+
+### 🤖 AI Agent 平台
+
+| 工具 | 链接 | 说明 |
+|:---|:---|:---|
+| Devin | [devin.ai](https://devin.ai/) | 自主 AI 软件工程师，$20/月 |
+| Replit Agent | [replit.com](https://replit.com/) | 端到端应用构建 Agent |
+| v0 by Vercel | [v0.dev](https://v0.dev/) | AI UI 生成，React + Tailwind |
+| Bolt.new | [bolt.new](https://bolt.new/) | 浏览器内全栈应用构建 |
+| Lovable | [lovable.dev](https://lovable.dev/) | 原 GPT Engineer，自然语言建应用 |
 
 ### 🆓 免费资源
 
@@ -105,6 +119,10 @@
 | Kiro | [kiro.dev](https://kiro.dev/) | 免费 Claude Opus 4.5 |
 | Windsurf | [windsurf.com](https://windsurf.com/) | 新用户免费额度 |
 | GitHub Copilot | [github.com/copilot](https://github.com/copilot) | 学生/开源免费 |
+| Codeium | [codeium.com](https://codeium.com/) | 免费 AI 代码补全 |
+| Tabnine | [tabnine.com](https://www.tabnine.com/) | 免费基础版 |
+| Continue | [continue.dev](https://continue.dev/) | 开源 AI 代码助手 |
+| Bito | [bito.ai](https://bito.ai/) | 免费 AI 代码助手 |
 
 ### 🎨 AI 生成工具
 
@@ -112,9 +130,15 @@
 |:---|:---|:---|
 | 图片 | Midjourney | [midjourney.com](https://midjourney.com/) |
 | 图片 | DALL-E 3 | [ChatGPT](https://chatgpt.com/) |
+| 图片 | Ideogram | [ideogram.ai](https://ideogram.ai/) |
+| 图片 | Leonardo AI | [leonardo.ai](https://leonardo.ai/) |
 | 音乐 | Suno | [suno.ai](https://suno.ai/) |
+| 音乐 | Udio | [udio.com](https://www.udio.com/) |
 | 音效 | ElevenLabs | [elevenlabs.io](https://elevenlabs.io/) |
 | 视频 | Sora | [sora.com](https://sora.com/) |
+| 视频 | Runway | [runwayml.com](https://runwayml.com/) |
+| 视频 | Kling | [klingai.com](https://klingai.com/) |
+| 3D | Meshy | [meshy.ai](https://www.meshy.ai/) |
 
 </details>
 
@@ -170,6 +194,9 @@
 |:---|:---|:---|
 | Cursor Discord | [discord.gg/cursor](https://discord.gg/cursor) | |
 | Anthropic Discord | [discord.gg/anthropic](https://discord.gg/anthropic) | |
+| Cline Discord | [discord.gg/cline](https://discord.gg/cline) | |
+| Aider Discord | [discord.gg/aider](https://discord.gg/Tv2uQnR88V) | |
+| Windsurf Discord | [discord.gg/codeium](https://discord.gg/codeium) | |
 
 ### Reddit
 
@@ -206,6 +233,9 @@
 | open-interpreter | [GitHub](https://github.com/OpenInterpreter/open-interpreter) | 本地代码解释器 |
 | continue | [GitHub](https://github.com/continuedev/continue) | 开源 AI 代码助手 |
 | spec-kit | [GitHub](https://github.com/github/spec-kit) | GitHub 官方 Spec-Driven 开发工具包 |
+| opencode | [GitHub](https://github.com/opencode-ai/opencode) | 开源终端 AI 助手，Go 编写 |
+| cline | [GitHub](https://github.com/cline/cline) | VS Code 自主编程 Agent |
+| gemini-cli | [GitHub](https://github.com/google-gemini/gemini-cli) | Google 官方 CLI |
 
 ### IDE 插件
 
@@ -213,6 +243,8 @@
 |:---|:---|:---|
 | copilot.vim | [GitHub](https://github.com/github/copilot.vim) | GitHub Copilot Vim 插件 |
 | codeium | [GitHub](https://github.com/Exafunction/codeium.vim) | 免费 AI 代码补全 |
+| avante.nvim | [GitHub](https://github.com/yetone/avante.nvim) | Neovim AI 助手插件 |
+| codecompanion.nvim | [GitHub](https://github.com/olimorris/codecompanion.nvim) | Neovim AI 编程伴侣 |
 
 ### 提示词工程
 
@@ -233,6 +265,9 @@
 | crewai | [GitHub](https://github.com/joaomdmoura/crewAI) | AI Agent 协作框架 |
 | dspy | [GitHub](https://github.com/stanfordnlp/dspy) | 编程式 LLM 框架 |
 | MCAF | [mcaf.managed-code.com](https://mcaf.managed-code.com/) | AI 编程框架，定义 AGENTS.md 规范 |
+| smolagents | [GitHub](https://github.com/huggingface/smolagents) | HuggingFace 轻量 Agent 框架 |
+| pydantic-ai | [GitHub](https://github.com/pydantic/pydantic-ai) | 类型安全 AI Agent 框架 |
+| browser-use | [GitHub](https://github.com/browser-use/browser-use) | AI 浏览器自动化 |
 
 ### MCP 相关
 
@@ -248,6 +283,8 @@
 | prompt-engineering-guide | [GitHub](https://github.com/dair-ai/Prompt-Engineering-Guide) | 提示工程指南 |
 | generative-ai-for-beginners | [GitHub](https://github.com/microsoft/generative-ai-for-beginners) | 微软生成式 AI 教程 |
 | llm-course | [GitHub](https://github.com/mlabonne/llm-course) | LLM 学习路线 |
+| ai-engineering | [GitHub](https://github.com/chiphuyen/aie-book) | AI 工程实践 |
+| awesome-llm | [GitHub](https://github.com/Hannibal046/Awesome-LLM) | LLM 资源汇总 |
 
 ### 实用工具
 
@@ -256,6 +293,10 @@
 | ollama | [GitHub](https://github.com/ollama/ollama) | 本地大模型运行 |
 | localai | [GitHub](https://github.com/mudler/LocalAI) | 本地 AI API |
 | text-generation-webui | [GitHub](https://github.com/oobabooga/text-generation-webui) | 文本生成 WebUI |
+| lmstudio | [lmstudio.ai](https://lmstudio.ai/) | 本地模型 GUI 工具 |
+| jan | [GitHub](https://github.com/janhq/jan) | 开源本地 AI 助手 |
+| repomix | [GitHub](https://github.com/yamadashy/repomix) | 代码库打包为 AI 上下文 |
+| gitingest | [GitHub](https://github.com/cyclotruc/gitingest) | Git 仓库转 AI 友好格式 |
 
 </details>
 
@@ -269,10 +310,13 @@
 | 工具 | 链接 | 说明 |
 |:---|:---|:---|
 | VS Code | [code.visualstudio.com](https://code.visualstudio.com/) | 主流编辑器 |
-| Cursor | [cursor.com](https://cursor.com/) | AI 原生编辑器 |
+| Cursor | [cursor.com](https://cursor.com/) | AI 原生编辑器，基于 VS Code |
+| Windsurf | [windsurf.com](https://windsurf.com/) | Codeium 出品 AI IDE |
 | Neovim | [neovim.io](https://neovim.io/) | 键盘流首选 |
 | LazyVim | [lazyvim.org](https://www.lazyvim.org/) | Neovim 配置框架 |
-| Zed | [zed.dev](https://zed.dev/) | 高性能编辑器 |
+| Zed | [zed.dev](https://zed.dev/) | 高性能编辑器，支持 AI |
+| Void | [voideditor.com](https://voideditor.com/) | 开源 AI 代码编辑器 |
+| PearAI | [trypear.ai](https://trypear.ai/) | 开源 AI IDE |
 
 ### 终端工具
 
@@ -368,7 +412,10 @@
 
 | 仓库 | 链接 | 说明 |
 |:---|:---|:---|
-| | | 待补充 |
+| awesome-cursorrules | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) | Cursor Rules 集合 |
+| cursor.directory | [cursor.directory](https://cursor.directory/) | Cursor Rules 在线目录 |
+| dotcursorrules | [GitHub](https://github.com/pontusab/dotcursorrules) | .cursorrules 模板 |
+| claude-code-system-prompts | [GitHub](https://github.com/Piebald-AI/claude-code-system-prompts) | Claude Code 系统提示词 |
 
 </details>
 
@@ -381,7 +428,11 @@
 
 | 仓库 | 链接 | 说明 |
 |:---|:---|:---|
-| | | 待补充 |
+| create-t3-app | [GitHub](https://github.com/t3-oss/create-t3-app) | 全栈 TypeScript 脚手架 |
+| create-next-app | [nextjs.org](https://nextjs.org/docs/app/api-reference/cli/create-next-app) | Next.js 官方脚手架 |
+| vite | [GitHub](https://github.com/vitejs/vite) | 现代前端构建工具 |
+| fastapi-template | [GitHub](https://github.com/tiangolo/full-stack-fastapi-template) | FastAPI 全栈模板 |
+| shadcn/ui | [ui.shadcn.com](https://ui.shadcn.com/) | React UI 组件库 |
 
 </details>
 
@@ -394,7 +445,20 @@
 
 | 工具 | 链接 | 说明 |
 |:---|:---|:---|
-| | | 待补充 |
+| RAGFlow | [GitHub](https://github.com/infiniflow/ragflow) | 开源 RAG 引擎 |
+| Dify | [GitHub](https://github.com/langgenius/dify) | LLM 应用开发平台 |
+| AnythingLLM | [GitHub](https://github.com/Mintplex-Labs/anything-llm) | 私有文档 AI 助手 |
+| Quivr | [GitHub](https://github.com/QuivrHQ/quivr) | 个人知识库 AI |
+| PrivateGPT | [GitHub](https://github.com/zylon-ai/private-gpt) | 私有文档问答 |
+
+### 文档工具
+
+| 工具 | 链接 | 说明 |
+|:---|:---|:---|
+| Docusaurus | [docusaurus.io](https://docusaurus.io/) | Meta 开源文档框架 |
+| VitePress | [vitepress.dev](https://vitepress.dev/) | Vue 驱动静态站点 |
+| Mintlify | [mintlify.com](https://mintlify.com/) | AI 文档生成 |
+| Zread | [zread.ai](https://zread.ai/) | AI 仓库阅读工具 |
 
 </details>
 
