@@ -250,6 +250,32 @@ Leverage GPT's internet capabilities (e.g., Grok):
 * Check for reusable components.
 * Compare quality, implementation methods, licenses, etc.
 
+#### 🔍 Using GitHub Topics to Find the Right Wheels
+
+**Method**: Ask AI to find the GitHub Topic for your requirement, then browse popular repos under that topic.
+
+**Example Prompt**:
+```
+I need to implement [your requirement], please help me:
+1. Analyze what technical areas this requirement might involve
+2. Recommend corresponding GitHub Topics keywords
+3. Provide GitHub Topics links (format: https://github.com/topics/xxx)
+```
+
+**Common Topics Examples**:
+| Requirement | Recommended Topic |
+|:---|:---|
+| Telegram Bot | [telegram-bot](https://github.com/topics/telegram-bot) |
+| Data Analysis | [data-analysis](https://github.com/topics/data-analysis) |
+| AI Agent | [ai-agent](https://github.com/topics/ai-agent) |
+| CLI Tool | [cli](https://github.com/topics/cli) |
+| Web Scraping | [web-scraping](https://github.com/topics/web-scraping) |
+
+**Advanced Tips**:
+- [GitHub Topics Homepage](https://github.com/topics) - Browse all topics
+- [GitHub Trending](https://github.com/trending) - Discover hot new projects
+- Combine multiple Topics: `https://github.com/topics/python?q=telegram`
+
 ### **4.4 Download and Organize Repositories**
 
 Pull the selected repositories locally and organize them by category.
