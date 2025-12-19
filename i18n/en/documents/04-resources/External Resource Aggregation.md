@@ -2,7 +2,7 @@
 
 > Summary of high-quality external resources related to Vibe Coding
 >
-> Last updated: 2025-12-18
+> Last updated: 2025-12-19
 
 ---
 
@@ -274,6 +274,7 @@
 
 | Repository | Link | Description |
 |:---|:---|:---|
+| 2025 AI Engineer Reading List | [Latent.Space](https://www.latent.space/p/2025-papers) | 50 must-read papers covering LLM/RAG/Agent/CodeGen and 10 fields |
 | prompt-engineering-guide | [GitHub](https://github.com/dair-ai/Prompt-Engineering-Guide) | Prompt Engineering Guide |
 | generative-ai-for-beginners | [GitHub](https://github.com/microsoft/generative-ai-for-beginners) | Microsoft Generative AI tutorial |
 | llm-course | [GitHub](https://github.com/mlabonne/llm-course) | LLM learning roadmap |
