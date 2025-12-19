@@ -5,7 +5,7 @@
 ## 推荐使用路径（从 0 到可控）
 
 1. **先定边界**：选择一个系统提示词版本（推荐 `v8` 或 `v10`）。
-2. **再跑流程**：在具体任务里按阶段选用 `coding_prompts/`（澄清 / 计划 / 执行 / 复盘）。
+2. **再跑流程**：在具体任务里按阶段选用 `编程提示词/`（澄清 / 计划 / 执行 / 复盘）。
 3. **最后产品化**：当你在某领域反复做同类工作，把「提示词 + 资料」升级为 `skills/` 里的 Skill（更可复用、更稳定）。
 
 ## 目录结构（以仓库真实目录为准）
@@ -13,13 +13,13 @@
 ```
 i18n/zh/prompts/
 ├── README.md
-├── coding_prompts/                 # 编程/研发提示词（当前 41 个 .md）
+├── 编程提示词/                 # 编程/研发提示词（当前 41 个 .md）
 │   ├── index.md                    # 自动生成的索引与版本矩阵（请勿手改）
 │   ├── 标准化流程.md
 │   ├── 项目上下文文档生成.md
 │   ├── 智能需求理解与研发导航引擎.md
 │   └── ...
-├── system_prompts/                 # 系统提示词（CLAUDE 多版本 + 其他收集）
+├── 系统提示词/                 # 系统提示词（CLAUDE 多版本 + 其他收集）
 │   ├── CLAUDE.md/                  # 1~10 版本目录（v9 目前仅占位）
 │   │   ├── 1/CLAUDE.md
 │   │   ├── 2/CLAUDE.md
@@ -33,17 +33,17 @@ i18n/zh/prompts/
 │       ├── VSCode Agent/           # VS Code Copilot
 │       ├── Kiro/                   # Kiro Vibe/Spec 模式
 │       └── ...                     # 更多 AI 工具提示词
-└── user_prompts/                   # 用户自用/一次性提示词
+└── 用户提示词/                   # 用户自用/一次性提示词
     ├── ASCII图生成.md
     ├── 数据管道.md
     └── 项目变量与工具统一维护.md
 ```
 
-## `system_prompts/`：系统级提示词（先把 AI 变“可控”）
+## `系统提示词/`：系统级提示词（先把 AI 变“可控”）
 
 系统提示词用于定义 **工作模式、代码品味、输出格式、安全边界**。目录采用版本化结构：
 
-- 路径约定：`i18n/zh/prompts/system_prompts/CLAUDE.md/<版本号>/CLAUDE.md`
+- 路径约定：`i18n/zh/prompts/系统提示词/CLAUDE.md/<版本号>/CLAUDE.md`
 - 推荐版本：
   - `v8`：综合版，适合通用 Vibe Coding
   - `v10`：偏 Augment/上下文引擎的规范化约束
@@ -51,7 +51,7 @@ i18n/zh/prompts/
 
 ### AI 工具系统提示词集合（中文翻译版）
 
-`system_prompts/system-prompts-and-models-of-ai-tools-main-cn/` 收录了主流 AI 编程工具的系统提示词，**由 [x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) 翻译为中文**，包括：
+`系统提示词/system-prompts-and-models-of-ai-tools-main-cn/` 收录了主流 AI 编程工具的系统提示词，**由 [x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) 翻译为中文**，包括：
 
 | 工具 | 目录 | 说明 |
 |:---|:---|:---|
@@ -67,9 +67,9 @@ i18n/zh/prompts/
 
 > 📌 原仓库：[x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
 
-## `coding_prompts/`：任务级提示词（把流程跑通）
+## `编程提示词/`：任务级提示词（把流程跑通）
 
-`coding_prompts/` 面向「一次任务」：从需求澄清、计划拆解到交付与复盘。建议把它当作工作流脚本库：
+`编程提示词/` 面向「一次任务」：从需求澄清、计划拆解到交付与复盘。建议把它当作工作流脚本库：
 
 - **入口级**（新会话/新项目必用）
   - `项目上下文文档生成.md`：固化上下文，降低跨会话漂移
@@ -80,9 +80,9 @@ i18n/zh/prompts/
 
 ### 关于 `index.md`（重要）
 
-[`coding_prompts/index.md`](./coding_prompts/index.md) 是自动生成的索引（包含版本矩阵与跳转链接），**不要手工编辑**。如果你批量增删/调整版本，建议通过工具链生成索引再同步。
+[`编程提示词/index.md`](./编程提示词/index.md) 是自动生成的索引（包含版本矩阵与跳转链接），**不要手工编辑**。如果你批量增删/调整版本，建议通过工具链生成索引再同步。
 
-## `user_prompts/`：个人工作台（不追求体系化）
+## `用户提示词/`：个人工作台（不追求体系化）
 
 放一些个人习惯、临时脚手架提示词，原则是 **能用、别烂、别污染主库**。
 
@@ -90,10 +90,10 @@ i18n/zh/prompts/
 
 ```bash
 # 查看一个任务提示词
-sed -n '1,160p' i18n/zh/prompts/coding_prompts/标准化流程.md
+sed -n '1,160p' i18n/zh/prompts/编程提示词/标准化流程.md
 
 # 选定系统提示词版本（建议先备份你当前的 CLAUDE.md）
-cp i18n/zh/prompts/system_prompts/CLAUDE.md/10/CLAUDE.md ./CLAUDE.md
+cp i18n/zh/prompts/系统提示词/CLAUDE.md/10/CLAUDE.md ./CLAUDE.md
 ```
 
 ## 维护与批量管理（可选）
