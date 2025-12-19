@@ -46,6 +46,11 @@ alias cc='claude --dangerously-skip-permissions'
 alias g='gemini --yolo'
 ```
 
+**Kiro CLI**
+```bash
+alias k='kiro --dangerously-skip-permissions'
+```
+
 ### 🟢 安全模式（无头但有限制）
 
 **Gemini CLI（禁用工具调用）**

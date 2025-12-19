@@ -4,7 +4,11 @@
 
 ```bash
 npm install -g @anthropic-ai/gemini-cli
+# 或
+npx https://github.com/anthropics/anthropic-quickstarts/tree/main/gemini-cli
 ```
+
+> ⚠️ 请以 [官方文档](https://github.com/google-gemini/gemini-cli) 为准
 
 ## 认证
 
