@@ -1,11 +1,12 @@
-# General Project Architecture Template
+```
+# Generic Project Architecture Template
 
 ## 1️⃣ Standard Structure for Python Web/API Projects
 
 ```
-project_name/
-├── README.md                 # Project README
-├── LICENSE                   # Open-source license
+项目名称/
+├── README.md                 # Project description document
+├── LICENSE                   # Open source license
 ├── requirements.txt          # Dependency management (pip)
 ├── pyproject.toml           # Modern Python project configuration (recommended)
 ├── setup.py                 # Package installation script (if packaged as a library)
@@ -14,7 +15,7 @@ project_name/
 ├── .env.example            # Example environment variables
 ├── CLAUDE.md              # Claude persistent context
 ├── AGENTS.md              # Codex persistent context
-├── Sublime-Text.txt                   # For requirements and notes, for self-reference, and CLI session recovery commands ^_^
+├── Sublime-Text.txt                   # For requirements and notes, for myself, and CLI session recovery commands ^_^
 │
 ├── docs/                   # Documentation directory
 │   ├── api.md             # API documentation
@@ -33,7 +34,7 @@ project_name/
 │   ├── integration/       # Integration tests
 │   └── test_config.py     # Configuration tests
 │
-├── src/                   # Source code (recommended)
+├── src/                   # Source code (recommended approach)
 │   ├── __init__.py
 │   ├── main.py           # Program entry point
 │   ├── app.py            # Flask/FastAPI application
@@ -58,7 +59,7 @@ project_name/
 │   └── external/         # External services
 │       ├── __init__.py
 │       ├── clients/      # API clients
-│       └── integrations/ # Integration services
+│       └── integrations/ # Integrated services
 │
 ├── logs/                  # Log directory (not committed to Git)
 │   ├── app.log
@@ -70,14 +71,14 @@ project_name/
     └── cache/             # Cache
 ```
 
-**Use Cases**: Flask/FastAPI Web applications, RESTful API services, Web backends
+**Usage Scenarios**: Flask/FastAPI Web applications, RESTful API services, Web backends
 
 ---
 
 ## 2️⃣ Standard Structure for Data Science/Quant Projects
 
 ```
-project_name/
+项目名称/
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
@@ -86,7 +87,7 @@ project_name/
 ├── .env.example
 ├── CLAUDE.md              # Claude persistent context
 ├── AGENTS.md              # Codex persistent context
-├── Sublime-Text.txt                   # For requirements and notes, for self-reference, and CLI session recovery commands ^_^
+├── Sublime-Text.txt                   # For requirements and notes, for myself, and CLI session recovery commands ^_^
 │
 ├── docs/                   # Documentation directory
 │   ├── notebooks/         # Jupyter documentation
@@ -99,7 +100,7 @@ project_name/
 │
 ├── scripts/               # Script tools
 │   ├── train_model.py     # Training script
-│   ├── backtest.py        # Backtest script
+│   ├── backtest.py        # Backtesting script
 │   ├── collect_data.py    # Data collection
 │   └── deploy_model.py    # Model deployment
 │
@@ -125,12 +126,12 @@ project_name/
 │   ├── models/            # Model module
 │   │   ├── __init__.py
 │   │   ├── strategies/    # Trading strategies
-│   │   ├── backtest/      # Backtest engine
+│   │   ├── backtest/      # Backtesting engine
 │   │   └── risk/          # Risk management
 │   │
 │   ├── utils/             # Utility module
 │   │   ├── __init__.py
-│   │   ├── logging.py     # Log configuration
+│   │   ├── logging.py     # Logging configuration
 │   │   ├── database.py    # Database tools
 │   │   └── api_client.py  # API client
 │   │
@@ -138,7 +139,7 @@ project_name/
 │       ├── __init__.py
 │       ├── config.py      # Configuration management
 │       ├── signals.py     # Signal generation
-│       └── portfolio.py   # Portfolio
+│       └── portfolio.py   # Investment portfolio
 │
 ├── data/                  # Data directory (Git ignored)
 │   ├── raw/               # Raw data
@@ -155,14 +156,14 @@ project_name/
     └── errors.log
 ```
 
-**Use Cases**: Quantitative trading, machine learning, data analysis, AI research
+**Usage Scenarios**: Quantitative trading, machine learning, data analysis, AI research
 
 ---
 
-## 3️⃣ Monorepo (Multi-Project Repository) Standard Structure
+## 3️⃣ Standard Structure for Monorepo (Multi-Project Repository)
 
 ```
-project_name-monorepo/
+项目名称-monorepo/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
@@ -170,7 +171,7 @@ project_name-monorepo/
 ├── docker-compose.yml    # Docker orchestration
 ├── CLAUDE.md              # Claude persistent context
 ├── AGENTS.md              # Codex persistent context
-├── Sublime-Text.txt                   # This is a file, for requirements and notes, for self-reference, and CLI session recovery commands ^_^
+├── Sublime-Text.txt                   # This is a file for requirements and notes, for myself, and CLI session recovery commands ^_^
 │
 ├── docs/                 # Global documentation
 │   ├── architecture.md
@@ -183,9 +184,9 @@ project_name-monorepo/
 │
 ├── backups/                 # Backup files
 │   ├── archive/             # Old backup files
-│   └── gz/                  # Gzip backup files
+│   └── gz/                  # Compressed backup files
 │
-├── services/             # Microservice directory
+├── services/             # Microservices directory
 │   │
 │   ├── user-service/     # User service
 │   │   ├── Dockerfile
@@ -209,35 +210,35 @@ project_name-monorepo/
 │   ├── common/           # Common modules
 │   │   ├── utils/
 │   │   └── models/
-│   ├── external/         # Third-party libraries (immutable, call only)
+│   ├── external/         # Third-party libraries (not modifiable, only callable)
 │   └── database/         # Database access library
 │
 ├── infrastructure/       # Infrastructure
-│   ├── terraform/        # Cloud resource definition
+│   ├── terraform/        # Cloud resource definitions
 │   ├── kubernetes/       # K8s configuration
 │   └── nginx/            # Reverse proxy configuration
 │
 └── monitoring/           # Monitoring system
-    ├── prometheus/       # Metrics collection
+    ├── prometheus/       # Metric collection
     ├── grafana/          # Visualization
-    └── alertmanager/     # Alerts
+    └── alertmanager/     # Alerting
 ```
 
-**Use Cases**: Microservice architecture, large projects, team collaboration
+**Usage Scenarios**: Microservices architecture, large-scale projects, team collaboration
 
 ---
 
 ## 4️⃣ Standard Structure for Full-Stack Web Applications
 
 ```
-project_name/
+项目名称/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
-├── docker-compose.yml    # Frontend and backend orchestration
+├── docker-compose.yml    # Frontend and backend orchestration together
 ├── CLAUDE.md              # Claude persistent context
 ├── AGENTS.md              # Codex persistent context
-├── Sublime-Text.txt                   # This is a file, for requirements and notes, for self-reference, and CLI session recovery commands ^_^
+├── Sublime-Text.txt                   # For requirements and notes, for myself, and CLI session recovery commands ^_^
 │
 ├── frontend/             # Frontend directory
 │   ├── public/           # Static assets
@@ -259,7 +260,7 @@ project_name/
     └── tests/
 ```
 
-**Use Cases**: Full-stack applications, SPA single-page applications, frontend/backend separated projects
+**Usage Scenarios**: Full-stack applications, SPA single-page applications, frontend/backend separation projects
 
 ---
 
@@ -268,12 +269,12 @@ project_name/
 ### 1. Separation of Concerns
 ```
 API → Service → Data Access → Database
-Clear at a glance, clear hierarchy
+Clear, hierarchical, and easy to understand
 ```
 
 ### 2. Testability
 ```
-Each module is independently testable
+Each module can be tested independently
 Dependencies can be mocked
 ```
 
@@ -285,12 +286,12 @@ Environment variables > Configuration files > Default values
 
 ### 4. Maintainability
 ```
-Self-documenting code
+Self-explanatory code
 Reasonable file naming
 Clear directory structure
 ```
 
-### 5. Version Control Friendly (Git-Friendly)
+### 5. Git-Friendly
 ```
 data/, logs/, models/ added to .gitignore
 Only commit source code and configuration examples
@@ -300,16 +301,16 @@ Only commit source code and configuration examples
 
 ## 🎯 Best Practice Recommendations
 
-1.  **Use `src/` directory**: Place source code in a dedicated `src` directory to avoid top-level clutter.
-2.  **Relative imports**: Consistently use `from src.module import thing` for imports.
+1.  **Use the `src/` directory**: Place source code in a dedicated `src` directory to avoid cluttering the top-level directory.
+2.  **Relative imports**: Consistently use import statements like `from src.module import thing`.
 3.  **Test coverage**: Ensure core business logic has unit and integration tests.
-4.  **Document first**: Write `README.md` for important modules.
-5.  **Environment isolation**: Use virtualenv or conda to create isolated environments.
-6.  **Explicit dependencies**: All dependencies written to `requirements.txt` and versions locked.
-7.  **Configuration management**: Use a combination of environment variables + configuration files.
+4.  **Documentation first**: Write `README.md` for important modules.
+5.  **Environment isolation**: Use virtualenv or conda to create independent environments.
+6.  **Explicit dependencies**: All dependencies should be listed in `requirements.txt` with locked versions.
+7.  **Configuration management**: Use a combination of environment variables and configuration files.
 8.  **Logging levels**: DEBUG, INFO, WARNING, ERROR, FATAL.
-9.  **Error handling**: Do not swallow exceptions; have a complete error chain.
-10. **Code style**: Use black for formatting, flake8 for checking.
+9.  **Error handling**: Do not suppress exceptions; ensure a complete error chain.
+10. **Code style**: Use black for formatting and flake8 for linting.
 
 ---
 
@@ -366,10 +367,10 @@ temp/
 
 ---
 
-## 📚 Technology Selection Reference
+## 📚 Technology Stack Reference
 
-| Scenario | Recommended Tech Stack |
-| :------- | :--------------------- |
+| Scenario | Recommended Technology Stack |
+|----------|-----------------------------|
 | Web API  | FastAPI + Pydantic + SQLAlchemy |
 | Data Processing | Pandas + NumPy + Polars |
 | Machine Learning | Scikit-learn + XGBoost + LightGBM |
@@ -387,7 +388,7 @@ temp/
 
 ### requirements.txt
 ```txt
-# Core dependencies
+# Core Dependencies
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
 pydantic==2.5.0
@@ -415,10 +416,10 @@ mypy==1.7.1
 ### pyproject.toml (Recommended for modern Python projects)
 ```toml
 [project]
-name = "Project Name"
+name = "项目名称"
 version = "0.1.0"
-description = "Project Description"
-authors = [{name = "Author", email = "email@example.com"}]
+description = "项目描述"
+authors = [{name = "作者", email = "邮箱 @example.com"}]
 dependencies = [
     "fastapi>=0.104.0",
     "uvicorn[standard]>=0.24.0",
@@ -439,51 +440,51 @@ build-backend = "setuptools.build_meta"
 
 When starting a new project, ensure the following are completed:
 
-- [ ] Create README.md, including project overview and usage instructions.
-- [ ] Create LICENSE file, clarifying the open-source license.
-- [ ] Set up Python virtual environment (venv/conda).
-- [ ] Create requirements.txt and lock dependency versions.
-- [ ] Create .gitignore, excluding sensitive and unnecessary files.
-- [ ] Create .env.example, explaining required environment variables.
-- [ ] Design directory structure, adhering to the principle of separation of concerns.
-- [ ] Create basic configuration files.
-- [ ] Set up code formatter (black).
-- [ ] Set up code checker (flake8/ruff).
-- [ ] Write the first test case.
-- [ ] Set up Git repository and commit initial code.
-- [ ] Create CHANGELOG.md, recording version changes.
+-   [ ] Create `README.md`, including project introduction and usage instructions.
+-   [ ] Create `LICENSE` file, clarifying the open-source license.
+-   [ ] Set up a Python virtual environment (venv/conda).
+-   [ ] Create `requirements.txt` and lock dependency versions.
+-   [ ] Create `.gitignore`, excluding sensitive and unnecessary files.
+-   [ ] Create `.env.example`, explaining required environment variables.
+-   [ ] Design the directory structure, adhering to the principle of separation of concerns.
+-   [ ] Create basic configuration files.
+-   [ ] Set up a code formatter (black).
+-   [ ] Set up a code linter (flake8/ruff).
+-   [ ] Write the first test case.
+-   [ ] Set up a Git repository and commit initial code.
+-   [ ] Create `CHANGELOG.md` to record version changes.
 
 ---
 
-In **programming / software development**, **Project Architecture / Software Architecture** refers to:
+In **programming / software development**, **project architecture (Project Architecture / Software Architecture)** refers to:
 
-> **The design solution for how a project is broken down, organized, communicated, and evolved at the "overall level"**
-> —it determines how code is layered, how modules are divided, how data flows, and how the system expands and is maintained.
-
----
-
-## One-Sentence Understanding
-
-**Project Architecture = Deciding "where the code goes, how modules connect, and how responsibilities are divided" before writing any specific business code.**
+> **A design plan for how a project is broken down, organized, communicated, and evolved at the "overall level"**
+> — It determines how code is layered, how modules are divided, how data flows, and how the system expands and is maintained.
 
 ---
 
-## I. What Problems Does Project Architecture Primarily Solve?
+## One-sentence understanding
 
-Project architecture is not about "coding skills," but about solving these **higher-level problems**:
+**Project Architecture = Before writing specific business code, first decide "where the code goes, how modules connect, and how responsibilities are divided."**
 
-*   📦 How to organize code to avoid chaos?
-*   🔁 How do modules communicate?
+---
+
+## I. What problems does project architecture mainly solve?
+
+Project architecture is not about "coding tricks," but about solving these **higher-level problems**:
+
+*   📦 How to organize code so it doesn't get messy?
+*   🔁 How do modules communicate with each other?
 *   🧱 Which parts can be modified independently without affecting the whole?
-*   🚀 How will the project be extended in the future?
+*   🚀 How will the project expand in the future?
 *   🧪 How to facilitate testing, debugging, and deployment?
-*   👥 How to collaborate without stepping on each other's code?
+*   👥 How can multiple people collaborate without stepping on each other's code?
 
 ---
 
-## II. What Does Project Architecture Generally Include?
+## II. What does project architecture generally include?
 
-### 1️⃣ Directory Structure (Most Intuitive)
+### 1️⃣ Directory Structure (Most intuitive)
 
 ```text
 project/
@@ -498,7 +499,7 @@ project/
 └── README.md
 ```
 
-👉 Determines **"where different types of code are placed"**.
+👉 Determines **"where different types of code are placed"**
 
 ---
 
@@ -518,8 +519,8 @@ Database / External Systems
 
 **Rules:**
 
-*   Upper layers can call lower layers.
-*   Lower layers cannot depend on upper layers.
+*   Upper layers can call lower layers
+*   Lower layers cannot depend on upper layers in reverse
 
 ---
 
@@ -537,8 +538,8 @@ For example, a trading system:
 
 👉 Each module:
 
-*   Does only one type of thing.
-*   Aims for low coupling, high cohesion.
+*   Does only one type of thing
+*   Strives for low coupling, high cohesion
 
 ---
 
@@ -547,7 +548,7 @@ For example, a trading system:
 *   Where does the data come from?
 *   Who is responsible for processing?
 *   Who is responsible for storage?
-*   Who is responsible for external output?
+*   Who is responsible for output?
 
 For example:
 
@@ -557,17 +558,17 @@ WebSocket → Data Cleaning → Indicator Calculation → AI Scoring → SQLite 
 
 ---
 
-### 5️⃣ Technology Selection (Part of Architecture)
+### 5️⃣ Technology Stack Selection (Part of architecture)
 
-*   Programming languages (Python / Java / Go)
-*   Frameworks (FastAPI / Spring / Django)
-*   Communication methods (HTTP / WebSocket / MQ)
+*   Programming language (Python / Java / Go)
+*   Framework (FastAPI / Spring / Django)
+*   Communication method (HTTP / WebSocket / MQ)
 *   Storage (SQLite / Redis / PostgreSQL)
 *   Deployment (Local / Docker / Cloud)
 
 ---
 
-## III. Common Project Architecture Types (Essential for Beginners)
+## III. Common Project Architecture Types (Beginner must-know)
 
 ### 1️⃣ Monolithic Architecture
 
@@ -592,7 +593,7 @@ One project, one process
 
 ---
 
-### 2️⃣ Layered Architecture (Most Common)
+### 2️⃣ Layered Architecture (Most common)
 
 ```text
 Controller → Service → Repository
@@ -616,11 +617,11 @@ core + plugins
 *   Pluggable systems
 *   Strategy / indicator systems
 
-👉 **Very suitable for quant, AI analysis you are doing.**
+👉 **Very suitable for quant and AI analysis that you are doing**
 
 ---
 
-### 4️⃣ Microservice Architecture (Advanced)
+### 4️⃣ Microservices Architecture (Advanced)
 
 ```text
 Each service is an independent process + API communication
@@ -632,13 +633,13 @@ Each service is an independent process + API communication
 *   High concurrency
 *   Long-term evolution
 
-❌ **Not recommended for beginners to start with.**
+❌ **Not recommended for beginners to start with**
 
 ---
 
-## IV. Understanding with a "Real Example" (Close to what you are doing now)
+## IV. Understand with a "Real Example" (Closer to what you are doing)
 
-Suppose you are building a **Binance Futures AI Analysis System**:
+Suppose you are building an **AI analysis system for Binance perpetual contracts**:
 
 ```text
 backend/
@@ -657,39 +658,38 @@ backend/
 
 This is **project architecture design**:
 
-*   Each folder is responsible for one thing.
-*   Replaceable, testable.
-*   Later, if you want to connect a Telegram Bot / Web frontend, you don't need to rewrite the core.
+*   Each folder is responsible for one thing
+*   Replaceable, testable
+*   No need to rewrite core logic if you want to integrate Telegram Bot / Web frontend later
 
 ---
 
-## V. Common Misconceptions for Beginners ⚠️
+## V. Common Mistakes for Beginners ⚠️
 
 ❌ Starting with microservices
-❌ All code in one file
-❌ Architecture pursuing "seniority" rather than "maintainability"
-❌ Starting to write code without clearly thinking about data flow
+❌ All code written in one file
+❌ Pursuing "advanced" architecture instead of "maintainable" architecture
+❌ Writing code without a clear understanding of data flow
 
 ---
 
-## VI. Suggested Learning Path (Very Important)
+## VI. Learning Path Recommendations (Very Important)
 
-If you are learning CS now, this order is highly recommended:
+Since you are studying CS, this order is highly recommended:
 
-1.  **First write runnable projects (imperfect).**
-2.  **Code becomes messy → then learn architecture.**
+1.  **First build a runnable project (not perfect)**
+2.  **When code starts getting messy → then learn architecture**
 3.  Learn:
-
-    *   Module decomposition
+    *   Module partitioning
     *   Layering
     *   Dependency direction
 4.  Then learn:
-
     *   Design patterns
-    *   Microservices / message queues
+    *   Microservices / Message queues
 
 ---
 
 **Version**: 1.0
 **Update Date**: 2025-11-24
-**Maintained by**: CLAUDE, CODEX, KIMI
+**Maintainers**: CLAUDE, CODEX, KIMI
+```

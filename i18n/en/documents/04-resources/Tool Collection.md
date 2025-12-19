@@ -1,6 +1,7 @@
+```
 # 🛠️ Toolset
 
-> Vibe Coding Common Tools Quick Reference
+> Quick reference for Vibe Coding tools
 
 ## 💻 IDEs and Plugins
 
@@ -11,13 +12,13 @@
 | [Cursor](https://cursor.com/) | AI-native editor |
 | [Continue](https://continue.dev/) | Open-source AI code assistant plugin |
 | Local History | VS Code local history plugin |
-| Partial Diff | VS Code diff viewer plugin |
+| Partial Diff | VS Code diff comparison plugin |
 
 ## 🤖 AI Models
 
 | Model | Description |
 |:---|:---|
-| Claude Opus 4.5 | Strong coding capabilities |
+| Claude Opus 4.5 | Strong code capabilities |
 | GPT-5.1 Codex | Complex logic processing |
 | Gemini 2.5 Pro | Free long context |
 
@@ -25,7 +26,7 @@
 
 | Tool | Description |
 |:---|:---|
-| [Kiro](https://kiro.dev/) | AWS official, free Claude Opus |
+| [Kiro](https://kiro.dev/) | AWS product, free Claude Opus |
 | [Droid](https://factory.ai/) | Multi-model CLI access |
 | Claude Code | Anthropic official CLI |
 | Codex CLI | OpenAI official CLI |
@@ -35,17 +36,18 @@
 
 | Website | Purpose |
 |:---|:---|
-| [AI Studio](https://aistudio.google.com/) | Google free Gemini |
-| [ChatGPT](https://chatgpt.com/) | OpenAI conversation |
-| [Zread](https://zread.ai/) | AI repository reading |
-| [GitHub](https://github.com/) | Code hosting |
-| [Mermaid Chart](https://www.mermaidchart.com/) | Text to diagram |
-| [NotebookLM](https://notebooklm.google.com/) | AI note-taking tool |
-| [Google Sheets](https://docs.google.com/spreadsheets/) | Online spreadsheets |
-| [Apps Script](https://script.google.com/) | Google scripts |
-| [Z-Library](https://z-lib.fm/) | E-book resources |
-| [Bilibili](https://www.bilibili.com/) | Video tutorials |
+| [AI Studio](https://aistudio.google.com/) | Google Free Gemini |
+| [ChatGPT](https://chatgpt.com/) | OpenAI Conversation |
+| [Zread](https://zread.ai/) | AI Repository Reading |
+| [GitHub](https://github.com/) | Code Hosting |
+| [Mermaid Chart](https://www.mermaidchart.com/) | Text to Diagram |
+| [NotebookLM](https://notebooklm.google.com/) | AI Note Tool |
+| [Google Sheets](https://docs.google.com/spreadsheets/) | Online Spreadsheets |
+| [Apps Script](https://script.google.com/) | Google Script |
+| [Z-Library](https://z-lib.fm/) | E-book Resources |
+| [Bilibili](https://www.bilibili.com/) | Video Tutorials |
 
 ## 🔗 More Resources
 
 See [External Resources Aggregation](./外部资源聚合.md)
+```

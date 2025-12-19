@@ -1,15 +1,15 @@
-# Vibe Coding Philosophy
+# Vibe Coding Philosophical Principles
 
-> First principle: Everything to AI... I am a parasite of AI, without AI I lose all capabilities.
+> Everything to AI... I am a parasite to AI, without AI I lose all my capabilities.
 
 ## Practice
 
-Encounter any problems? Send them to AI, describe clearly, you can send screenshots, screen recordings, etc., send your complete problem and context (history/background) to AI.
+Encounter any problems? Send them to AI, describe them clearly, you can send screenshots, screen recordings, etc., send your complete problem and context (history/background) to AI.
 
 ---
 
 ## Next Step
 
-After understanding the philosophy, start practical operations:
+Having understood the philosophical principles, let's move on to practical application:
 
-→ [01-Network Environment Configuration](./01-Network%20Environment%20Configuration.md)
+→ [01-Network Environment Configuration](./01-网络环境配置.md)
