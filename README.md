@@ -313,12 +313,12 @@
 *   [**胶水编程 (Glue Coding)**](./i18n/zh/documents/00-基础指南/): 软件工程的圣杯与银弹，Vibe Coding 的终极进化形态。
 *   [**Chat Vault**](./libs/external/chat-vault/): AI 聊天记录保存工具，支持 Codex/Kiro/Gemini/Claude CLI。
 *   [**prompts-library 工具说明**](./libs/external/prompts-library/): 支持 Excel 与 Markdown 格式互转，包含数百个精选提示词。
-*   [**coding_prompts 集合**](./i18n/zh/prompts/coding_prompts/): 适用于 Vibe Coding 流程的专用提示词。
+*   [**编程提示词集合**](./i18n/zh/prompts/02-编程提示词/): 适用于 Vibe Coding 流程的专用提示词。
 *   [**系统提示词构建原则**](./i18n/zh/documents/00-基础指南/系统提示词构建原则.md): 构建高效 AI 系统提示词的综合指南。
 *   [**开发经验总结**](./i18n/zh/documents/00-基础指南/开发经验.md): 变量命名、文件结构、编码规范、架构原则等。
 *   [**通用项目架构模板**](./i18n/zh/documents/00-基础指南/通用项目架构模板.md): 多种项目类型的标准目录结构。
 *   [**Augment MCP 配置文档**](./i18n/zh/documents/02-方法论/auggie-mcp配置文档.md): Augment 上下文引擎配置说明。
-*   [**system_prompts 集合**](./i18n/zh/prompts/system_prompts/): AI 开发的系统提示词，含多版本开发规范。
+*   [**系统提示词集合**](./i18n/zh/prompts/01-系统提示词/): AI 开发的系统提示词，含多版本开发规范。
 *   [**外部资源聚合**](./i18n/zh/documents/04-资源/外部资源聚合.md): GitHub 精选仓库、AI 工具平台、提示词资源、优质博主汇总。
 
 ---
@@ -383,14 +383,14 @@
 │       └── XHS-image-to-PDF-conversion/ # 小红书图片转PDF工具。
 │
 ├── i18n/zh/prompts/             # 集中存放所有类型的 AI 提示词。
-│   ├── assistant_prompts/       # 辅助类提示词。
-│   ├── coding_prompts/          # 专门用于编程和代码生成相关的提示词集合。
-│   │   └── ... (具体编程提示词文件)
-│   │
-│   ├── system_prompts/          # AI 系统级提示词，用于设定 AI 行为和框架。
+│   ├── 00-元提示词/             # 用于生成提示词的高级提示词。
+│   ├── 01-系统提示词/           # AI 系统级提示词，用于设定 AI 行为和框架。
 │   │   └── ... (其他系统提示词)
 │   │
-│   └── user_prompts/            # 用户自定义或常用提示词。
+│   ├── 02-编程提示词/           # 专门用于编程和代码生成相关的提示词集合。
+│   │   └── ... (具体编程提示词文件)
+│   │
+│   └── 03-用户提示词/           # 用户自定义或常用提示词。
 │       ├── ASCII图生成.md         # ASCII 艺术图生成提示词。
 │       ├── 数据管道.md            # 数据管道处理提示词。
 │       └── ... (其他用户提示词)
@@ -414,7 +414,7 @@
 一句话：Vibe Coding = **规划驱动 + 上下文固定 + AI 结对执行**，让「从想法到可维护代码」变成一条可审计的流水线，而不是一团无法迭代的巨石文件。
 
 **你能得到**
-- 成体系的提示词工具链：`i18n/zh/prompts/system_prompts/` 约束 AI 行为边界，`i18n/zh/prompts/coding_prompts/` 提供需求澄清、计划、执行的全链路脚本。
+- 成体系的提示词工具链：`i18n/zh/prompts/01-系统提示词/` 约束 AI 行为边界，`i18n/zh/prompts/02-编程提示词/` 提供需求澄清、计划、执行的全链路脚本。
 - 闭环交付路径：需求 → 上下文文档 → 实施计划 → 分步实现 → 自测 → 进度记录，全程可复盘、可移交。
 
 <details>
@@ -425,10 +425,10 @@
 核心资产映射：
 ```
 i18n/zh/prompts/
-  coding_prompts/        # 需求澄清、计划、执行链的核心提示词
-  system_prompts/        # 约束 AI 行为边界的系统级提示词
-  assistant_prompts/     # 辅助/配合型提示
-  user_prompts/          # 可复用的用户侧提示词
+  00-元提示词/           # 用于生成提示词的高级提示词
+  01-系统提示词/         # 约束 AI 行为边界的系统级提示词
+  02-编程提示词/         # 需求澄清、计划、执行链的核心提示词
+  03-用户提示词/         # 可复用的用户侧提示词
 i18n/zh/documents/
   04-资源/代码组织.md, 04-资源/通用项目架构模板.md, 00-基础指南/开发经验.md, 00-基础指南/系统提示词构建原则.md 等知识库
 backups/
@@ -473,10 +473,10 @@ graph TB
   end
 
   subgraph consume_layer[执行与消费层]
-    artifacts_md --> catalog_coding[i18n/zh/prompts/coding_prompts]
-    artifacts_md --> catalog_system[i18n/zh/prompts/system_prompts]
-    artifacts_md --> catalog_assist[i18n/zh/prompts/assistant_prompts]
-    artifacts_md --> catalog_user[i18n/zh/prompts/user_prompts]
+    artifacts_md --> catalog_coding[i18n/zh/prompts/02-编程提示词]
+    artifacts_md --> catalog_system[i18n/zh/prompts/01-系统提示词]
+    artifacts_md --> catalog_meta[i18n/zh/prompts/00-元提示词]
+    artifacts_md --> catalog_user[i18n/zh/prompts/03-用户提示词]
     artifacts_md --> docs_repo[i18n/zh/documents/*]
     artifacts_md --> new_consumer[预留：其他下游渠道]
     catalog_coding --> ai_flow[AI 结对编程流程]
