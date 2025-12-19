@@ -9,7 +9,9 @@ i18n/zh/skills/
 ├── README.md                # 本文件
 │
 ├── # === 元技能（核心） ===
-├── claude-skills/           # ⭐ 元技能：生成 Skills 的 Skills（11KB）
+├── meta-skills/             # 元技能目录
+│   └── claude-skills/       # ⭐ 元技能：生成 Skills 的 Skills（11KB）
+├── headless-cli/            # 无头模式 AI CLI 调用技能
 │
 ├── # === Claude 工具 ===
 ├── claude-code-guide/       # Claude Code 使用指南（9KB）
@@ -44,6 +46,7 @@ i18n/zh/skills/
 | **ccxt** | 18KB | 交易 | 加密货币交易所统一 API |
 | **twscrape** | 11KB | 数据采集 | Twitter/X 数据抓取 |
 | **claude-skills** | 11KB | 元技能 | ⭐ 生成 Skills 的 Skills |
+| **headless-cli** | 5KB | CLI | 无头模式 AI CLI 调用 |
 | **claude-code-guide** | 9KB | 工具 | Claude Code 使用最佳实践 |
 | **claude-cookbooks** | 9KB | 工具 | Claude API 使用示例 |
 | **snapdom** | 8KB | 前端 | DOM 快照与测试 |
@@ -60,7 +63,8 @@ i18n/zh/skills/
 
 | 技能 | 说明 | 推荐场景 |
 |------|------|----------|
-| `claude-skills` | 生成 Skills 的 Skills | 创建新技能时必用 |
+| `meta-skills/claude-skills` | 生成 Skills 的 Skills | 创建新技能时必用 |
+| `headless-cli` | 无头模式 AI CLI 调用 | 批量任务、自动化 |
 | `claude-code-guide` | Claude Code CLI 使用指南 | 日常开发 |
 | `claude-cookbooks` | Claude API 最佳实践 | API 集成 |
 
@@ -118,7 +122,10 @@ skill-name/
 
 ```bash
 # 查看元技能
-cat i18n/zh/skills/claude-skills/SKILL.md
+cat i18n/zh/skills/meta-skills/claude-skills/SKILL.md
+
+# 查看无头 CLI 技能
+cat i18n/zh/skills/headless-cli/SKILL.md
 
 # 查看 PostgreSQL 技能（最详细）
 cat i18n/zh/skills/postgresql/SKILL.md
@@ -154,12 +161,12 @@ cp i18n/zh/skills/postgresql/SKILL.md ./CLAUDE.md
 ### 方法一：使用元技能生成（推荐）
 
 1. 准备领域资料（文档、代码、规范）
-2. 将资料和 `i18n/zh/skills/claude-skills/SKILL.md` 一起提供给 AI
+2. 将资料和 `i18n/zh/skills/meta-skills/claude-skills/SKILL.md` 一起提供给 AI
 3. AI 会生成针对该领域的专用 Skill
 
 ```bash
 # 示例：让 AI 读取元技能后生成新技能
-cat i18n/zh/skills/claude-skills/SKILL.md
+cat i18n/zh/skills/meta-skills/claude-skills/SKILL.md
 # 然后告诉 AI：请根据这个元技能，为 [你的领域] 生成一个新的 SKILL.md
 ```
 
@@ -196,7 +203,7 @@ EOF
 
 ## 核心技能详解
 
-### `claude-skills/SKILL.md` - 元技能 ⭐
+### `meta-skills/claude-skills/SKILL.md` - 元技能 ⭐
 
 **生成 Skills 的 Skills**，是创建新技能的核心工具。
 
@@ -235,7 +242,8 @@ EOF
 ## 相关资源
 
 - [Skills 生成器](https://github.com/yusufkaraaslan/Skill_Seekers) - 把任何资料转为 AI Skills
-- [元技能文件](./claude-skills/SKILL.md) - 生成 Skills 的 Skills
+- [元技能文件](./meta-skills/claude-skills/SKILL.md) - 生成 Skills 的 Skills
+- [无头 CLI 技能](./headless-cli/SKILL.md) - 无头模式 AI CLI 调用
 - [提示词库](../prompts/) - 更细粒度的提示词集合
 - [Claude Code 指南](./claude-code-guide/SKILL.md) - Claude Code 使用最佳实践
 - [文档库](../documents/) - 方法论与开发经验
