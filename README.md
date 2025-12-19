@@ -293,7 +293,7 @@
 *   [**Skills 制作器**](https://github.com/yusufkaraaslan/Skill_Seekers): 可根据需求生成定制化 Skills 的工具。
 *   [**元提示词**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=1770874220#gid=1770874220): 用于生成提示词的高级提示词。
 *   [**通用项目架构模板**](./i18n/zh/documents/00-基础指南/通用项目架构模板.md): 可用于快速搭建标准化的项目目录结构。
-*   [**元技能：Skills 的 Skills**](./i18n/zh/skills/meta-skills/claude-skills/SKILL.md): 用于生成 Skills 的元技能。
+*   [**元技能：Skills 的 Skills**](./i18n/zh/skills/00-元技能/claude-skills/SKILL.md): 用于生成 Skills 的元技能。
 *   [**tmux快捷键大全**](./i18n/zh/documents/02-方法论/tmux快捷键大全.md): tmux 的快捷键参考文档。
 *   [**LazyVim快捷键大全**](./i18n/zh/documents/02-方法论/LazyVim快捷键大全.md): LazyVim 的快捷键参考文档。
 *   [**手机远程 Vibe Coding**](./i18n/zh/documents/02-方法论/关于手机ssh任意位置链接本地计算机，基于frp实现的方法.md): 基于 frp 实现手机 SSH 远程控制本地电脑进行 Vibe Coding。
@@ -396,12 +396,13 @@
 │       └── ... (其他用户提示词)
 │
 ├── i18n/zh/skills/              # 集中存放所有类型的 skills 技能。
-    ├── meta-skills/             # 元技能目录
+    ├── 00-元技能/               # 元技能目录
     │   └── claude-skills/       # 生成 SKILL 的元 SKILL
-    │       ├── SKILL.md
-    │       └── ... (其他)
-    ├── headless-cli/            # 无头模式 AI CLI 调用技能
-    └── ... (与其他 skill)
+    ├── 01-AI工具/               # AI CLI 和工具
+    │   └── headless-cli/        # 无头模式 AI CLI 调用
+    ├── 02-数据库/               # 数据库技能
+    ├── 03-加密货币/             # 加密货币/量化交易
+    └── 04-开发工具/             # 通用开发工具
 ```
 
 ---
