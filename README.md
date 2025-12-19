@@ -68,19 +68,10 @@
   <a href="./i18n/zh/documents/00-基础指南/语言层要素.md"><img src="https://img.shields.io/badge/📊_语言层要素-12层框架-gold?style=for-the-badge" alt="语言层要素"></a>
   <a href="./i18n/zh/documents/00-基础指南/常见坑汇总.md"><img src="https://img.shields.io/badge/🕳️_常见坑-避坑指南-yellow?style=for-the-badge" alt="常见坑汇总"></a>
   <a href="./i18n/zh/documents/04-资源/外部资源聚合.md"><img src="https://img.shields.io/badge/📡_信息源-聚合-teal?style=for-the-badge" alt="信息源聚合"></a>
-</p>
-<!-- 🟠 方法论 (橙色系) -->
-<p>
   <a href="./i18n/zh/documents/00-基础指南/A%20Formalization%20of%20Recursive%20Self-Optimizing%20Generative%20Systems.md"><img src="https://img.shields.io/badge/📐_元方法论-递归优化-darkorange?style=for-the-badge" alt="元方法论"></a>
   <a href="./i18n/zh/documents/00-基础指南/编程之道.md"><img src="https://img.shields.io/badge/🧭_编程之道-道法术-orange?style=for-the-badge" alt="编程之道"></a>
   <a href="./i18n/zh/documents/03-实战/README.md"><img src="https://img.shields.io/badge/🎬_实战案例-项目实操-orange?style=for-the-badge" alt="实战案例"></a>
-</p>
-<!-- 🟡 实用工具 (黄/绿色系) -->
-<p>
   <a href="./i18n/zh/documents/04-资源/工具集.md"><img src="https://img.shields.io/badge/🛠️_工具集-速查-teal?style=for-the-badge" alt="工具集"></a>
-</p>
-<!-- 🔵 资源库 (蓝/紫色系) -->
-<p>
   <a href="./i18n/zh/prompts/"><img src="https://img.shields.io/badge/💬_提示词-精选-purple?style=for-the-badge" alt="提示词精选"></a>
   <a href="./i18n/zh/skills/"><img src="https://img.shields.io/badge/⚡_Skills-技能大全-forestgreen?style=for-the-badge" alt="skills技能大全"></a>
   <a href="https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1"><img src="https://img.shields.io/badge/📋_提示词-在线表格-blue?style=for-the-badge" alt="提示词在线表格"></a>
