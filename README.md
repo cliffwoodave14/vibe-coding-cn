@@ -41,6 +41,7 @@
   <a href="./i18n/zh/documents/01-入门指南/00-Vibe%20Coding%20哲学原理.md"><img src="https://img.shields.io/badge/🧠_核心哲学-必读-crimson?style=for-the-badge" alt="核心哲学"></a>
   <a href="./i18n/zh/documents/00-基础指南/胶水编程.md"><img src="https://img.shields.io/badge/🧬_胶水编程-银弹-red?style=for-the-badge" alt="胶水编程"></a>
   <a href="./i18n/zh/documents/01-入门指南/README.md"><img src="https://img.shields.io/badge/🚀_从零开始-新手入门-red?style=for-the-badge" alt="从零开始"></a>
+  <a href="./i18n/zh/documents/00-基础指南/血的教训.md"><img src="https://img.shields.io/badge/🩸_血的教训-必看-red?style=for-the-badge" alt="血的教训"></a>
   <a href="./i18n/zh/documents/00-基础指南/语言层要素.md"><img src="https://img.shields.io/badge/📊_语言层要素-12层框架-gold?style=for-the-badge" alt="语言层要素"></a>
   <a href="./i18n/zh/documents/00-基础指南/常见坑汇总.md"><img src="https://img.shields.io/badge/🕳️_常见坑-避坑指南-yellow?style=for-the-badge" alt="常见坑汇总"></a>
   <a href="./i18n/zh/documents/00-基础指南/强前置条件约束.md"><img src="https://img.shields.io/badge/🚫_硬约束-铁律-darkred?style=for-the-badge" alt="强前置条件约束"></a>
