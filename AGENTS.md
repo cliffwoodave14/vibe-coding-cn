@@ -5,7 +5,7 @@
 - 多语言 i18n：`i18n/<lang>/` 统一三层结构（documents / prompts / skills）。现有语言：中文 `zh`、英文 `en`、希伯来语 `he`，以及 `es`、`hi`、`ar`、`pt`、`ru`、`fr`、`de`、`ja`、`ko`、`it`、`tr`、`nl`、`pl`、`id`、`vi`、`th`、`fa`、`uk`、`bn`、`ta`、`ur`、`ms`、`sw`、`ha`；新增语言遵循同样层级。
 - 文档库：`i18n/zh/documents/` 是默认中文方法论入口，含子目录：`方法论与原则/`、`模板与资源/`、`教程与指南/`、`外部资源聚合/`、`胶水编程/`、`从零开始vibecoding/` 等。
 - 提示词资产：`i18n/zh/prompts/` 按角色拆分（`system_prompts/`、`assistant_prompts/`、`coding_prompts/`、`user_prompts/`、`meta_prompts/`），`libs/external/prompts-library/` 提供 Excel ↔ Markdown 互转工具。
-- 技能库：`i18n/zh/skills/` 包含模块化技能集，如 `ccxt/`、`postgresql/`、`telegram-dev/`、`claude-code-guide/`、`claude-skills/` 等 16+ 个技能目录。
+- 技能库：`i18n/zh/skills/` 包含模块化技能集，如 `ccxt/`、`postgresql/`、`telegram-dev/`、`claude-code-guide/`、`ddd-doc-steward/`、`claude-skills/` 等 17+ 个技能目录。
 - 代码与集成：`libs/` 预留核心实现骨架，`common/`（含 `models/`、`utils/`）、`database/`、`external/` 分别对应通用模型、存储适配与外部依赖。
 - 外部工具：`libs/external/` 含 `prompts-library/`、`l10n-tool/`、`my-nvim/`、`MCPlayerTransfer/`、`XHS-image-to-PDF-conversion/` 等。
 - 备份：`backups/` 内含 `一键备份.sh`、`快速备份.py` 和 `gz/` 存档目录。
